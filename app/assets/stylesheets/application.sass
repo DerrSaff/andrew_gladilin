@@ -1,0 +1,58 @@
+body
+  margin: 0
+  padding: 0
+  height: 100vh
+  background-color: #000614
+
+[class^="star-"],
+[class^="noglow-star-"]
+  margin: 0
+  padding: 0
+  border-radius: 50%
+  background-color: white
+  position: absolute
+
+[class^="noglow-star-"]
+  width: 1px
+  height: 1px
+
+[class^="star-"]
+  box-shadow: 0 0 4px 0 white
+  width: 3px
+  height: 3px
+  animation-name: glow
+  animation-duration: 2s
+  animation-iteration-count: infinite
+  animation-direction: alternate
+  animation-delay: 0
+
+[class^="cloud-"]
+  transform: skewX(15deg)
+  border-radius: 70%
+  background-color: rgba(255, 255, 255, 0)
+  box-shadow: 0 0 200px 200px rgba(255, 255, 255, 0.1)
+  position: absolute
+  left: 100px
+  top: 100px
+  width: 1px
+  height: 1px
+
+@keyframes glow
+  to
+    box-shadow: 0 0 4px 2px white
+
+// @media screen and (max-width: 1920)
+//   $window-height: 1080
+//   $window-width: 1920
+//
+// @media screen and (max-width: 1366)
+//   $window-height: 768
+//   $window-width: 1366
+//
+// $window-height: 1080
+// $window-width: 1920
+//
+// @for $i from 0 through 99
+//   .star-#{$i}
+//     left: random($window-height) + px
+//     top: random($window-width) + px
