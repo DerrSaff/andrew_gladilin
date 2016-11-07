@@ -9,7 +9,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'underscore-rails', '~> 1.8', '>= 1.8.3'
 gem 'jbuilder', '~> 2.5'
-gem 'font-awesome-rails', '~> 4.7'
+gem 'font-awesome-sass', '~> 4.7.0'
 
 group :development do
   gem 'web-console'

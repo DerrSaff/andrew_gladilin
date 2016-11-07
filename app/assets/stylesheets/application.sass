@@ -1,8 +1,12 @@
+@import 'font-awesome-sprockets'
+@import 'font-awesome'
+
 body
   margin: 0
   padding: 0
   height: 100vh
   background-color: #000614
+  z-index: 0
 
 [class^="star-"],
 [class^="noglow-star-"]
@@ -11,6 +15,7 @@ body
   border-radius: 50%
   background-color: white
   position: absolute
+  z-index: 1
 
 [class^="noglow-star-"]
   width: 1px
@@ -36,10 +41,73 @@ body
   top: 100px
   width: 1px
   height: 1px
+  z-index: 1
 
 @keyframes glow
   to
     box-shadow: 0 0 4px 2px white
+
+.orbit
+  width: 400px
+  height: 200px
+  border-radius: 50%
+  border: 2px grey dashed
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 2
+
+.planet
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 3
+  cursor: pointer
+
+  i
+    color: white
+    position: relative
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 4
+
+.about
+  background-color: #111933
+
+.science
+  background-color: #47B2D6
+  top: 0%
+
+
+.skills
+  top: 15%
+  left: 85%
+  background-color: #2B05B3
+
+.projects
+  top: 85%
+  left: 85%
+  background-color: #631262
+
+.works
+  top: 100%
+  background-color: #3BFF3E
+
+.photos
+  top: 85%
+  left: 15%
+  background-color: #FFDC17
+
+.contacts
+  top: 15%
+  left: 15%
+  background-color: #D60400
 
 // @media screen and (max-width: 1920)
 //   $window-height: 1080
