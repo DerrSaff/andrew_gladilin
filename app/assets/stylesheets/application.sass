@@ -68,14 +68,20 @@ body
   transform: translate(-50%, -50%)
   z-index: 3
   cursor: pointer
+  transition-property: width, height, border-radius, top, left
+  transition-duration: 1s
+  color: white
 
   i
-    color: white
     position: relative
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
     z-index: 4
+
+  .active-icon
+    position: static
+    display: inline
 
 .about
   background-color: #111933
@@ -83,7 +89,6 @@ body
 .science
   background-color: #47B2D6
   top: 0%
-
 
 .skills
   top: 15%
@@ -109,9 +114,33 @@ body
   left: 15%
   background-color: #D60400
 
-// @media screen and (max-width: 1920)
-//   $window-height: 1080
-//   $window-width: 1920
+.content
+  display: none
+
+h2
+  margin: 0
+  padding: 0
+  display: none
+  color: white
+
+.active-planet
+  width: 800px
+  height: 500px
+  padding: 20px
+  border-radius: 0%
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 4
+
+.active-h
+  display: inline-block
+
+@media screen and (max-width: 320)
+  .orbit
+    width: 300px
+    height: 150px
+
 //
 // @media screen and (max-width: 1366)
 //   $window-height: 768
