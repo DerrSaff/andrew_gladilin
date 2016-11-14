@@ -1,0 +1,6 @@
+ru:
+  application:
+    index:
+      about: Обо мне
+      about_content:
+        hello: Привет!
