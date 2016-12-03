@@ -6,48 +6,87 @@
       <p>
         <%= t('.about_content.hello') %>
       </p>
+      <p>
+        <%= t('.about_content.me') %>
+      </p>
+      <p>
+        <%= t('.about_content.nicknames') %>
+      </p>
+      <p>
+        <%= t('.about_content.interests') %>
+      </p>
+      <div class="interests">
+          <%= image_tag("it.png", alt: t('.about_content.interests_list.it'), class: 'interest') %>
+          <%= image_tag("sciences.png", alt: t('.about_content.interests_list.sciences'), class: 'interest') %>
+          <%= image_tag("foreign_languages.png", alt: t('.about_content.interests_list.foreign_languages'), class: 'interest') %>
+          <%= image_tag("literature.png", alt: t('.about_content.interests_list.literature'), class: 'interest') %>
+      </div>
+      <div class="interests">
+          <%= image_tag("yoga.png", alt: t('.about_content.interests_list.yoga'), class: 'interest') %>
+          <%= image_tag("sports.png", alt: t('.about_content.interests_list.sports'), class: 'interest') %>
+          <%= image_tag("games.png", alt: t('.about_content.interests_list.games'), class: 'interest') %>
+          <%= image_tag("socionics.png", alt: t('.about_content.interests_list.socionics'), class: 'interest') %>
+      </div>
+      <div class="interests">
+          <%= image_tag("ai.png", alt: t('.about_content.interests_list.ai'), class: 'interest') %>
+          <%= image_tag("music.png", alt: t('.about_content.interests_list.music'), class: 'interest') %>
+          <%= image_tag("engineering.png", alt: t('.about_content.interests_list.engineering'), class: 'interest') %>
+          <%= image_tag("comics.png", alt: t('.about_content.interests_list.comics'), class: 'interest') %>
+      </div>
     </div>
   </div>
   <div class="planet skills">
     <div class="content">
       <%= icon('tasks') %>
-      <h2>Навыки</h2>
-      Привет!
+      <h2><%= t('.skills') %></h2>
+      <p>
+        <%= t('.about_content.hello') %>
+      </p>
     </div>
   </div>
   <div class="planet science">
     <div class="content">
       <%= icon('flask') %>
-      <h2>Научные работы</h2>
-      Привет!
+      <h2><%= t('.science') %></h2>
+      <p>
+        <%= t('.about_content.hello') %>
+      </p>
     </div>
   </div>
   <div class="planet projects">
     <div class="content">
       <%= icon('cogs') %>
-      <h2>Мои разработки</h2>
-      Привет!
+      <h2><%= t('.projects') %></h2>
+      <p>
+        <%= t('.about_content.hello') %>
+      </p>
     </div>
   </div>
   <div class="planet works">
     <div class="content">
       <%= icon('book') %>
-      <h2>Литературное творчество</h2>
-      Привет!
+      <h2><%= t('.works') %></h2>
+      <p>
+        <%= t('.about_content.hello') %>
+      </p>
     </div>
   </div>
   <div class="planet photos">
     <div class="content">
       <%= icon('camera') %>
-      <h2>Мои фото</h2>
-      Привет!
+      <h2><%= t('.photos') %></h2>
+      <p>
+        <%= t('.about_content.hello') %>
+      </p>
     </div>
   </div>
   <div class="planet contacts">
     <div class="content">
       <%= icon('envelope') %>
-      <h2>Контакты</h2>
-      Привет!
+      <h2><%= t('.contacts') %></h2>
+      <p>
+        <%= t('.about_content.hello') %>
+      </p>
     </div>
   </div>
 
