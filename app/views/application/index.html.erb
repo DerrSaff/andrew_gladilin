@@ -16,52 +16,128 @@
         <%= t('.about_content.interests') %>
       </p>
       <div class="interests">
-          <%= image_tag("it.png", alt: t('.about_content.interests_list.it'), class: 'interest') %>
-          <%= image_tag("sciences.png", alt: t('.about_content.interests_list.sciences'), class: 'interest') %>
-          <%= image_tag("foreign_languages.png", alt: t('.about_content.interests_list.foreign_languages'), class: 'interest') %>
-          <%= image_tag("literature.png", alt: t('.about_content.interests_list.literature'), class: 'interest') %>
+          <%= image_tag("interests/it.png", alt: t('.about_content.interests_list.it'), class: 'interest') %>
+          <%= image_tag("interests/sciences.png", alt: t('.about_content.interests_list.sciences'), class: 'interest') %>
+          <%= image_tag("interests/foreign_languages.png", alt: t('.about_content.interests_list.foreign_languages'), class: 'interest') %>
+          <%= image_tag("interests/literature.png", alt: t('.about_content.interests_list.literature'), class: 'interest') %>
       </div>
       <div class="interests">
-          <%= image_tag("yoga.png", alt: t('.about_content.interests_list.yoga'), class: 'interest') %>
-          <%= image_tag("sports.png", alt: t('.about_content.interests_list.sports'), class: 'interest') %>
-          <%= image_tag("games.png", alt: t('.about_content.interests_list.games'), class: 'interest') %>
-          <%= image_tag("socionics.png", alt: t('.about_content.interests_list.socionics'), class: 'interest') %>
+          <%= image_tag("interests/yoga.png", alt: t('.about_content.interests_list.yoga'), class: 'interest') %>
+          <%= image_tag("interests/sports.png", alt: t('.about_content.interests_list.sports'), class: 'interest') %>
+          <%= image_tag("interests/games.png", alt: t('.about_content.interests_list.games'), class: 'interest') %>
+          <%= image_tag("interests/socionics.png", alt: t('.about_content.interests_list.socionics'), class: 'interest') %>
       </div>
       <div class="interests">
-          <%= image_tag("ai.png", alt: t('.about_content.interests_list.ai'), class: 'interest') %>
-          <%= image_tag("music.png", alt: t('.about_content.interests_list.music'), class: 'interest') %>
-          <%= image_tag("engineering.png", alt: t('.about_content.interests_list.engineering'), class: 'interest') %>
-          <%= image_tag("comics.png", alt: t('.about_content.interests_list.comics'), class: 'interest') %>
+          <%= image_tag("interests/ai.png", alt: t('.about_content.interests_list.ai'), class: 'interest') %>
+          <%= image_tag("interests/music.png", alt: t('.about_content.interests_list.music'), class: 'interest') %>
+          <%= image_tag("interests/engineering.png", alt: t('.about_content.interests_list.engineering'), class: 'interest') %>
+          <%= image_tag("interests/comics.png", alt: t('.about_content.interests_list.comics'), class: 'interest') %>
       </div>
     </div>
   </div>
-  <div class="planet skills">
-    <div class="content">
-      <%= icon('tasks') %>
-      <h2><%= t('.skills') %></h2>
-      <p>
-        <%= t('.about_content.hello') %>
-      </p>
-    </div>
-  </div>
+
   <div class="planet science">
     <div class="content">
       <%= icon('flask') %>
       <h2><%= t('.science') %></h2>
       <p>
-        <%= t('.about_content.hello') %>
+        <%= t('.science_content.theme') %>
+      </p>
+      <p>
+        <%= t('.science_content.thesis') %>
+        <a href="https://github.com/DerrSaff/mythesis">https://github.com/DerrSaff/mythesis</a>
+      </p>
+      <p>
+        <%= t('.science_content.articles') %>
+        <a href="https://github.com/DerrSaff/mythesis">https://github.com/DerrSaff/myarticles</a>
       </p>
     </div>
   </div>
+
+  <div class="planet skills">
+    <div class="content">
+      <%= icon('tasks') %>
+      <h2><%= t('.skills') %></h2>
+      <p>
+        <%= t('.skills_content.level') %>
+      </p>
+      <!-- <%= t('.skills_content.interskillar') %> -->
+      <div class="skills-list">
+        <div class="skill">
+          <figure>
+            <%= image_tag('skills/frontend.png', size: '96') %>
+            <progress value="60" max="100">60%</progress>
+            <figcaption>HTML/CSS</figcaption>
+          </figure>
+        </div>
+        <div class="skill">
+          <figure>
+            <%= image_tag('skills/javascript.png', size: '96') %>
+            <progress value="15" max="100">15%</progress>
+            <figcaption>JavaScript</figcaption>
+          </figure>
+        </div>
+        <div class="skill">
+          <figure>
+            <%= image_tag('skills/ror.png', size: '96') %>
+            <progress value="25" max="100">25%</progress>
+            <figcaption>Ruby on Rails</figcaption>
+          </figure>
+        </div>
+        <div class="skill">
+          <figure>
+            <%= image_tag('skills/git.png', size: '96') %>
+            <progress value="25" max="100">25%</progress>
+            <figcaption>Git</figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- --- -->
+      <div class="skills-list">
+        <div class="skill">
+          <figure>
+            <%= image_tag('skills/java.png', size: '96') %>
+            <progress value="15" max="100">15%</progress>
+            <figcaption>Java</figcaption>
+          </figure>
+        </div>
+        <div class="skill">
+          <figure>
+            <%= image_tag('skills/postgresql.png', size: '96') %>
+            <progress value="10" max="100">10%</progress>
+            <figcaption>PostgreSQL</figcaption>
+          </figure>
+        </div>
+        <div class="skill">
+          <figure>
+            <%= image_tag('skills/android.jpg', size: '96') %>
+            <progress value="10" max="100">10%</progress>
+            <figcaption>Android</figcaption>
+          </figure>
+        </div>
+        <div class="skill">
+          <figure>
+            <%= image_tag('skills/scala.png', size: '96') %>
+            <progress value="5" max="100">5%</progress>
+            <figcaption>Scala</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <div class="planet projects">
     <div class="content">
       <%= icon('cogs') %>
       <h2><%= t('.projects') %></h2>
       <p>
-        <%= t('.about_content.hello') %>
+        <%= t('.projects_content.hello') %>
       </p>
     </div>
   </div>
+
   <div class="planet works">
     <div class="content">
       <%= icon('book') %>
