@@ -184,9 +184,15 @@
     <div class="content">
       <%= icon('camera') %>
       <h2><%= t('.photos') %></h2>
-      <p>
-        <%= t('.about_content.hello') %>
-      </p>
+      <div class="gallery">
+        <div class="previous"></div>
+        <%= image_tag('photos/me1.jpg', class: "myphoto currentPhoto") %>
+        <%= image_tag('photos/me2.jpg', class: "myphoto") %>
+        <%= image_tag('photos/me3.jpg', class: "myphoto") %>
+        <%= image_tag('photos/me4.jpg', class: "myphoto") %>
+        <div class="next"></div>
+      </div>
+      <div class="dots"></div>
     </div>
   </div>
 

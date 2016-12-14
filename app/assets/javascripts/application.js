@@ -35,12 +35,12 @@ $(document).ready( function() {
   }
 
   $( ".planet" ).click( function() {
+    event.stopPropagation();
     var planet = $(this);
 
     planet.toggleClass('active-planet');
 
     if (planet.hasClass('active-planet')) {
-      planet.find('i').hide();
       setTimeout( function() {
         planetContent(planet);
       }, 1000);
@@ -50,10 +50,46 @@ $(document).ready( function() {
     }
   });
 
+  $("body").click( function() {
+    planetContent($(".planet.active-planet"));
+    $(".planet.active-planet").removeClass('active-planet');
+  });
+
   function planetContent(object) {
-    object.find('i').toggleClass('active-icon').toggle();
+    object.find('i').toggleClass('active-icon');
     object.find('h2').toggleClass('active-h');
     object.find('.content').toggle();
+  }
+
+  var current_photo = 1
+  $(".currentPhoto").show();
+
+  $(".previous").click ( function () {
+    var sibling = $(".myphoto.currentPhoto").prev();
+
+    if (sibling.is("div")) {
+      sibling = $(".myphoto").last()
+    }
+    $(".currentPhoto").removeClass('currentPhoto');
+    sibling.addClass('currentPhoto');
+    event.stopPropagation();
+
+  });
+
+  $(".myphoto").click ( nextPhoto );
+
+  $(".next").click ( nextPhoto );
+
+  function nextPhoto() {
+
+    var sibling = $(".myphoto.currentPhoto").next();
+
+    if (sibling.is("div")) {
+      sibling = $(".myphoto").first()
+    }
+    $(".currentPhoto").removeClass('currentPhoto');
+    sibling.addClass('currentPhoto');
+    event.stopPropagation();
   }
 
 });
