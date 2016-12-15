@@ -76,9 +76,15 @@ $(document).ready( function() {
 
   });
 
-  $(".myphoto").click ( nextPhoto );
+  $(".myphoto, .next").click ( nextPhoto );
 
-  $(".next").click ( nextPhoto );
+  // $(".next").click ( nextPhoto );
+
+  $(".contact-icon, span.email").click ( function () {
+    event.stopPropagation();
+  })
+
+
 
   function nextPhoto() {
 

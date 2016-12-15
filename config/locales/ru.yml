@@ -45,4 +45,5 @@ ru:
           web_of_strings: Паутина струн
       photos: Мои фото
       contacts: Контакты
-        
+      contacts_content:
+        email: 'Мой электронный адрес: '
