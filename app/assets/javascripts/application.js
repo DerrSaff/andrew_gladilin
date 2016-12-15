@@ -68,7 +68,7 @@ $(document).ready( function() {
   var current_photo = 1
   $(".currentPhoto").show();
 
-  $(".previous").click ( function () {
+  $(".previous").click ( function() {
     var sibling = $(".myphoto.currentPhoto").prev();
 
     if (sibling.is("div")) {
@@ -84,7 +84,7 @@ $(document).ready( function() {
 
   // $(".next").click ( nextPhoto );
 
-  $("a, span.email").click ( function () {
+  $("a, span.email").click ( function() {
     event.stopPropagation();
   })
 
