@@ -34,11 +34,9 @@ $(document).ready( function() {
     $('.cloud-' + i).css({ top: _.random(1, h-8), left: _.random(1, w-8) });
   }
 
-  $( ".planet" ).click( function() {
+  $( ".planet" ).click( function(event) {
     event.stopPropagation();
     var planet = $(this);
-
-    console.log($(this).width())
 
     if ( ($(this).width() != 50) && ($(this).width() != 800) ) { return }
 
@@ -68,7 +66,7 @@ $(document).ready( function() {
   var current_photo = 1
   $(".currentPhoto").show();
 
-  $(".previous").click ( function() {
+  $(".previous").click ( function(event) {
     var sibling = $(".myphoto.currentPhoto").prev();
 
     if (sibling.is("div")) {
@@ -80,11 +78,12 @@ $(document).ready( function() {
 
   });
 
-  $(".myphoto, .next").click ( nextPhoto );
+  $(".myphoto, .next").click ( function(event) {
+    event.stopPropagation();
+    nextPhoto;
+  });
 
-  // $(".next").click ( nextPhoto );
-
-  $("a, span.email").click ( function() {
+  $("a, span.email").click ( function(event) {
     event.stopPropagation();
   })
 
@@ -96,7 +95,6 @@ $(document).ready( function() {
     }
     $(".currentPhoto").removeClass('currentPhoto');
     sibling.addClass('currentPhoto');
-    event.stopPropagation();
   }
 
 });
