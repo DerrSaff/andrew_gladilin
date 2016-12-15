@@ -13,7 +13,7 @@ $(document).ready( function() {
   var angle = _.random(360);
   var colors = ['#510001', '#3a0051', '#B70046', '#002B3A', '#007A0E', '#002823', '#007AC6', '#000000', '#C67A00', '#AD0200'];
   var backgroundColor = _.sample(colors);
-  $('body').css('background-image', 'linear-gradient(' + angle + 'deg, #010011 0%, ${backgroundColor} 100%)');
+  $('body').css('background-image', 'linear-gradient(' + angle + 'deg, #010011 0%, ' + backgroundColor + ' 100%)');
 
   for (var i = 0; i < 100; i++) {
     $('body').append('<div class="star-' + i + '"></div>');
