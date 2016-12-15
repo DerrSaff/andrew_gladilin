@@ -25,7 +25,7 @@ $(document).ready( function() {
   }
 
   for (var i = 0; i < 1000; i++) {
-    $('body').append('<div class="noglow-star-' + i '"></div>');
+    $('body').append('<div class="noglow-star-' + i + '"></div>');
     $('.noglow-star-' + i).css({ top: _.random(1, h-8), left: _.random(1, w-8) });
   }
 
