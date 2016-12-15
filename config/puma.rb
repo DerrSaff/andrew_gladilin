@@ -9,6 +9,5 @@ port        ENV['PORT']     || 3000
 environment ENV['RACK_ENV'] || 'development'
 
 on_worker_boot do
-  Rack::Timeout.timeout = 20  # seconds
   ActiveRecord::Base.establish_connection
 end
