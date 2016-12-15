@@ -38,6 +38,10 @@ $(document).ready( function() {
     event.stopPropagation();
     var planet = $(this);
 
+    console.log($(this).width())
+
+    if ( ($(this).width() != 50) && ($(this).width() != 800) ) { return }
+
     planet.toggleClass('active-planet');
 
     if (planet.hasClass('active-planet')) {
@@ -80,14 +84,11 @@ $(document).ready( function() {
 
   // $(".next").click ( nextPhoto );
 
-  $(".contact-icon, span.email").click ( function () {
+  $("a, span.email").click ( function () {
     event.stopPropagation();
   })
 
-
-
   function nextPhoto() {
-
     var sibling = $(".myphoto.currentPhoto").next();
 
     if (sibling.is("div")) {

@@ -1,6 +1,17 @@
 @import 'font-awesome-sprockets'
 @import 'font-awesome'
 
+// z-indices
+// body = 0
+// stars and clouds = 1
+// orbit = 2
+// planets = 3
+// active planets = 4
+//
+
+
+// Background
+
 body
   margin: 0
   padding: 0
@@ -58,6 +69,8 @@ body
   left: 50%
   transform: translate(-50%, -50%)
   z-index: 2
+
+// Planets
 
 .planet
   width: 50px
@@ -119,6 +132,11 @@ body
 .content
   display: none
 
+// Planets content
+
+a, a:active, a:visited
+  color: white
+
 h2
   margin: 0
   padding: 0
@@ -150,7 +168,47 @@ h2
   flex-direction: row
   flex-wrap: wrap
   margin-bottom: 15px
-  z-index: 5
+
+.interests img
+  position: relative
+  padding: 5px
+  box-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+  &:hover
+    box-shadow: 0 0 10px white
+
+// Tips
+
+.tip
+  position: relative
+
+.tip-content
+  position: absolute
+  z-index: 10
+  top: -10px
+  right: -40px
+  width: 150px
+  margin-right: -150px
+  padding: 10px
+  color: #fff
+  background: #333
+  opacity: 0
+  transition: opacity 250ms ease-out
+
+.tip .tip-content:before
+  content: ''
+  position: absolute
+  top: 50%
+  left: -16px
+  width: 0
+  height: 0
+  margin-top: -8px
+  border: 8px solid transparent
+  border-right-color: #333
+
+.tip:hover .tip-content
+  right: -40px
+  opacity: 1
 
 .skills-list
   display: flex
@@ -238,7 +296,6 @@ progress
   display: flex
 
 .contacts-icons
-  padding-left: 50px
   padding-top: 40px
   margin-top: 50px
   display: flex
@@ -252,11 +309,9 @@ progress
     margin-top: 20px
 
 .contact-icon
-  color: white
   text-decoration: none
 
   &:active, &:visited
-    color: white
     text-decoration: none
 
 .email
