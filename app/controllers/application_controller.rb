@@ -3,6 +3,9 @@ class ApplicationController < ActionController::Base
 
   before_action :set_locale
 
+  def achievements
+  end
+
   private
 
   def set_locale
