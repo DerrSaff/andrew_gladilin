@@ -86,17 +86,27 @@ body
   transition-duration: 1s
   color: white
 
-  i
-    position: relative
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    z-index: 4
+.tip
+  display: none
 
-  .active-icon
-    position: static
-    display: inline
-    vertical-align: bottom
+.planet:hover .tip
+  display: block
+  position: absolute
+  top: -40px
+  left: 60px
+  white-space: nowrap
+
+.tip::before
+  content: ''
+  display: block
+  position: absolute
+  top: 20px
+  left: -20px
+  width: 90px
+  height: 30px
+  border-left: 1px solid white
+  border-top: 1px solid white
+  transform: skewX(-45deg)
 
 .about
   background-color: #111933
@@ -176,39 +186,6 @@ h2
 
   &:hover
     box-shadow: 0 0 10px white
-
-// Tips
-
-.tip
-  position: relative
-
-.tip-content
-  position: absolute
-  z-index: 10
-  top: -10px
-  right: -40px
-  width: 150px
-  margin-right: -150px
-  padding: 10px
-  color: #fff
-  background: #333
-  opacity: 0
-  transition: opacity 250ms ease-out
-
-.tip .tip-content:before
-  content: ''
-  position: absolute
-  top: 50%
-  left: -16px
-  width: 0
-  height: 0
-  margin-top: -8px
-  border: 8px solid transparent
-  border-right-color: #333
-
-.tip:hover .tip-content
-  right: -40px
-  opacity: 1
 
 .skills-list
   display: flex
