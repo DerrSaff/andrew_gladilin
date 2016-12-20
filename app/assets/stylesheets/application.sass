@@ -86,17 +86,17 @@ body
   transition-duration: 1s
   color: white
 
-.tip
+.planet-tip
   display: none
 
-.planet:hover .tip
+.hoverable:hover .planet-tip
   display: block
   position: absolute
   top: -40px
   left: 60px
   white-space: nowrap
 
-.tip::before
+.planet-tip::before
   content: ''
   display: block
   position: absolute
@@ -186,6 +186,22 @@ h2
 
   &:hover
     box-shadow: 0 0 10px white
+
+.interest-tip
+  text-align: center
+  position: relative
+  margin-bottom: -40px
+  word-wrap: break-word
+  vertical-align: middle
+  display: none
+
+.interest:hover .interest-tip
+  display: block
+  width: 74px
+  top: -40px
+  left: 0
+  height: 40px
+  background-color: rgba(0,0,0,0.8)
 
 .skills-list
   display: flex

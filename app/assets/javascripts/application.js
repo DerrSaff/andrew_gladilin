@@ -16,7 +16,7 @@ $(document).ready( function() {
   }
 
   function glowingStars() {
-    for (var i = 0; i < 50; i++) {
+    for (var i = 0; i < 10; i++) {
       $('body').append('<div class="star-' + i + '"></div>');
       var size = _.random(1, 3);
       $('.star-' + i).css({width: size + 'px', height: size + 'px'});
@@ -63,6 +63,7 @@ $(document).ready( function() {
     if ( ($(this).width() != 50) && ($(this).width() != 800) ) { return }
 
     planet.toggleClass('active-planet');
+    planet.toggleClass('hoverable');
 
     if (planet.hasClass('active-planet')) {
       setTimeout( function() {
@@ -76,7 +77,7 @@ $(document).ready( function() {
 
   $("body").click( function() {
     planetContent($(".planet.active-planet"));
-    $(".planet.active-planet").removeClass('active-planet');
+    $(".planet.active-planet").toggleClass('hoverable').removeClass('active-planet');
   });
 
   function planetContent(object) {

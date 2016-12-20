@@ -1,8 +1,8 @@
 <canvas id='space' style='position:absolute; left:0px; top:0px;'></canvas>
 
 <div class="orbit">
-  <div class="planet about">
-    <div class="tip">
+  <div class="planet about hoverable">
+    <div class="planet-tip">
       <%= raw(t('.about')) %>
     </div>
     <div class="content">
@@ -20,64 +20,65 @@
         <%= t('.about_content.interests') %>
       </p>
       <div class="interests">
-        <span class="tip">
-          <%= image_tag("interests/it.png", alt: t('.about_content.interests_list.it'), class: 'interest') %>
-          <span class="tip-content"><%= t('.about_content.interests_list.it') %></span>
-        </span>
-        <span class="tip">
+        <div class="interest">
+          <%= image_tag("interests/it.png", alt: t('.about_content.interests_list.it')) %>
+          <div class="interest-tip"><%= t('.about_content.interests_list.it') %></div>
+        </div>
+        <div class="interest">
           <%= image_tag("interests/sciences.png", alt: t('.about_content.interests_list.sciences'), class: 'interest') %>
-          <span class="tip-content"><%= t('.about_content.interests_list.sciences') %></span>
-        </span>
-        <span class="tip">
+          <div class="interest-tip"><%= t('.about_content.interests_list.sciences') %></div>
+        </div>
+        <div class="interest">
           <%= image_tag("interests/foreign_languages.png", alt: t('.about_content.interests_list.foreign_languages'), class: 'interest') %>
-          <span class="tip-content"><%= t('.about_content.interests_list.foreign_languages') %></span>
-        </span>
-        <span class="tip">
+          <div class="interest-tip"><%= t('.about_content.interests_list.foreign_languages') %></div>
+        </div>
+        <div class="interest">
           <%= image_tag("interests/literature.png", alt: t('.about_content.interests_list.literature'), class: 'interest') %>
-          <span class="tip-content"><%= t('.about_content.interests_list.literature') %></span>
-        </span>
+          <div class="interest-tip"><%= t('.about_content.interests_list.literature') %></div>
+        </div>
       </div>
+
       <div class="interests">
-        <span class="tip">
+        <div class="interest">
           <%= image_tag("interests/yoga.png", alt: t('.about_content.interests_list.yoga'), class: 'interest') %>
-          <span class="tip-content"><%= t('.about_content.interests_list.yoga') %></span>
-        </span>
-        <span class="tip">
+          <div class="interest-tip"><%= t('.about_content.interests_list.yoga') %></div>
+        </div>
+        <div class="interest">
           <%= image_tag("interests/sports.png", alt: t('.about_content.interests_list.sports'), class: 'interest') %>
-          <span class="tip-content"><%= t('.about_content.interests_list.sports') %></span>
-        </span>
-        <span class="tip">
+          <div class="interest-tip"><%= t('.about_content.interests_list.sports') %></div>
+        </div>
+        <div class="interest">
           <%= image_tag("interests/games.png", alt: t('.about_content.interests_list.games'), class: 'interest') %>
-          <span class="tip-content"><%= t('.about_content.interests_list.games') %></span>
-        </span>
-        <span class="tip">
+          <div class="interest-tip"><%= t('.about_content.interests_list.games') %></div>
+        </div>
+        <div class="interest">
           <%= image_tag("interests/socionics.png", alt: t('.about_content.interests_list.socionics'), class: 'interest') %>
-          <span class="tip-content"><%= t('.about_content.interests_list.socionics') %></span>
-        </span>
+          <div class="interest-tip"><%= t('.about_content.interests_list.socionics') %></div>
+        </div>
       </div>
       <div class="interests">
-        <span class="tip">
+        <div class="interest">
           <%= image_tag("interests/ai.png", alt: t('.about_content.interests_list.ai'), class: 'interest') %>
-          <span class="tip-content"><%= t('.about_content.interests_list.ai') %></span>
-        </span>
-        <span class="tip">
+          <div class="interest-tip"><%= t('.about_content.interests_list.ai') %></div>
+        </div>
+        <div class="interest">
           <%= image_tag("interests/music.png", alt: t('.about_content.interests_list.music'), class: 'interest') %>
-          <span class="tip-content"><%= t('.about_content.interests_list.music') %></span>
-        </span>
-        <span class="tip">
+          <div class="interest-tip"><%= t('.about_content.interests_list.music') %></div>
+        </div>
+        <div class="interest">
           <%= image_tag("interests/engineering.png", alt: t('.about_content.interests_list.engineering'), class: 'interest') %>
-          <span class="tip-content"><%= t('.about_content.interests_list.engineering') %></span>
-        </span>
-        <span class="tip">
+          <div class="interest-tip"><%= t('.about_content.interests_list.engineering') %></div>
+        </div>
+        <div class="interest">
           <%= image_tag("interests/comics.png", alt: t('.about_content.interests_list.comics'), class: 'interest') %>
-          <span class="tip-content"><%= t('.about_content.interests_list.comics') %></span>
-        </span>
+          <div class="interest-tip"><%= t('.about_content.interests_list.comics') %></div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="planet science">
-    <div class="tip">
+  <div class="planet science hoverable">
+    <div class="planet-tip">
       <%= t('.science') %>
     </div>
     <div class="content">
@@ -96,8 +97,8 @@
     </div>
   </div>
 
-  <div class="planet skills">
-    <div class="tip">
+  <div class="planet skills hoverable">
+    <div class="planet-tip">
       <%= t('.skills') %>
     </div>
     <div class="content">
@@ -170,8 +171,8 @@
     </div>
   </div>
 
-  <div class="planet projects">
-    <div class="tip">
+  <div class="planet projects hoverable">
+    <div class="planet-tip">
       <%= t('.projects') %>
     </div>
     <div class="content">
@@ -203,8 +204,8 @@
     </div>
   </div>
 
-  <div class="planet works">
-    <div class="tip">
+  <div class="planet works hoverable">
+    <div class="planet-tip">
       <%= t('.works') %>
     </div>
     <div class="content">
@@ -228,8 +229,8 @@
     </div>
   </div>
 
-  <div class="planet photos">
-    <div class="tip">
+  <div class="planet photos hoverable">
+    <div class="planet-tip">
       <%= t('.photos') %>
     </div>
     <div class="content">
@@ -246,8 +247,8 @@
     </div>
   </div>
 
-  <div class="planet contacts">
-    <div class="tip">
+  <div class="planet contacts hoverable">
+    <div class="planet-tip">
       <%= t('.contacts') %>
     </div>
     <div class="content">
