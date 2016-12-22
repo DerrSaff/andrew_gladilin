@@ -51,8 +51,8 @@ $(document).ready( function() {
   }
 
   function resizeCanvas() {
-    htmlCanvas.width = window.innerWidth;
-    htmlCanvas.height = window.innerHeight;
+    htmlCanvas.width = $('body').innerWidth();
+    htmlCanvas.height = Math.max($(document).height(), $(window).height());
     redraw();
   }
 
@@ -76,6 +76,7 @@ $(document).ready( function() {
   });
 
   $("body").click( function() {
+    if ( ($(".planet.active-planet").width() != 50) && ($(".planet.active-planet").width() != 800) ) { return }
     planetContent($(".planet.active-planet"));
     $(".planet.active-planet").toggleClass('hoverable').removeClass('active-planet');
   });
