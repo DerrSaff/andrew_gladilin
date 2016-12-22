@@ -20,6 +20,7 @@ body
   z-index: 0
   font-family: 'PT Sans', sans-serif
 
+
 [class^="star-"],
 [class^="noglow-star-"]
   margin: 0
@@ -114,6 +115,7 @@ body
 .science
   background-color: #00B5A9
   top: 0%
+  animation: myOrbit 1s linear infinite
 
 .skills
   top: 15%
@@ -333,3 +335,34 @@ progress
 
 .fa-wikipedia-w:hover
   color: #C2C2C2
+
+
+// Animations
+
+
+// @keyframes myOrbit
+//   0%
+//     transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg) scale(1)
+//   25%
+//     transform: rotate(90deg) translateX(5px) translateY(120px) rotate(-90deg) scale(.75)
+//   50%
+//     transform: rotate(180deg) translateX(5px) translateY(120px) rotate(-180deg) scale(.60)
+//   75%
+//     transform: rotate(270deg) translateX(5px) translateY(120px) rotate(-270deg) scale(.75)
+//   100%
+//     transform: rotate(360deg) translateX(5px) translateY(120px) rotate(-360deg) scale(1)
+
+// Achievements page
+.achievements
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+
+  img
+    width: 141px
+    height: 200px
+    margin: 10px
+
+  img.landscape
+    width: 200px
+    height: 141px
