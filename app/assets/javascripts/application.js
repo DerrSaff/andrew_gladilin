@@ -120,4 +120,8 @@ $(document).ready( function() {
     sibling.addClass('currentPhoto');
   }
 
+  $(".achievement").click ( function(event) {
+    $(this).css('display', 'block').css('position', 'absolute').css('left', 56).css('top', 300);
+  });
+
 });

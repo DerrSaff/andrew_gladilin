@@ -360,12 +360,16 @@ progress
   justify-content: space-around
   flex-wrap: wrap
 
-  img
+  .achievement
     width: 141px
     height: 200px
     margin: 10px
+    z-index: 5
     cursor: pointer
+    align-self: center
+    transition-property: display, left, top
+    transition-duration: 2s
 
-  img.landscape
+  .achievement.landscape
     width: 200px
     height: 141px
