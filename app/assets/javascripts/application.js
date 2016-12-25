@@ -56,7 +56,12 @@ $(document).ready( function() {
     redraw();
   }
 
-  $( ".planet" ).click( function(event) {
+  $(".refresh-icon").click( function(event) {
+    context.clearRect(0, 0, context.width, context.height);
+    resizeCanvas();
+  });
+
+  $(".planet").click( function(event) {
     event.stopPropagation();
     var planet = $(this);
 
