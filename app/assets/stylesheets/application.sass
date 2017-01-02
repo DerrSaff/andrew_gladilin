@@ -1,10 +1,16 @@
 @import 'font-awesome-sprockets'
 @import 'font-awesome'
 
+$text-color: white
+$science-color: #009688
+
 body
   margin: 0
   padding: 0
+  color: $text-color
+  font-size: 16px
   background-color: black
+  font-family: 'PT Sans', sans-serif
 
 ul.navigation
   margin: 0
@@ -13,35 +19,50 @@ ul.navigation
   color: white
   display: flex
   text-align: center
-  height: 80px
+  height: 10vh
+  max-height: 60px
 
   li
     cursor: pointer
     width: 15%
     margin-left: auto
     margin-right: auto
-    line-height: 90px
 
-    &.about
+
+    &#about
       line-height: 100px
 
-    &.science
-      background-color: #00B5A9
+    &#science
+      background-color: $science-color
 
-      &:hover
-        opacity: 0.5
-
-    &.skills
+    &#skills
       background-color: #2B05B3
 
-    &.projects
+    &#projects
       background-color: #631262
 
-    &.literature
+    &#literature
       background-color: #009903
 
-    &.photos
+    &#photos
       background-color: #ED9200
 
-    &.contacts
+    &#contacts
       background-color: #7A0000
+
+  li:hover
+    filter: brightness(120%)
+
+.science
+  height: 90vh
+
+.science
+  background-color: $science-color
+
+h2
+  font-size: 48px
+  letter-spacing: 3px
+  text-align: center
+  margin: 0
+  padding: 0
+  text-transform: uppercase
