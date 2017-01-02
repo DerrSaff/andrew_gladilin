@@ -1,10 +1,10 @@
 header
   nav
     ul.navigation.fa-ul
-      li#science
+      li#science data-tab="science"
         <svg fill="#FFFFFF" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
-      li#literature
-        = icon('file-text', class: "fa-2x")
+      li#literature data-tab="literature"
+        <svg fill="#FFFFFF" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
       li#skills
         = icon('tasks', class: "fa-2x")
       li#about
@@ -16,7 +16,7 @@ header
       li#contacts
         = icon('envelope', class: "fa-2x")
 main
-  .science
+  .science.tab
     h2
       = t('.science')
     p
@@ -30,3 +30,17 @@ main
       = t('.science_content.achievements_desc')
       a href="/achievements" target="_blank"
         = t('.science_content.achievements_title')
+
+  .literature.tab
+    h2 = t('.works')
+    p
+      = t('.works_content.my_way')
+      a href="http://www.proza.ru/avtor/derrsaff" target="_blank">Проза.ру
+      a href="https://ficbook.net/home/myfics" target="_blank">Книга Фанфиков
+    .collections
+      .collection
+        h3 = t('.works_content.collections.petals_of_bitterness')
+      .collection
+        h3 = t('.works_content.collections.coterie_of_drawing')
+      .collection
+        h3 = t('.works_content.collections.web_of_strings')

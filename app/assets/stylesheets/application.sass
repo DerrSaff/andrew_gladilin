@@ -3,12 +3,14 @@
 
 $text-color: white
 $science-color: #009688
+$literature-color: #1B5E20
+$literature-color: #1B5E20
 
 body
   margin: 0
   padding: 0
   color: $text-color
-  font-size: 16px
+  font-size: 18px
   background-color: black
   font-family: 'PT Sans', sans-serif
 
@@ -28,21 +30,20 @@ ul.navigation
     margin-left: auto
     margin-right: auto
 
-
-    &#about
-      line-height: 100px
-
     &#science
       background-color: $science-color
+
+    &#literature
+      background-color: $literature-color
 
     &#skills
       background-color: #2B05B3
 
+    &#about
+      line-height: 100px
+
     &#projects
       background-color: #631262
-
-    &#literature
-      background-color: #009903
 
     &#photos
       background-color: #ED9200
@@ -53,11 +54,17 @@ ul.navigation
   li:hover
     filter: brightness(120%)
 
-.science
+.science,
+.literature
+  padding-left: 20px
+  padding-right: 20px
   height: 90vh
 
 .science
   background-color: $science-color
+
+.literature
+  background-color: $literature-color
 
 h2
   font-size: 48px
