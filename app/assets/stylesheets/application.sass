@@ -5,6 +5,7 @@ $text-color: white
 $science-color: #009688
 $literature-color: #1B5E20
 $skills-color: #1A237E
+$about-color: #212121
 
 body
   margin: 0
@@ -40,6 +41,7 @@ ul.navigation
       background-color: $skills-color
 
     &#about
+      background-color: $about-color
       line-height: 100px
 
     &#projects
@@ -55,7 +57,9 @@ ul.navigation
     filter: brightness(120%)
 
 .science,
-.literature
+.literature,
+.skills,
+.about
   padding-left: 20px
   padding-right: 20px
   height: 90vh
@@ -68,6 +72,9 @@ ul.navigation
 
 .skills
   background-color: $skills-color
+
+.about
+  background-color: $about-color
 
 h2
   font-size: 48px
