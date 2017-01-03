@@ -5,10 +5,10 @@ header
         <svg fill="#FFFFFF" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
       li#literature data-tab="literature"
         <svg fill="#FFFFFF" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
-      li#skills
-        = icon('tasks', class: "fa-2x")
+      li#skills data-tab="skills"
+        <svg fill="#FFFFFF" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
       li#about
-        = icon('user-circle', class: "fa-3x")
+        <svg fill="#FFFFFF" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
       li#projects
         = icon('cogs', class: "fa-2x")
       li#photos
@@ -22,21 +22,21 @@ main
     p
       = t('.science_content.theme')
       = t('.science_content.thesis')
-      a href="https://github.com/DerrSaff/mythesis" target="_blank">https://github.com/DerrSaff/mythesis
+      a href="https://github.com/DerrSaff/mythesis" target="_blank" https://github.com/DerrSaff/mythesis
     p
       = t('.science_content.articles')
-      a href="https://github.com/DerrSaff/myarticles" target="_blank">https://github.com/DerrSaff/myarticles
+      a href="https://github.com/DerrSaff/myarticles" target="_blank" https://github.com/DerrSaff/myarticles
     p
       = t('.science_content.achievements_desc')
       a href="/achievements" target="_blank"
         = t('.science_content.achievements_title')
 
   .literature.tab
-    h2 = t('.works')
+    h2 = t('.literature')
     p
       = t('.works_content.my_way')
-      a href="http://www.proza.ru/avtor/derrsaff" target="_blank">Проза.ру
-      a href="https://ficbook.net/home/myfics" target="_blank">Книга Фанфиков
+      a href="http://www.proza.ru/avtor/derrsaff" target="_blank" Проза.ру
+      a href="https://ficbook.net/home/myfics" target="_blank" Книга Фанфиков
     .collections
       .collection
         h3 = t('.works_content.collections.petals_of_bitterness')
@@ -44,3 +44,51 @@ main
         h3 = t('.works_content.collections.coterie_of_drawing')
       .collection
         h3 = t('.works_content.collections.web_of_strings')
+
+  .skills.tab
+    h2 = t('.skills')
+    p
+      = t('.skills_content.level')
+    .skills-list
+      .skill
+        figure
+          = image_tag('skills/frontend.png', size: '96')
+          progress value="60" max="100" 60%
+          figcaption HTML/CSS
+      .skill
+        figure
+          = image_tag('skills/javascript.png', size: '96')
+          progress value="15" max="100" 15%
+          figcaption JavaScript
+      .skill
+        figure
+          = image_tag('skills/ror.png', size: '96')
+          progress value="25" max="100" 25%
+          figcaption Ruby on Rails
+      .skill
+        figure
+          = image_tag('skills/git.png', size: '96')
+          progress value="25" max="100" 25%
+          figcaption Git
+
+    .skills-list
+      .skill
+        figure
+          = image_tag('skills/java.png', size: '96')
+          progress value="15" max="100" 15%
+          figcaption Java
+      .skill
+        figure
+          = image_tag('skills/postgresql.png', size: '96')
+          progress value="10" max="100" 10%
+          figcaption PostgreSQL
+      .skill
+        figure
+          = image_tag('skills/android.jpg', size: '96')
+          progress value="10" max="100">10%</progress>
+          figcaption Android
+      .skill
+        figure
+          = image_tag('skills/scala.png', size: '96')
+          progress value="5" max="100" 5%
+          figcaption Scala
