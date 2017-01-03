@@ -6,7 +6,9 @@ $science-color: #009688
 $literature-color: #1B5E20
 $skills-color: #1A237E
 $about-color: #212121
+$projects-color: #AB47BC
 $photos-color: #EF6C00
+$contacts-color: #B71C1C
 
 body
   margin: 0
@@ -46,13 +48,13 @@ ul.navigation
       line-height: 100px
 
     &#projects
-      background-color: #631262
+      background-color: $projects-color
 
     &#photos
       background-color: $photos-color
 
     &#contacts
-      background-color: #7A0000
+      background-color: $contacts-color
 
   li:hover
     filter: brightness(120%)
@@ -60,7 +62,10 @@ ul.navigation
 .science,
 .literature,
 .skills,
-.about
+.about,
+.projects,
+.photos,
+.contacts
   padding-left: 20px
   padding-right: 20px
   height: 90vh
@@ -76,6 +81,15 @@ ul.navigation
 
 .about
   background-color: $about-color
+
+.projects
+  background-color: $projects-color
+
+.photos
+  background-color: $photos-color
+
+.contacts
+  background-color: $contacts-color
 
 h2
   font-size: 48px
