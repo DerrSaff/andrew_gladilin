@@ -10,6 +10,27 @@ $projects-color: #AB47BC
 $photos-color: #EF6C00
 $contacts-color: #B71C1C
 
+.science
+  background-color: $science-color
+
+.literature
+  background-color: $literature-color
+
+.skills
+  background-color: $skills-color
+
+.about
+  background-color: $about-color
+
+.projects
+  background-color: $projects-color
+
+.photos
+  background-color: $photos-color
+
+.contacts
+  background-color: $contacts-color
+
 body
   margin: 0
   padding: 0
@@ -34,62 +55,13 @@ ul.navigation
     margin-left: auto
     margin-right: auto
 
-    &#science
-      background-color: $science-color
+    &:hover
+      filter: brightness(120%)
 
-    &#literature
-      background-color: $literature-color
-
-    &#skills
-      background-color: $skills-color
-
-    &#about
-      background-color: $about-color
-      line-height: 100px
-
-    &#projects
-      background-color: $projects-color
-
-    &#photos
-      background-color: $photos-color
-
-    &#contacts
-      background-color: $contacts-color
-
-  li:hover
-    filter: brightness(120%)
-
-.science,
-.literature,
-.skills,
-.about,
-.projects,
-.photos,
-.contacts
+.tab
   padding-left: 20px
   padding-right: 20px
   height: 90vh
-
-.science
-  background-color: $science-color
-
-.literature
-  background-color: $literature-color
-
-.skills
-  background-color: $skills-color
-
-.about
-  background-color: $about-color
-
-.projects
-  background-color: $projects-color
-
-.photos
-  background-color: $photos-color
-
-.contacts
-  background-color: $contacts-color
 
 h2
   font-size: 48px
