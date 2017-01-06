@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root :to => 'application#index'
+  resources :posts
+  root :to => 'posts#index'
+  get '/about' => 'application#index'
   get '/achievements' => 'application#achievements'
-  get '/test' => 'application#test'
 end
