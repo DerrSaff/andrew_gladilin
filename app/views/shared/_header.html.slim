@@ -1,8 +1,10 @@
 header
   nav
-    / | Logo
-    = inline_svg "info.svg", class: 'info-icon header-icon'
-    = inline_svg "search.svg", class: 'sign-up-icon header-icon'
-    = inline_svg "settings.svg", class: 'settings-icon header-icon'
-    = inline_svg "sign_in.svg", class: 'settings-icon header-icon'
-    = inline_svg "sign_up.svg", class: 'sign-up-icon header-icon'
+    .header-left-side
+      | Logo
+      = inline_svg "info.svg", class: 'info-icon header-icon'
+      = inline_svg "search.svg", class: 'search-icon header-icon'
+    .header-right-side
+      = inline_svg "settings.svg", class: 'settings-icon header-icon'
+      = inline_svg "sign_in.svg", class: 'sign-in-icon header-icon'
+      = inline_svg "sign_up.svg", class: 'sign-up-icon header-icon'
