@@ -5,10 +5,15 @@ $background-color: #F5E9E2
 $link-color: #255C99
 $label-color: #7EA3CC
 
+// global
+
 body
   margin: 0
   padding: 0
   background-color: $background-color
+
+// header
+
 nav
   height: 64px
   background-color: $header-color
@@ -28,12 +33,39 @@ nav
       color: white
       text-decoration: none
 
-.header-icon
-  cursor: pointer
+    &:hover
+      color: $link-color
 
 .logo
-  margin-left: 10px
+  margin-left: 30px
   margin-right: 10px
+
+.header-left-side, .search-form
+  display: flex
+  align-items: center
+
+.search-form
+  margin-right: 10px
+
+.search-icon
+  cursor: pointer
+
+#search-radio-switcher
+  display: none
+
+#search-field
+  font-size: 20px
+  height: 30px
+  opacity: 0
+  width: 0
+  transition-property: opacity, width
+  transition-duration: 0.5s
+
+#search-radio-switcher:checked ~ #search-field
+  opacity: 1
+  width: 200px
+
+// posts
 
 h2
   text-transform: uppercase
