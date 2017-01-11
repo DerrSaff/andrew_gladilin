@@ -1,0 +1,21 @@
+/* line 8, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5E9E2;
+}
+
+/* line 12, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+nav {
+  height: 64px;
+  background-color: #0D1321;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 19, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+.header-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
