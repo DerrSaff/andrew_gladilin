@@ -54,8 +54,6 @@ nav
   display: none
 
 #search-field
-  font-size: 20px
-  height: 30px
   opacity: 0
   width: 0
   transition-property: opacity, width
@@ -65,11 +63,42 @@ nav
   opacity: 1
   width: 200px
 
+// forms
+
+.wrapper
+  width: 400px
+  margin: 0 auto
+
+form.new_user
+  display: flex
+  flex-direction: column
+
+#user_name,
+input[type="email"],
+input[type="password"],
+  padding: 10px
+  background-color: white
+  font-size: 20px
+  min-height: 30px
+  margin-bottom: 10px
+  border: none
+
+input[type="submit"]
+  margin-top: 30px
+  font-size: 30px
+  border: none
+  color: white
+  height: 60px
+  padding-top: 10px
+  padding-bottom: 10px
+  background-color: $link-color
+
 // posts
 
 .centered
   text-align: center
 
 h2
+  font-size: 40px
   text-transform: uppercase
   color: $title-color

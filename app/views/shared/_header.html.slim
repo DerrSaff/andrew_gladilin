@@ -1,7 +1,7 @@
 header
   nav
     .header-left-side
-      = link_to image_tag('logo.jpg', class: 'logo header-icon', size: '36'), posts_path
+      = link_to image_tag('logo.jpg', class: 'logo header-icon', size: '36'), root_path
       = link_to inline_svg('info.svg', class: 'info-icon header-icon'), about_path
 
       form.search-form action="/search" method="get"
@@ -11,6 +11,6 @@ header
         input type="text" id='search-field' name=''
       = link_to inline_svg('add.svg', class: 'add-icon header-icon'), new_post_path
     .header-right-side
-      = link_to 'Sign up', '#', class: 'sign-up button'
-      = link_to 'Sign in', '#', class: 'sign-in button'
+      = link_to 'Sign up', sign_up_path, class: 'sign-up button'
+      = link_to 'Sign in', sign_in_path, class: 'sign-in button'
       / = inline_svg 'menu.svg', class: 'menu-icon header-icon'
