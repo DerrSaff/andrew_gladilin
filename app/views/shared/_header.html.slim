@@ -7,10 +7,18 @@ header
       form.search-form action="/search" method="get"
         label for="search-radio-switcher"
           = inline_svg('search.svg', class: 'search-icon header-icon')
-        input type="checkbox" id='search-radio-switcher' name='search'
+        input.display-switcher type="checkbox" id='search-radio-switcher' name='search'
         input type="text" id='search-field' name=''
-      = link_to inline_svg('add.svg', class: 'add-icon header-icon'), new_post_path
+      - if current_user && current_user.role == "admin"
+        = link_to inline_svg('add.svg', class: 'add-icon header-icon'), new_post_path
     .header-right-side
-      = link_to 'Sign up', sign_up_path, class: 'sign-up button'
-      = link_to 'Sign in', sign_in_path, class: 'sign-in button'
-      / = inline_svg 'menu.svg', class: 'menu-icon header-icon'
+      - if user_signed_in?
+        label for="dropdown-menu-switcher"
+          = inline_svg 'menu.svg', class: 'menu-icon header-icon'
+        input.display-switcher type="checkbox" id='dropdown-menu-switcher' name='search'
+        ul.dropdown-menu
+          li = link_to "Settings", settings_path
+          li = link_to "Sign out", sign_out_path
+      - else
+        = link_to 'Sign up', sign_up_path, class: 'sign-link button'
+        = link_to 'Sign in', sign_in_path, class: 'sign-link button'

@@ -26,7 +26,6 @@ nav
   a
     color: white
     text-decoration: none
-    margin-right: 20px
 
     &:active,
     &:visited
@@ -50,7 +49,7 @@ nav
 .search-icon
   cursor: pointer
 
-#search-radio-switcher
+.display-switcher
   display: none
 
 #search-field
@@ -62,6 +61,36 @@ nav
 #search-radio-switcher:checked ~ #search-field
   opacity: 1
   width: 200px
+
+.sign-link
+  margin-right: 20px
+
+.header-icon
+  margin-right: 20px
+  cursor: pointer
+
+.dropdown-menu
+  margin: 0
+  padding: 0
+  border: 1px solid white
+  position: absolute
+  top: 100000000px
+  right: 100000000px
+
+  li
+    text-align: center
+    margin: 0
+    list-style: none
+    background-color: $header-color
+    color: white
+    padding: 20px
+
+  li:first-of-type
+    border-bottom: 1px solid white
+
+#dropdown-menu-switcher:checked ~ .dropdown-menu
+  top: 50px
+  right: 30px
 
 // forms
 
