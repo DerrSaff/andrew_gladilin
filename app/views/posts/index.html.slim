@@ -1,8 +1,11 @@
-- @posts.each do |post|
-  .post
-    h2
-      = post.header
-    .post-text
-    = link_to 'Show', post
-    = link_to 'Edit', edit_post_path(post)
-    = link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
+.posts-wrapper
+  - @posts.each do |post|
+    .post
+      h2
+        = post.header
+        - if admin?
+          = link_to inline_svg('edit.svg', class: 'edit-icon'), edit_post_path(post)
+          = link_to inline_svg('delete.svg', class: 'delete-icon'), post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete-icon'
+      .post-text
+        = truncate(post.text, length: 100)
+      
