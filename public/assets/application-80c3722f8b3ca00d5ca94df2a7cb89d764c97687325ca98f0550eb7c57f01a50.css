@@ -2,10 +2,11 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 20px;
   background-color: #F5E9E2;
 }
 
-/* line 17, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+/* line 18, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
 nav {
   height: 64px;
   background-color: #0D1321;
@@ -15,11 +16,10 @@ nav {
   color: white;
   text-transform: uppercase;
 }
-/* line 26, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+/* line 27, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
 nav a {
   color: white;
   text-decoration: none;
-  margin-right: 20px;
 }
 /* line 31, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
 nav a:active, nav a:visited {
@@ -54,7 +54,7 @@ nav a:hover {
 }
 
 /* line 53, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
-#search-radio-switcher {
+.display-switcher {
   display: none;
 }
 
@@ -72,19 +72,59 @@ nav a:hover {
   width: 200px;
 }
 
-/* line 68, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+/* line 66, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+.sign-link {
+  margin-right: 20px;
+}
+
+/* line 69, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+.header-icon {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* line 73, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
+  position: absolute;
+  top: 100000000px;
+  right: 100000000px;
+}
+/* line 81, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+.dropdown-menu li {
+  text-align: center;
+  margin: 0;
+  list-style: none;
+  background-color: #0D1321;
+  color: white;
+  padding: 20px;
+}
+/* line 89, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+.dropdown-menu li:first-of-type {
+  border-bottom: 1px solid white;
+}
+
+/* line 92, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+#dropdown-menu-switcher:checked ~ .dropdown-menu {
+  top: 50px;
+  right: 30px;
+}
+
+/* line 98, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
 .wrapper {
   width: 400px;
   margin: 0 auto;
 }
 
-/* line 72, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+/* line 102, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
 form.new_user {
   display: flex;
   flex-direction: column;
 }
 
-/* line 76, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+/* line 106, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
 #user_name,
 input[type="email"],
 input[type="password"] {
@@ -96,7 +136,7 @@ input[type="password"] {
   border: none;
 }
 
-/* line 86, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+/* line 116, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
 input[type="submit"] {
   margin-top: 30px;
   font-size: 30px;
@@ -108,12 +148,12 @@ input[type="submit"] {
   background-color: #255C99;
 }
 
-/* line 98, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+/* line 128, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
 .centered {
   text-align: center;
 }
 
-/* line 101, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
+/* line 131, /home/andrew/projects/saffa/app/assets/stylesheets/application.sass */
 h2 {
   font-size: 40px;
   text-transform: uppercase;
