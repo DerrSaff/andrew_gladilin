@@ -1,24 +1,25 @@
-header
-  nav
-    .header-left-side
-      = link_to image_tag('logo.jpg', class: 'logo header-icon', size: '36'), root_path
-      = link_to inline_svg('info.svg', class: 'info-icon header-icon'), about_path
-
+header.header.header_shadowed
+  .header__left-side
+    = link_to image_tag('logo.jpg', class: 'site-logo', size: '36'), root_path
+    .divider.w10px
+    nav.navigation
+      = link_to inline_svg('info.svg', class: 'navigation__info-icon'), about_path
+      .divider.w10px
       form.search-form action="/search" method="get"
         label for="search-radio-switcher"
-          = inline_svg('search.svg', class: 'search-icon header-icon')
-        input.display-switcher type="checkbox" id='search-radio-switcher' name='search'
-        input type="text" id='search-field' name=''
+          = inline_svg('search.svg', class: 'pointered')
+        input.hidden type="checkbox" id='search-radio-switcher' name='search'
+        input type="text" id='search-field' name='search-text'
       - if admin?
-        = link_to inline_svg('add.svg', class: 'add-icon header-icon'), new_post_path
-    .header-right-side
-      - if user_signed_in?
-        label for="dropdown-menu-switcher"
-          = inline_svg 'menu.svg', class: 'menu-icon header-icon'
-        input.display-switcher type="checkbox" id='dropdown-menu-switcher' name='search'
-        ul.dropdown-menu
-          li = link_to "Settings", settings_path
-          li = link_to "Sign out", sign_out_path
-      - else
-        = link_to 'Sign up', sign_up_path, class: 'sign-link button'
-        = link_to 'Sign in', sign_in_path, class: 'sign-link button'
+        = link_to inline_svg('add.svg', class: 'navigation__add-icon'), new_post_path
+  .header__right-side.header_right-side_uppercase
+    - if user_signed_in?
+      label for="dropdown-menu-switcher"
+        = inline_svg 'menu.svg', class: 'pointered'
+      input.hidden type="checkbox" id='dropdown-menu-switcher' name='search'
+      ul.dropdown-menu
+        li = link_to "Settings", settings_path, class: 'header-link'
+        li = link_to "Sign out", sign_out_path, class: 'header-link'
+    - else
+      = link_to 'Sign up', sign_up_path, class: 'header-link'
+      = link_to 'Sign in', sign_in_path, class: 'header-link'

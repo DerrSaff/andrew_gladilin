@@ -5,53 +5,8 @@ $background-color: #F5E9E2
 $link-color: #255C99
 $label-color: #7EA3CC
 
+@import 'blog/**/*'
 // global
-
-body
-  margin: 0
-  padding: 0
-  font-size: 20px
-  background-color: $background-color
-
-// header
-
-nav
-  height: 64px
-  background-color: $header-color
-  display: flex
-  justify-content: space-between
-  align-items: center
-  color: white
-  text-transform: uppercase
-
-  a
-    color: white
-    text-decoration: none
-
-    &:active,
-    &:visited
-      color: white
-      text-decoration: none
-
-    &:hover
-      color: $link-color
-
-.logo
-  margin-left: 30px
-  margin-right: 10px
-
-.header-left-side, .search-form
-  display: flex
-  align-items: center
-
-.search-form
-  margin-right: 10px
-
-.search-icon
-  cursor: pointer
-
-.display-switcher
-  display: none
 
 #search-field
   opacity: 0
@@ -62,13 +17,6 @@ nav
 #search-radio-switcher:checked ~ #search-field
   opacity: 1
   width: 200px
-
-.sign-link
-  margin-right: 20px
-
-.header-icon
-  margin-right: 20px
-  cursor: pointer
 
 .dropdown-menu
   margin: 0
