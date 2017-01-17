@@ -9,5 +9,6 @@
       .post-summary
         = post.summary
       .post-tags
-        
+        - post.tags.each do |tag|
+          = tag
       
