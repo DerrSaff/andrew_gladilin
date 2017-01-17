@@ -9,7 +9,7 @@ header.header.header_shadowed
         label for="search-radio-switcher"
           = inline_svg('search.svg', class: 'pointered')
         input.hidden type="checkbox" id='search-radio-switcher' name='search'
-        input type="text" id='search-field' name='search-text'
+        input.search-input type="text" id='search-field' name='search-text'
       - if admin?
         = link_to inline_svg('add.svg', class: 'navigation__add-icon'), new_post_path
   .header__right-side.header_right-side_uppercase
@@ -18,8 +18,8 @@ header.header.header_shadowed
         = inline_svg 'menu.svg', class: 'pointered'
       input.hidden type="checkbox" id='dropdown-menu-switcher' name='search'
       ul.dropdown-menu
-        li = link_to "Settings", settings_path, class: 'header-link'
-        li = link_to "Sign out", sign_out_path, class: 'header-link'
+        li.dropdown-menu__item = link_to "Settings", settings_path, class: 'header-link'
+        li.dropdown-menu__item = link_to "Sign out", sign_out_path, class: 'header-link'
     - else
-      = link_to 'Sign up', sign_up_path, class: 'header-link'
-      = link_to 'Sign in', sign_in_path, class: 'header-link'
+      = link_to 'Sign up', sign_up_path, class: 'header-link header-link_margined'
+      = link_to 'Sign in', sign_in_path, class: 'header-link header-link_margined'

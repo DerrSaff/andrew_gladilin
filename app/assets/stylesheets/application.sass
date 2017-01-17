@@ -8,34 +8,9 @@ $label-color: #7EA3CC
 @import 'blog/**/*'
 // global
 
-#search-field
-  opacity: 0
-  width: 0
-  transition-property: opacity, width
-  transition-duration: 0.5s
-
 #search-radio-switcher:checked ~ #search-field
   opacity: 1
   width: 200px
-
-.dropdown-menu
-  margin: 0
-  padding: 0
-  border: 1px solid white
-  position: absolute
-  top: 100000000px
-  right: 100000000px
-
-  li
-    text-align: center
-    margin: 0
-    list-style: none
-    background-color: $header-color
-    color: white
-    padding: 20px
-
-  li:first-of-type
-    border-bottom: 1px solid white
 
 #dropdown-menu-switcher:checked ~ .dropdown-menu
   top: 50px
@@ -72,14 +47,6 @@ input[type="submit"]
   background-color: $link-color
 
 // posts
-
-.centered
-  text-align: center
-
-h2
-  font-size: 40px
-  text-transform: uppercase
-  color: $title-color
 
 .posts-wrapper
   width: 70%
