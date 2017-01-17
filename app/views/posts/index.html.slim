@@ -6,7 +6,8 @@
         - if admin?
           = link_to inline_svg('edit.svg', class: 'edit-icon'), edit_post_path(post), class: 'absoluted'
           = link_to inline_svg('delete.svg', class: 'delete-icon'), post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'absoluted'
-      .post-desc
-        = truncate(post.text, length: 100)
-        / = post.desc
+      .post-summary
+        = post.summary
+      .post-tags
+        
       
