@@ -6,17 +6,17 @@ header.header.header_shadowed
       = link_to inline_svg('info.svg', class: 'navigation__info-icon'), about_path
       .divider.w10px
       form.search-form action="/search" method="get"
-        label for="search-radio-switcher"
+        label for="search-form__switch"
           = inline_svg('search.svg', class: 'pointered')
-        input.hidden type="checkbox" id='search-radio-switcher' name='search'
-        input.search-input type="text" id='search-field' name='search-text'
+        input.search-form__switch.hidden type="checkbox" id='search-form__switch' name='search'
+        input.search-form__input type="text" name='search-form__text'
       - if admin?
         = link_to inline_svg('add.svg', class: 'navigation__add-icon'), new_post_path
   .header__right-side.header_right-side_uppercase
     - if user_signed_in?
-      label for="dropdown-menu-switcher"
+      label for="dropdown-menu__switch"
         = inline_svg 'menu.svg', class: 'pointered'
-      input.hidden type="checkbox" id='dropdown-menu-switcher' name='search'
+      input.dropdown-menu__switch.hidden type="checkbox" id='dropdown-menu__switch' name='search'
       ul.dropdown-menu
         li.dropdown-menu__item = link_to "Settings", settings_path, class: 'header-link'
         li.dropdown-menu__item = link_to "Sign out", sign_out_path, class: 'header-link'
