@@ -1,20 +1,21 @@
-= form_for(post) do |f|
-  - if post.errors.any?
-    .error_explanation
-      h2 = pluralize(post.errors.count, "error")
-        | prohibited this post from being saved:
+.form-wrapper
+  = form_for(post) do |f|
+    - if post.errors.any?
+      .error_explanation
+        h2 = pluralize(post.errors.count, "error")
+          | prohibited this post from being saved:
 
-      ul
-      - post.errors.full_messages.each do |message|
-        li = message
+        ul
+        - post.errors.full_messages.each do |message|
+          li = message
 
-  .field
-    = f.label :header
-    = f.text_field :header
+    .field
+      / = f.label :header
+      = f.text_field :header
 
-  .field
-    = f.label :text
-    = f.text_area :text
+    .field
+      = f.label :text
+      = f.text_area :text
 
-  .actions
-    = f.submit
+    .actions
+      = f.submit
