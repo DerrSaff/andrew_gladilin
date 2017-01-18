@@ -15,3 +15,5 @@
         = post.created_at.strftime("%m/%d/%Y %H:%M")
         = inline_svg('views.svg', class: 'views-icon')
         = post.views
+        = inline_svg('like.svg', class: 'like-icon')
+        = post.likes.count

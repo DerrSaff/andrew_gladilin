@@ -4,4 +4,6 @@ class User < ApplicationRecord
          :confirmable, :lockable, :timeoutable #, :omniauthable
 
   enum role: [:user, :moderator, :admin]
+
+  has_many :likes
 end
