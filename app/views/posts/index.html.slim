@@ -1,14 +1,15 @@
 .posts-wrapper
   - @posts.each do |post|
     .post
-      h2.post-title
-        = post.header
-        - if admin?
-          = link_to inline_svg('edit.svg', class: 'edit-icon'), edit_post_path(post), class: 'absoluted'
-          = link_to inline_svg('delete.svg', class: 'delete-icon'), post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'absoluted'
+      h2
+        = link_to post.header, post, class: 'post-title'
+      - if admin?
+        = link_to inline_svg('edit.svg', class: 'edit-icon'), edit_post_path(post), class: 'absoluted'
+        = link_to inline_svg('delete.svg', class: 'delete-icon'), post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'absoluted'
       .post-summary
         = post.summary
       .post-tags
         - post.tags.each do |tag|
           = tag
-      
+      .post-footer
+        = post.created_at.strftime("%m/%d/%Y %H:%M")
