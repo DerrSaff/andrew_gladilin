@@ -6,4 +6,5 @@ class User < ApplicationRecord
   enum role: [:user, :moderator, :admin]
 
   has_many :likes
+  has_many :dislikes
 end
