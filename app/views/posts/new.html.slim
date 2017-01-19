@@ -1,3 +1,6 @@
-= render 'form', post: @post
+.form-wrapper.form-wrapper_wide
+  h2.centered New post
 
-= link_to 'Back', posts_path
+  = render 'form', post: @post
+
+  = link_to 'Back', posts_path
