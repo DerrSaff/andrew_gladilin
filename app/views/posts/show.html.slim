@@ -2,12 +2,10 @@ p#notice
   = notice
 
 p
-  strong Header
-    = @post.header
+  = @post.header
 
 p
-  strong Text
-    = @post.text
+  = raw @post.text
 
 = link_to 'Edit |', edit_post_path(@post)
 = link_to 'Back', posts_path

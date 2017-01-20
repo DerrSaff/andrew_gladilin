@@ -1,14 +1,11 @@
 .posts
   - @posts.each do |post|
     .post
-      h2
-        = link_to post.header, post, class: 'post-title'
+      h2.post-title
+        = link_to post.header, post, class: 'link'
       - if admin?
-        = link_to inline_svg('edit.svg', class: 'edit-icon'), edit_post_path(post)
-        = link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }
-        = link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
-        / = link_to inline_svg('edit.svg', class: 'edit-icon'), edit_post_path(post), class: 'absoluted'
-        / = link_to inline_svg('delete.svg', class: 'delete-icon'), post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'absoluted'
+        = link_to inline_svg('edit.svg'), edit_post_path(post), class: 'edit-icon inline-block padded-5px'
+        = link_to inline_svg('delete.svg'), post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete-icon inline-block padded-5px'
       .post-summary
         = post.summary
       .post-tags
