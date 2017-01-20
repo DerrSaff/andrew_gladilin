@@ -1,21 +1,29 @@
 .posts
   - @posts.each do |post|
     .post
-      h2.post-title
+      h2.post__title.post__title_margined
         = link_to post.header, post, class: 'link'
       - if admin?
         = link_to inline_svg('edit.svg'), edit_post_path(post), class: 'edit-icon inline-block padded-5px'
         = link_to inline_svg('delete.svg'), post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete-icon inline-block padded-5px'
-      .post-summary
-        = post.summary
-      .post-tags
+      .post__tags
         - post.tags.each do |tag|
           = tag
+      .post__summary
+        = post.summary
+      .post__read-button
+        = button_tag t('.read-button')
       .post-footer
-        = post.created_at.strftime("%m/%d/%Y %H:%M")
-        = inline_svg('views.svg', class: 'views-icon')
-        = post.views
-        = inline_svg('like.svg', class: 'like-icon')
-        = post.likes.count
-        = inline_svg('dislike.svg', class: 'dislike-icon')
-        = post.dislikes.count
+        .post-footer__date
+          = post.created_at.strftime("%m/%d/%Y %H:%M")
+        .post-footer__views
+          = inline_svg('views.svg', class: 'views-icon')
+          = post.views
+        .post-footer__likes
+          = inline_svg('like.svg', class: 'like-icon')
+          = post.likes.count
+        .post-footer__dislikes
+          = inline_svg('dislike.svg', class: 'dislike-icon')
+          = post.dislikes.count
+        .post-footer__comment-button
+          = button_tag t('.comment-button')
