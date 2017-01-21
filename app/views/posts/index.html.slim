@@ -15,15 +15,18 @@
         = button_tag t('.read-button')
       .post-footer
         .post-footer__date
-          = post.created_at.strftime("%m/%d/%Y %H:%M")
-        .post-footer__views
-          = inline_svg('views.svg', class: 'views-icon')
-          = post.views
-        .post-footer__likes
-          = inline_svg('like.svg', class: 'like-icon')
-          = post.likes.count
-        .post-footer__dislikes
-          = inline_svg('dislike.svg', class: 'dislike-icon')
-          = post.dislikes.count
+          = post.created_at.strftime("%m.%d.%Y %H:%M")
+        .post-footer-params
+          .post-footer-params__views
+            = inline_svg('views.svg', class: 'views-icon')
+            = post.views
+          .w10px
+          .post-footer-params__likes
+            = inline_svg('like.svg', class: 'like-icon')
+            = post.likes.count
+          .w10px
+          .post-footer-params__dislikes
+            = inline_svg('dislike.svg', class: 'dislike-icon')
+            = post.dislikes.count
         .post-footer__comment-button
           = button_tag t('.comment-button')
