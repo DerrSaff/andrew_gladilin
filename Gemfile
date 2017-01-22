@@ -18,6 +18,13 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'better_errors', '~> 2.1', '>= 2.1.1'
+  gem 'bullet', '~> 5.5'
+  gem 'binding_of_caller', '~> 0.7.2'
+end
+
+group :development, :test do
+  gem 'letter_opener', '~> 1.4', '>= 1.4.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
