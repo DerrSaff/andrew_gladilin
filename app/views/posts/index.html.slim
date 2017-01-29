@@ -12,7 +12,7 @@
       .post__summary
         = post.summary
       .post__read-button
-        = button_tag t('.read-button'), class: 'button button_fs20 button_h40'
+        = button_tag t('.read-button'), class: 'button button_fs20'
       .post-footer
         .post-footer__date
           = post.created_at.strftime("%m.%d.%Y %H:%M")
@@ -29,4 +29,4 @@
             = inline_svg('dislike.svg', class: 'dislike-icon')
             = post.dislikes.count
         .post-footer__comment-button
-          = button_tag t('.comment-button'), class: 'button button_fs20 button_h40'
+          = link_to t('.comment-link')
