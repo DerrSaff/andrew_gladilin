@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170118191842) do
+ActiveRecord::Schema.define(version: 20170129161319) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,12 +34,15 @@ ActiveRecord::Schema.define(version: 20170118191842) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.string   "header",     default: "", null: false
-    t.text     "text",       default: "", null: false
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
-    t.text     "summary",    default: ""
-    t.integer  "views",      default: 0
+    t.string   "header",          default: "", null: false
+    t.text     "text",            default: "", null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.text     "summary",         default: ""
+    t.integer  "views",           default: 0
+    t.string   "author",          default: ""
+    t.string   "link",            default: ""
+    t.string   "original_header", default: ""
   end
 
   create_table "tags", force: :cascade do |t|

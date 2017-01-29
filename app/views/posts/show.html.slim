@@ -1,11 +1,13 @@
 p#notice
   = notice
-
-p
-  = @post.header
-
-p
+  
+.posts
+  h2.post__title.post__title_margined
+    = @post.header
+  .subtitle
+    | Перевод статьи #{link_to @post.original_header, @post.link} под авторством #{@post.author}
+    = 
   = raw @post.text
 
-= link_to 'Edit |', edit_post_path(@post)
-= link_to 'Back', posts_path
+/ = link_to 'Edit |', edit_post_path(@post)
+/ = link_to 'Back', posts_path

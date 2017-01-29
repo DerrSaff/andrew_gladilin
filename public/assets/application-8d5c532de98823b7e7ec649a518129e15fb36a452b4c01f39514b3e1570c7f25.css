@@ -1,0 +1,316 @@
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/body/body.sass */
+.body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: "OpenSans", sans-serif;
+  background-color: #F5E9E2;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/button/button.sass */
+.button {
+  border: none;
+  color: white;
+  padding: 15px;
+  background-color: #255C99;
+  text-transform: uppercase;
+}
+/* line 8, /home/andrew/projects/saffa/app/assets/stylesheets/blog/button/button.sass */
+.button:hover {
+  filter: brightness(120%);
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/button/button_fs20.sass */
+.button_fs20 {
+  font-size: 20px;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/button/button_fs30.sass */
+.button_fs30 {
+  font-size: 30px;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/button/button_h60.sass */
+.button_h60 {
+  height: 60px;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/dropdown-menu/dropdown-menu.sass */
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
+  position: absolute;
+  top: 100000000px;
+  right: 100000000px;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/dropdown-menu/dropdown-menu__item/dropdown-menu__item.sass */
+.dropdown-menu__item {
+  text-align: center;
+  margin: 0;
+  list-style: none;
+  background-color: #0D1321;
+  color: white;
+  padding: 20px;
+}
+
+/* line 9, /home/andrew/projects/saffa/app/assets/stylesheets/blog/dropdown-menu/dropdown-menu__item/dropdown-menu__item.sass */
+.dropdown-menu__item:first-of-type {
+  border-bottom: 1px solid white;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/dropdown-menu/dropdown-menu__switch/dropdown-menu__switch.sass */
+.dropdown-menu__switch:checked ~ .dropdown-menu {
+  top: 50px;
+  right: 30px;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/email-input/email-input.sass */
+.email-input {
+  padding: 10px;
+  background-color: white;
+  font-size: 20px;
+  min-height: 30px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url(/assets/Lora-Regular-cb9fb5bba33081358660d16333b755ce74ddc2c34d03b7b4de41d561b3507d47.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(/assets/OpenSans-Regular-e64e508b2aa2880f907e470c4550980ec4c0694d103a43f36150ac3f93189bee.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/form-wrapper/form-wrapper.sass */
+.form-wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/form-wrapper/form-wrapper_wide.sass */
+.form-wrapper_wide {
+  min-width: 70%;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/form/form.sass */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 3, /home/andrew/projects/saffa/app/assets/stylesheets/blog/global-modifiers.sass */
+.w10px {
+  width: 10px;
+}
+
+/* line 6, /home/andrew/projects/saffa/app/assets/stylesheets/blog/global-modifiers.sass */
+.pointered {
+  cursor: pointer;
+}
+
+/* line 9, /home/andrew/projects/saffa/app/assets/stylesheets/blog/global-modifiers.sass */
+.hidden {
+  display: none;
+}
+
+/* line 12, /home/andrew/projects/saffa/app/assets/stylesheets/blog/global-modifiers.sass */
+.centered {
+  text-align: center;
+}
+
+/* line 15, /home/andrew/projects/saffa/app/assets/stylesheets/blog/global-modifiers.sass */
+.absoluted {
+  position: absolute;
+}
+
+/* line 18, /home/andrew/projects/saffa/app/assets/stylesheets/blog/global-modifiers.sass */
+.relatived {
+  position: relative;
+}
+
+/* line 21, /home/andrew/projects/saffa/app/assets/stylesheets/blog/global-modifiers.sass */
+.inline {
+  display: inline;
+}
+
+/* line 24, /home/andrew/projects/saffa/app/assets/stylesheets/blog/global-modifiers.sass */
+.inline-block {
+  display: inline-block;
+}
+
+/* line 27, /home/andrew/projects/saffa/app/assets/stylesheets/blog/global-modifiers.sass */
+.padded-5px {
+  padding: 5px;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/header-link/header-link.sass */
+.header-link {
+  color: white;
+  text-decoration: none;
+}
+/* line 5, /home/andrew/projects/saffa/app/assets/stylesheets/blog/header-link/header-link.sass */
+.header-link:active, .header-link:visited {
+  color: white;
+  text-decoration: none;
+}
+/* line 10, /home/andrew/projects/saffa/app/assets/stylesheets/blog/header-link/header-link.sass */
+.header-link:hover {
+  color: #255C99;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/header-link/header-link_margined.sass */
+.header-link_margined {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/header/header.sass */
+.header {
+  height: 64px;
+  background-color: #0D1321;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/header/header__left-side.sass */
+.header__left-side {
+  display: flex;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/header/header__right-side.sass */
+.header_right-side {
+  display: flex;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/header/header__right-side_uppercase.sass */
+.header_right-side_uppercase {
+  text-transform: uppercase;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/header/header_shadowed.sass */
+.header_shadowed {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/link/link.sass */
+.link {
+  color: #B3001B;
+}
+/* line 4, /home/andrew/projects/saffa/app/assets/stylesheets/blog/link/link.sass */
+.link:active, .link:visited {
+  color: #B3001B;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/navigation/navigation.sass */
+.navigation {
+  display: flex;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/password-input/password-input.sass */
+.password-input {
+  padding: 10px;
+  background-color: white;
+  font-size: 20px;
+  min-height: 30px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/post-footer-params/post-footer-params.sass */
+.post-footer-params {
+  display: flex;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/post-footer/post-footer.sass */
+.post-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/post/post.sass */
+.post {
+  background-color: #fff9f9;
+  padding: 10px;
+  margin: 30px 0 30px 0;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/post/post__read-button/post__read-button.sass */
+.post__read-button {
+  margin-bottom: 10px;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/post/post__summary/post__summary.sass */
+.post__summary {
+  margin-bottom: 10px;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/post/post__title/post-title_bottom-margin.sass */
+.post__title_margined {
+  margin: 5px 0 15px 0;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/post/post__title/post__title.sass */
+.post__title {
+  font-size: 30px;
+  color: #B3001B;
+  font-family: "Lora", serif;
+  padding: 0;
+  display: inline-block;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/posts/posts.sass */
+.posts {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/search-form/__input/search-form__input.sass */
+.search-form__input {
+  opacity: 0;
+  width: 0;
+  transition-property: opacity, width;
+  transition-duration: 0.5s;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/search-form/_switch/search-form__switch.sass */
+.search-form__switch:checked ~ .search-form__input {
+  opacity: 1;
+  width: 200px;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/search-form/search-form.sass */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/text-input/text-input.sass */
+.text-input {
+  padding: 10px;
+  background-color: white;
+  font-size: 20px;
+  min-height: 30px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/textarea-input/textarea-input.sass */
+.textarea-input {
+  padding: 10px;
+  background-color: white;
+  font-size: 20px;
+  min-height: 30px;
+  margin-bottom: 10px;
+  border: none;
+}

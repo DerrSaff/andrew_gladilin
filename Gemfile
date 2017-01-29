@@ -12,6 +12,7 @@ gem 'underscore-rails', '~> 1.8', '>= 1.8.3'
 gem 'jbuilder', '~> 2.5'
 gem 'inline_svg', '~> 0.11.1'
 gem 'devise', '~> 4.2'
+gem 'carrierwave', '~> 1.0'
 
 group :development do
   gem 'web-console'
