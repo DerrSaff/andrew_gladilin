@@ -1,6 +1,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require underscore
+//= require jquery.autosize
+
+$(document).ready(function(){
+  $('textarea').autosize();
+});
+
+
 //
 // $(document).ready( function() {
 //
