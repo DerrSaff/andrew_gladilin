@@ -7,6 +7,9 @@ $(document).ready(function(){
   $('textarea').autosize();
 });
 
+// $(document).on('ready page:load', function() {
+//     Prism.highlightAll();
+// });
 
 //
 // $(document).ready( function() {

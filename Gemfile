@@ -14,6 +14,7 @@ gem 'inline_svg', '~> 0.11.1'
 gem 'devise', '~> 4.2'
 gem 'autosize-rails', '~> 1.18', '>= 1.18.17'
 gem 'redcarpet', '~> 3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.1'
 
 group :development do
   gem 'web-console'
