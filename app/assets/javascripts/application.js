@@ -2,9 +2,13 @@
 //= require jquery_ujs
 //= require underscore
 //= require jquery.autosize
+//= require highlight.pack
 
 $(document).ready(function(){
   $('textarea').autosize();
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
 });
 
 // $(document).on('ready page:load', function() {
