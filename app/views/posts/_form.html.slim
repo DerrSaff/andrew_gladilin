@@ -5,8 +5,8 @@
         | prohibited this post from being saved:
 
       ul
-      - post.errors.full_messages.each do |message|
-        li = message
+        - post.errors.full_messages.each do |message|
+          li = message
 
   / = f.label :header
   = f.text_field :header, class: 'text-input', placeholder: 'Header'

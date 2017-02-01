@@ -1,0 +1,28 @@
+= form_for(book, html: {class: 'form'}) do |f|
+  - if book.errors.any?
+    .error_explanation
+      h2
+        = pluralize(book.errors.count, "error")
+        |  prohibited this book from being saved:
+      ul
+        - book.errors.full_messages.each do |message|
+          li
+            = message
+            
+  / = f.label :header
+  = f.text_field :name, class: 'text-input', placeholder: 'Name'
+  
+  = f.text_field :pages_read, class: 'text-input'
+  
+  = f.text_field :total_pages, class: 'text-input'
+  
+  = select(:book, :read, options_for_select(["false", "true"]))
+  
+  = f.text_field :picture, class: 'text-input', placeholder: 'Link to the book picture'
+  
+  = f.text_field :link, class: 'textarea-input', placeholder: 'Link to the book'
+
+  / = f.label :text
+  = f.text_area :review, class: 'textarea-input', placeholder: 'Review of the bookS'
+
+  = f.submit 'Post it', class: 'button button_fs20'

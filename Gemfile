@@ -13,7 +13,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'inline_svg', '~> 0.11.1'
 gem 'devise', '~> 4.2'
 gem 'autosize-rails', '~> 1.18', '>= 1.18.17'
-gem 'carrierwave', '~> 1.0'
 
 group :development do
   gem 'html2slim', '~> 0.2.0'
