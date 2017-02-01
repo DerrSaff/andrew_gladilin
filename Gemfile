@@ -16,6 +16,7 @@ gem 'autosize-rails', '~> 1.18', '>= 1.18.17'
 gem 'carrierwave', '~> 1.0'
 
 group :development do
+  gem 'html2slim', '~> 0.2.0'
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
