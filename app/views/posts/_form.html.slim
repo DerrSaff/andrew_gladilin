@@ -8,18 +8,18 @@
         - post.errors.full_messages.each do |message|
           li = message
 
-  / = f.label :header
   = f.text_field :header, class: 'text-input', placeholder: 'Header'
-  
+
   = f.text_field :original_header, class: 'text-input', placeholder: 'Original header'
-  
+
   = f.text_field :author, class: 'text-input', placeholder: 'Author'
-  
+
   = f.text_field :link, class: 'text-input', placeholder: 'Link'
-  
+
   = f.text_field :summary, class: 'textarea-input', placeholder: 'A post or the summary of an article'
 
-  / = f.label :text
   = f.text_area :text, class: 'textarea-input', placeholder: 'Text of the post'
+
+  = f.text_area :javascript, class: 'textarea-input', placeholder: 'Custom Javascript of the post'
 
   = f.submit 'Post it', class: 'button button_fs20'
