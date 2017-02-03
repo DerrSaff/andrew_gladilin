@@ -10,21 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170203122324) do
+ActiveRecord::Schema.define(version: 20170203162847) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "books", force: :cascade do |t|
-    t.string   "name",        default: ""
-    t.integer  "pages_read",  default: 0
-    t.integer  "total_pages", default: 0
-    t.boolean  "read",        default: false
-    t.string   "picture",     default: ""
-    t.string   "link",        default: ""
-    t.text     "review",      default: ""
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.string   "name",         default: ""
+    t.integer  "pages_read",   default: 0
+    t.integer  "total_pages",  default: 0
+    t.boolean  "read",         default: false
+    t.string   "book_picture", default: ""
+    t.string   "link",         default: ""
+    t.text     "review",       default: ""
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
   create_table "dislikes", force: :cascade do |t|

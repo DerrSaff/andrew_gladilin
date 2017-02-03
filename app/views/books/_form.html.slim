@@ -18,7 +18,7 @@
   
   = select(:book, :read, options_for_select(["false", "true"]))
   
-  = f.text_field :picture, class: 'text-input', placeholder: 'Link to the book picture'
+  = f.file_field :book_picture
   
   = f.text_field :link, class: 'textarea-input', placeholder: 'Link to the book'
 
