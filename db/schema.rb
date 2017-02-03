@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170203113050) do
+ActiveRecord::Schema.define(version: 20170203122324) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(version: 20170203113050) do
     t.string   "link",            default: ""
     t.string   "original_header", default: ""
     t.text     "javascript",      default: ""
+    t.text     "css",             default: ""
   end
 
   create_table "tags", force: :cascade do |t|
