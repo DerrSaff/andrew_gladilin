@@ -1,10 +1,22 @@
 header.header.header_shadowed
-  .header__left-side
+
+  .header__left-side.header__left-side_uppercase
+    // logo
     = link_to image_tag('logo.jpg', class: 'site-logo', size: '36'), root_path
+    
     .divider.w10px
+    
     nav.navigation
-      = link_to inline_svg('info.svg', class: 'navigation__info-icon'), about_path
+    
+      = link_to inline_svg('author.svg', class: 'navigation__info-icon'), about_path
+      
       .divider.w10px
+      
+      = link_to inline_svg('books.svg', class: 'navigation__books-icon'), books_path
+      
+      .divider.w10px
+      
+      // search-form
       form.search-form action="/search" method="get"
         label for="search-form__switch"
           = inline_svg('search.svg', class: 'pointered')
@@ -14,14 +26,18 @@ header.header.header_shadowed
         = link_to inline_svg('add.svg', class: 'navigation__add-icon'), new_post_path
         - unless @post.nil?
           = link_to 'Edit', edit_post_path(@post)
+          
   .header__right-side.header_right-side_uppercase
     - if user_signed_in?
-      label for="dropdown-menu__switch"
+    
+      label for="dropdown-menu__settings"
         = inline_svg 'menu.svg', class: 'pointered'
-      input.dropdown-menu__switch.hidden type="checkbox" id='dropdown-menu__switch' name='search'
-      ul.dropdown-menu
+      input.dropdown-menu__switch.hidden type="checkbox" id='dropdown-menu__settings' name='search'
+      
+      ul.dropdown-menu.dropdown-menu_settings
         li.dropdown-menu__item = link_to "Settings", settings_path, class: 'header-link'
         li.dropdown-menu__item = link_to "Sign out", sign_out_path, class: 'header-link'
+        
     - else
       = link_to 'Sign up', sign_up_path, class: 'header-link header-link_margined'
       = link_to 'Sign in', sign_in_path, class: 'header-link header-link_margined'
