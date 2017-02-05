@@ -8,8 +8,7 @@
         - book.errors.full_messages.each do |message|
           li
             = message
-            
-  / = f.label :header
+
   = f.text_field :name, class: 'text-input', placeholder: 'Name'
   
   = f.text_field :pages_read, class: 'text-input'
@@ -22,7 +21,8 @@
   
   = f.text_field :link, class: 'textarea-input', placeholder: 'Link to the book'
 
-  / = f.label :text
-  = f.text_area :review, class: 'textarea-input', placeholder: 'Review of the bookS'
+  = f.text_area :review, class: 'textarea-input', placeholder: 'Review of the book'
+
+  = f.text_area :summary, class: 'textarea-input', placeholder: 'Summary of the book'
 
   = f.submit 'Post it', class: 'button button_fs20'
