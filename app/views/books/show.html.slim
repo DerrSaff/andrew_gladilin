@@ -1,5 +1,25 @@
-= @book.name
-= @book.pages_read
-= @book.total_pages
-= image_tag @book.book_picture_url
-= @book.read
+.book-show
+  .book-info
+  
+    = image_tag @book.book_picture_url, class: 'book-info__picture'
+    button.button.button_fs20.button_h40
+      = link_to t('.acquire'), @book.link, class: 'book-info__link'
+
+  .book-info
+  
+    / h3.book-info__name
+    /   = @book.name
+    /   
+    / .book-info__author
+    /   = @book.author
+    /   
+    / .book-info__publisher
+    /   = @book.publisher
+    /   | , 
+    /   = @book.total_pages
+
+    .book-info__review
+      = @book.review
+      
+    .book-info__summary
+      = @book.summary
