@@ -9,8 +9,8 @@
       .book__name.centered
         = link_to truncate(book.name, length: 17), book_path(book), class: "book__name"
       
-      span.book__percents
-        | #{(book.pages_read.fdiv(book.total_pages)*100.0).round}% прочитано
+      .book__percents
+        | #{(book.pages_read.fdiv(book.total_pages)*100.0).round}%
         
       .book__progress
         progress.book__progress value=book.pages_read max=book.total_pages

@@ -19,7 +19,9 @@
     /   = @book.total_pages
 
     .book-info__review
+      = t('.review')
       = @book.review
       
     .book-info__summary
-      = @book.summary
+      = t('.summary')
+      = raw @book.summary
