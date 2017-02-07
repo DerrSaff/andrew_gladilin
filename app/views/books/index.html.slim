@@ -7,7 +7,7 @@
     .book
       = link_to image_tag(book.book_picture_url, class: "book__picture"), book_path(book), class: "book__picture-link"
       .book__name.centered
-        = link_to truncate(book.name, length: 17), book_path(book), class: "book__name"
+        = link_to book.name, book_path(book), class: "book__name"
       
       .book__percents
         | #{(book.pages_read.fdiv(book.total_pages)*100.0).round}%
