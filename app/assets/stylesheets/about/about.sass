@@ -1,0 +1,44 @@
+.interests
+  display: flex
+  justify-content: space-around
+  flex-direction: row
+  flex-wrap: wrap
+  margin-bottom: 15px
+
+.interests img
+  position: relative
+  padding: 5px
+  box-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+  &:hover
+    box-shadow: 0 0 10px white
+
+.interest-tip
+  text-align: center
+  position: relative
+  margin-bottom: -40px
+  word-wrap: break-word
+  vertical-align: middle
+  display: none
+
+.interest:hover .interest-tip
+  display: block
+  width: 74px
+  top: -40px
+  left: 0
+  height: 40px
+  background-color: rgba(0,0,0,0.8)
+
+.skills-list
+  display: flex
+  justify-content: space-around
+
+  img
+    background-color: white
+
+  figcaption
+    text-align: center
+
+progress
+  display: block
+  width: inherit

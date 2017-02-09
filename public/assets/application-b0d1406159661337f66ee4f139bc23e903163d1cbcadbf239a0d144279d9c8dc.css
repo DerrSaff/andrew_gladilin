@@ -1,5 +1,4 @@
 @import url(atom-one-dark.css);
-@import url(about.css);
 /* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/body/body.sass */
 .body {
   margin: 0;
@@ -428,4 +427,162 @@
   font-size: 20px;
   margin-bottom: 10px;
   border: none;
+}
+
+/* line 10, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.science {
+  background-color: #009688;
+}
+
+/* line 13, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.literature {
+  background-color: #1B5E20;
+}
+
+/* line 16, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.skills {
+  background-color: #1A237E;
+}
+
+/* line 19, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.about {
+  background-color: #212121;
+}
+
+/* line 22, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.projects {
+  background-color: #AB47BC;
+}
+
+/* line 25, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.photos {
+  background-color: #EF6C00;
+}
+
+/* line 28, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.contacts {
+  background-color: #B71C1C;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
+.interests {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+/* line 8, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
+.interests img {
+  position: relative;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* line 13, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
+.interests img:hover {
+  box-shadow: 0 0 10px white;
+}
+
+/* line 16, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
+.interest-tip {
+  text-align: center;
+  position: relative;
+  margin-bottom: -40px;
+  word-wrap: break-word;
+  vertical-align: middle;
+  display: none;
+}
+
+/* line 24, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
+.interest:hover .interest-tip {
+  display: block;
+  width: 74px;
+  top: -40px;
+  left: 0;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 32, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
+.skills-list {
+  display: flex;
+  justify-content: space-around;
+}
+/* line 36, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
+.skills-list img {
+  background-color: white;
+}
+/* line 39, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
+.skills-list figcaption {
+  text-align: center;
+}
+
+/* line 42, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
+progress {
+  display: block;
+  width: inherit;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/fixed-navigation/fixed-navigation.sass */
+.fixed-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 2vw;
+  top: 15vh;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/tab/tab.sass */
+.tab {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 90vh;
+  color: white;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/tab/tab__content/tab__content.sass */
+.tab__content {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* line 10, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.science {
+  background-color: #009688;
+}
+
+/* line 13, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.literature {
+  background-color: #1B5E20;
+}
+
+/* line 16, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.skills {
+  background-color: #1A237E;
+}
+
+/* line 19, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.about {
+  background-color: #212121;
+}
+
+/* line 22, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.projects {
+  background-color: #AB47BC;
+}
+
+/* line 25, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.photos {
+  background-color: #EF6C00;
+}
+
+/* line 28, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
+.contacts {
+  background-color: #B71C1C;
 }
