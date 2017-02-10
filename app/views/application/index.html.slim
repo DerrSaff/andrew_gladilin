@@ -18,7 +18,7 @@ nav
 .tab.about
   .tab__content
     h2#author = t('.about')
-    
+
     p
       = t('.about_content.hello')
     p
@@ -27,18 +27,66 @@ nav
       = t('.about_content.interests')
 
     .interests
-      = image_tag("interests/it.png", alt: t('.about_content.interests_list.it'), class: "interests__image")
-      = image_tag("interests/sciences.png", alt: t('.about_content.interests_list.sciences'), class: "interests__image")
-      = image_tag("interests/foreign_languages.png", alt: t('.about_content.interests_list.foreign_languages'), class: "interests__image")
-      = image_tag("interests/literature.png", alt: t('.about_content.interests_list.literature'), class: "interests__image")
-      = image_tag("interests/yoga.png", alt: t('.about_content.interests_list.yoga'), class: "interests__image")
-      = image_tag("interests/sports.png", alt: t('.about_content.interests_list.sports'), class: "interests__image")
-      = image_tag("interests/games.png", alt: t('.about_content.interests_list.games'), class: "interests__image")
-      = image_tag("interests/socionics.png", alt: t('.about_content.interests_list.socionics'), class: "interests__image")
-      = image_tag("interests/ai.png", alt: t('.about_content.interests_list.ai'), class: "interests__image")
-      = image_tag("interests/music.png", alt: t('.about_content.interests_list.music'), class: "interests__image")
-      = image_tag("interests/engineering.png", alt: t('.about_content.interests_list.engineering'), class: "interests__image")
-      = image_tag("interests/comics.png", alt: t('.about_content.interests_list.comics'), class: "interests__image")
+      figure.interest
+        .interest__figure
+          = image_tag("interests/it.png", alt: t('.about_content.interests_list.it'), class: "interest__image")
+        figcapture.interest__capture
+          = t('.about_content.interests_list.it')
+      figure.interest
+        .interest__figure
+          = image_tag("interests/sciences.png", alt: t('.about_content.interests_list.sciences'), class: "interests__image")
+        figcapture.interest__capture
+          = t('.about_content.interests_list.sciences')
+      figure.interest
+        .interest__figure
+          = image_tag("interests/foreign_languages.png", alt: t('.about_content.interests_list.foreign_languages'), class: "interests__image")
+        figcapture.interest__capture
+          = t('.about_content.interests_list.foreign_languages')
+      figure.interest
+        .interest__figure
+          = image_tag("interests/literature.png", alt: t('.about_content.interests_list.literature'), class: "interests__image")
+        figcapture.interest__capture
+          = t('.about_content.interests_list.literature')
+      figure.interest
+        .interest__figure
+          = image_tag("interests/yoga.png", alt: t('.about_content.interests_list.yoga'), class: "interests__image")
+        figcapture.interest__capture
+          = t('.about_content.interests_list.yoga')
+      figure.interest
+        .interest__figure
+          = image_tag("interests/sports.png", alt: t('.about_content.interests_list.sports'), class: "interests__image")
+        figcapture.interest__capture
+          = t('.about_content.interests_list.sports')
+      figure.interest
+        .interest__figure
+          = image_tag("interests/games.png", alt: t('.about_content.interests_list.games'), class: "interests__image")
+        figcapture.interest__capture
+          = t('.about_content.interests_list.games')
+      figure.interest
+        .interest__figure
+          = image_tag("interests/socionics.png", alt: t('.about_content.interests_list.socionics'), class: "interests__image")
+        figcapture.interest__capture
+          = t('.about_content.interests_list.socionics')
+      figure.interest
+        .interest__figure
+          = image_tag("interests/ai.png", alt: t('.about_content.interests_list.ai'), class: "interests__image")
+        figcapture.interest__capture
+          = t('.about_content.interests_list..ai')
+      figure.interest
+        .interest__figure
+          = image_tag("interests/music.png", alt: t('.about_content.interests_list.music'), class: "interests__image")
+        figcapture.interest__capture
+          = t('.about_content.interests_list.music')
+      figure.interest
+        .interest__figure
+          = image_tag("interests/engineering.png", alt: t('.about_content.interests_list.engineering'), class: "interests__image")
+        figcapture.interest__capture
+          = t('.about_content.interests_list.engineering')
+      figure.interest
+        .interest__figure
+          = image_tag("interests/comics.png", alt: t('.about_content.interests_list.comics'), class: "interests__image")
+        figcapture.interest__capture
+          = t('.about_content.interests_list.comics')
 
 .tab.science
   .tab__content
