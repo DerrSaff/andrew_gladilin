@@ -97,15 +97,15 @@ nav
     p
       = t('.science_content.theme')
     p
-      = raw t('.science_content.thesis', link: '<a href="https://github.com/DerrSaff/mythesis" target="_blank">' + 'git-' + t('.science_content.repository') + '</a>')
+      = raw t('.science_content.thesis', link: '<a class="link_white" href="https://github.com/DerrSaff/mythesis" target="_blank">' + 'git-' + t('.science_content.repository') + '</a>')
     p
       = t('.science_content.articles')
-      a href="https://github.com/DerrSaff/myarticles" target="_blank" https://github.com/DerrSaff/myarticles
+      a.link.link_white href="https://github.com/DerrSaff/myarticles" target="_blank" https://github.com/DerrSaff/myarticles
     p
       = t('.science_content.achievements_desc')
-      a href="/achievements" target="_blank"
+      a.link.link_white href="/achievements" target="_blank"
         = t('.science_content.achievements_title')
-  
+
 .tab.literature
   .tab__content
     h2#literature

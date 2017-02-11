@@ -2,7 +2,7 @@
   - @posts.each do |post|
     .post
       h2.post__title.post__title_margined
-        = link_to post.header, post, class: 'link'
+        = link_to post.header, post, class: 'title-link'
       - if admin?
         = link_to inline_svg('edit.svg'), edit_post_path(post), class: 'edit-icon inline-block padded-5px'
         = link_to inline_svg('delete.svg'), post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete-icon inline-block padded-5px'
