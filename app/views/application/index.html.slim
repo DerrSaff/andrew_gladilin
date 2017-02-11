@@ -130,52 +130,67 @@ nav
     h2#skills = t('.skills')
     p
       = t('.skills_content.level')
-    .skills-list
+    .skills
       .skill
         figure
-          = image_tag('skills/frontend.png', size: '96')
+          = image_tag('skills/frontend.png', size: '96', class: 'skill__image')
           progress value="60" max="100" 60%
-          figcaption HTML/CSS
+          figcaption.centered HTML/CSS
       .skill
         figure
-          = inline_svg('sass.svg', size: '96')
+          = inline_svg('sass.svg', size: '96', class: 'skill__image')
           progress value="60" max="100" 60%
-          figcaption Sass
+          figcaption.centered Sass
       .skill
         figure
-          = image_tag('skills/javascript.png', size: '96')
+          = image_tag('skills/javascript.png', size: '96', class: 'skill__image')
           progress value="15" max="100" 15%
-          figcaption JavaScript
+          figcaption.centered JavaScript
       .skill
         figure
-          = image_tag('skills/ror.png', size: '96')
+          = image_tag('skills/ror.png', size: '96', class: 'skill__image')
           progress value="25" max="100" 25%
-          figcaption Ruby on Rails
+          figcaption.centered Rails
       .skill
         figure
-          = image_tag('skills/git.png', size: '96')
+          = image_tag('skills/git.png', size: '96', class: 'skill__image')
           progress value="25" max="100" 25%
-          figcaption Git
+          figcaption.centered Git
       .skill
         figure
-          = image_tag('skills/java.png', size: '96')
+          = image_tag('skills/java.png', size: '96', class: 'skill__image')
           progress value="15" max="100" 15%
-          figcaption Java
+          figcaption.centered Java
       .skill
         figure
-          = image_tag('skills/postgresql.png', size: '96')
+          = image_tag('skills/postgresql.png', size: '96', class: 'skill__image')
           progress value="10" max="100" 10%
-          figcaption PostgreSQL
+          figcaption.centered Postgres
       .skill
         figure
-          = image_tag('skills/android.jpg', size: '96')
-          progress value="10" max="100">10%</progress>
-          figcaption Android
+          = image_tag('skills/android.jpg', size: '96', class: 'skill__image')
+          progress value="10" max="100" 10%
+          figcaption.centered Android
       .skill
         figure
-          = image_tag('skills/scala.png', size: '96')
+          = image_tag('skills/scala.png', size: '96', class: 'skill__image')
           progress value="5" max="100" 5%
-          figcaption Scala
+          figcaption.centered Scala
+
+    p
+      = t('.skills_content.education')
+
+    ul
+      li
+        = link_to 'Code Fights', 'https://codefights.com/profile/andrewgladilin', class: 'link link_white'
+      li
+        = link_to 'Code Wars', 'https://www.codewars.com/users/Andrew%20Gladilin', class: 'link link_white'
+      li
+        = link_to 'Stepic', 'https://stepik.org/users/16824079', class: 'link link_white'
+      li
+        = link_to 'Codecademy', 'https://www.codecademy.com/AndrewGladilin', class: 'link link_white'
+      li
+        = link_to 'Code School', 'https://www.codeschool.com/users/DerrSaff', class: 'link link_white'
 
 .tab.tab_projects-color
   .tab__content
