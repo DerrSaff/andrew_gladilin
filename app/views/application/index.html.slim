@@ -1,7 +1,7 @@
 nav
   ul.fixed-navigation
     li
-      = link_to inline_svg('author.svg', class: 'fixed-navigation__author-icon'),'#author'
+      = link_to inline_svg('author.svg', class: 'fixed-navigation__icon fixed-navigation__author-icon'),'#author'
     li
       = link_to inline_svg('science.svg', class: 'fixed-navigation__science-icon'), '#science'
     li
@@ -15,7 +15,7 @@ nav
     li
       = link_to inline_svg('contacts.svg', class: 'fixed-navigation__contacts-icon'), '#contacts'
 
-.tab.about
+.tab.tab_about-color
   .tab__content
     h2#author = t('.about')
 
@@ -88,7 +88,7 @@ nav
         figcapture.interest__capture
           = t('.about_content.interests_list.comics')
 
-.tab.science
+.tab.tab_science-color
   .tab__content
     h2#science
       = t('.science')
@@ -106,7 +106,7 @@ nav
       a.link.link_white href="/achievements" target="_blank"
         = t('.science_content.achievements_title')
 
-.tab.literature
+.tab.tab_literature-color
   .tab__content
     h2#literature
       = t('.literature')
@@ -114,9 +114,9 @@ nav
       = t('.literature_content.my_way')
     ul
       li
-        a href="http://www.proza.ru/avtor/derrsaff" target="_blank" Проза.ру
+        a.link.link_white href="http://www.proza.ru/avtor/derrsaff" target="_blank" Проза.ру
       li
-        a href="https://ficbook.net/home/myfics" target="_blank" Книга Фанфиков
+        a.link.link_white href="https://ficbook.net/authors/1571677" target="_blank" Книга Фанфиков
     / .collections
     /   .collection
     /     h3 = t('.works_content.collections.petals_of_bitterness')
@@ -125,7 +125,7 @@ nav
     /   .collection
     /     h3 = t('.works_content.collections.web_of_strings')
 
-.tab.skills
+.tab.tab_skills-color
   .tab__content
     h2#skills = t('.skills')
     p
@@ -136,6 +136,11 @@ nav
           = image_tag('skills/frontend.png', size: '96')
           progress value="60" max="100" 60%
           figcaption HTML/CSS
+      .skill
+        figure
+          = inline_svg('sass.svg', size: '96')
+          progress value="60" max="100" 60%
+          figcaption Sass
       .skill
         figure
           = image_tag('skills/javascript.png', size: '96')
@@ -151,8 +156,6 @@ nav
           = image_tag('skills/git.png', size: '96')
           progress value="25" max="100" 25%
           figcaption Git
-  
-    .skills-list
       .skill
         figure
           = image_tag('skills/java.png', size: '96')
@@ -174,7 +177,7 @@ nav
           progress value="5" max="100" 5%
           figcaption Scala
 
-.tab.projects
+.tab.tab_projects-color
   .tab__content
     h2#projects = t('.projects')
     / .project
@@ -194,8 +197,8 @@ nav
     /   p
     /     = t('.projects_content.ar_desc')
   / 
-  
-.tab.photos
+
+.tab.tab_photos-color
   .tab__content
     h2#photos = t('.photos')
     / .gallery
@@ -207,7 +210,8 @@ nav
     /   .next
     / .dots
   / 
-.tab.contacts
+
+.tab.tab_contacts-color
   .tab__content
     h2#contacts = t('.contacts')
     / p
