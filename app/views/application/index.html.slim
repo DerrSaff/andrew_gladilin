@@ -191,10 +191,24 @@ nav
         = link_to 'Codecademy', 'https://www.codecademy.com/AndrewGladilin', class: 'link link_white'
       li
         = link_to 'Code School', 'https://www.codeschool.com/users/DerrSaff', class: 'link link_white'
+      li
+        = link_to 'Udemy', 'https://www.udemy.com/user/andrew-gladilin/', class: 'link link_white'
+      li
+        = link_to 'HTML Academy', 'https://htmlacademy.ru/profile/id282845', class: 'link link_white'
 
 .tab.tab_projects-color
   .tab__content
     h2#projects = t('.projects')
+
+    p
+      = t('.projects_content.ideas')
+
+    .project
+      h3 derrsaff.com
+      p
+        = t('.projects_content.saffa_desc')
+        =< link_to "Git", 'https://github.com/DerrSaff/saffa', class: 'link link_white'
+        
     / .project
     /   h3 Ord
     /   p
