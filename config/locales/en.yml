@@ -4,53 +4,52 @@ en:
       about: 'About the author'
       about_content:
         hello: 'Hello. My name is Andrew Gladilin. This is my personal web-site.'
-        me: 'Мне 24 года. Я закончил ПензГТУ по специальности "Информационные технологии в дизайне", после чего поступил в аспирантуру.'
-        nicknames: 'Я использую два псевдонима: "Лайан де Ридлинг" - для литературного творчества, "Derr Şaff" - моё имя на сахе, для всех остальных случаев. '
-        interests: 'Занимаюсь наукой, IT-разработками, также пробую себя в качестве писателя. Мои интересы:'
+        me: 'I am 24 years old. I graduated from Penza State Technological University with "IT id design" speciality, after that I entered the postgraduate school.'
+        interests: 'I make scientific researches, develop IT projects, try myself in writing. My interests are:'
         interests_list:
           it: IT
-          sciences: Наука
-          foreign_languages: Языки
-          yoga: Йога
-          literature: Литература
-          sports: Спорт
-          games: Игры
-          socionics: Соционика
-          history: История
-          ai: ИИ
-          music: Музыка
-          engineering: Электротехника
-          comics: Комиксы
-      skills: Навыки
+          sciences: Science
+          foreign_languages: Languages
+          yoga: Yoga
+          literature: Literature
+          sports: Sports
+          games: Games
+          socionics: Socionics
+          history: History
+          ai: AI
+          music: Music
+          engineering: Engineering
+          comics: Comics
+      skills: Skills
       skills_content:
-        level: 'Как разработчик, я не углублялся в какой-либо области и имею отрывочные знания из разных сфер. Мне интересен весь стек разработки, поэтому я склонен развиваться как универсальный специалист. Ниже примерный список моих умений.'
-        interskillar: 'Более детальное дерево моих навыков можно посмотреть на моём проекте Interskillar: '
-        education: 'Кроме того, я периодически прохожу различные интерактивные и не очень курсы, решаю задачи на кодерских сайтах, вот ссылки на профили:'
-      science: Наука
+        level: 'As a developer, I didn't advanced in any sphere, so I have fragmented knowledge from different areas. I am interested in the full stack of developing, that's why I tend to evolve as a universal specialist.'
+        interskillar: 'You can see a detailed tree of my skills on my Interskillar project: '
+        education: 'Besides, I periodically go through a variety of interactive courses, solve tasks on programming web-sites, here are links to profiles:'
+      science: Science
       science_content:
-        intro: 'Я учусь в аспирантуре на втором курсе. К сожалению, до сих пор испытываю сложности с написанием диссертации из-за неопределённости постановки задачи и нехватки знаний по математике.'
-        theme: 'Моя работа посвящена разработке семантического кластерного анализа. Его особенность заключается в том, что данные перед кластеризацией обрабатываются на наличие каких-либо взаимных связей, которые могут повлиять на итоговое разбиение по кластерам. Эти связи хранятся в графовой базе данных.'
-        repository: репозитории
-        thesis: "Текущий прогресс по диссертации можно посмотреть в %{link}."
-        articles: 'Кроме того, я также создал репозиторий со всеми моими статьями: '
-        achievements_desc: 'За время обучения в вузе я накопил достаточно большое количество различных дипломов и грамот. Посмотреть их можно на следующей странице: '
-        achievements_title: Достижения
-      projects: Проекты
+        intro: 'I study in the postgraduate school the second year.'
+        theme: 'My work is dedicated to developing semantic clustering. Its feature is that data is processed before clustering for the presence of any mutual semantic links, which could effect the clustering result. These links are stored in a graph database.'
+        repository: repository
+        thesis: "The current state of my thesis can be found in this %{link}."
+        articles: 'Also I created a repository for my scientific articles: '
+        achievements_desc: 'During studying at my university I have earned quite a lot of different diplomas and certificates. You can see on this page:'
+        achievements_title: Achievements
+      projects: Projects
       projects_content:
-        ideas: 'У меня много идей, которые я хотел бы реализовать, но у меня не хватает знаний, умений и времени. Проекты будут появляться здесь, как только достигнут планки MVP.'
-        saffa_desc: 'Этот сайт. Резюме, блог с переводами статей, обзоры книг, игр и прочего.'
-        ord_desc: 'Семантическая база знаний.'
-        is_desc: 'Проект позволяет детализированно описывать навыки и умения, что может быть использовано в качестве трекера саморазвития, так и биржи труда.'
-        bk_desc: 'Приложение для отслеживания цен, составления списка покупок и хранения списка уже имеющихся вещей.'
-        ar_desc: 'Веб-сервис для хранения списка достижений, которые пользователи открывают во время каких-либо мероприятий.'
-      literature: Литература
+        ideas: 'I have a lot of ideas that I would like to implement, but I lack knowledge, skills and time. Projects will appear here, once achieve MVP level.'
+        saffa_desc: 'This site. My resume, a blog with articles translations, reviews of books, games and other stuff.'
+        ord_desc: 'Semantic knowledge base.'
+        is_desc: ''
+        bk_desc: ''
+        ar_desc: ''
+      literature: Literature
       literature_content:
-        my_way: 'Я начинающий писатель, работы планирую оформлять в виде серии произведений. На данный момент у меня всего два рассказа, однако когда-нибудь я всё же продолжу активно писать. Мои работы представлены на следующих сайтах:'
+        my_way: 'I am a beginning writer, I plan to create works in the form of book series. At now I have only two stories but I will continue to write actively some day. My works are presented on this sites: '
         collections:
-          petals_of_bitterness: Лепестки горечи
-          coterie_of_drawing: Кружок рисования
-          web_of_strings: Паутина струн
-      photos: Фото
-      contacts: Контакты
+          petals_of_bitterness: Petals of bitterness
+          coterie_of_drawing: Coterie of drawing
+          web_of_strings: Web of strings
+      photos: Photos
+      contacts: Contacts
       contacts_content:
-        email: 'Мой электронный адрес: '
+        email: 'My email: '
