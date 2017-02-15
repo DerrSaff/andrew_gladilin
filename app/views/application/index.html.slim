@@ -11,8 +11,6 @@ nav
     li
       = link_to inline_svg('projects.svg', class: 'fixed-navigation__icon fixed-navigation__projects-icon'), '#projects'
     li
-      = link_to inline_svg('photos.svg', class: 'fixed-navigation__icon fixed-navigation__photos-icon'), '#photos'
-    li
       = link_to inline_svg('contacts.svg', class: 'fixed-navigation__icon fixed-navigation__contacts-icon'), '#contacts'
 
 .tab.tab_about-color
@@ -225,19 +223,6 @@ nav
     /   h3 Achievaroom
     /   p
     /     = t('.projects_content.ar_desc')
-  / 
-
-.tab.tab_photos-color
-  .tab__content
-    h2#photos = t('.photos')
-    / .gallery
-    /   .previous
-    /   = image_tag('photos/me1.jpg', class: "myphoto currentPhoto")
-    /   = image_tag('photos/me2.jpg', class: "myphoto")
-    /   = image_tag('photos/me3.jpg', class: "myphoto")
-    /   = image_tag('photos/me4.jpg', class: "myphoto")
-    /   .next
-    / .dots
   / 
 
 .tab.tab_contacts-color

@@ -295,11 +295,11 @@
 }
 
 /* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/blog/link/link.sass */
-.link {
+.title-link {
   color: #B3001B;
 }
 /* line 4, /home/andrew/projects/saffa/app/assets/stylesheets/blog/link/link.sass */
-.link:active, .link:visited {
+.title-link:active, .title-link:visited {
   color: #B3001B;
 }
 
@@ -429,96 +429,7 @@
   border: none;
 }
 
-/* line 10, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.science {
-  background-color: #009688;
-}
-
-/* line 13, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.literature {
-  background-color: #1B5E20;
-}
-
-/* line 16, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.skills {
-  background-color: #1A237E;
-}
-
-/* line 19, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.about {
-  background-color: #212121;
-}
-
-/* line 22, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.projects {
-  background-color: #AB47BC;
-}
-
-/* line 25, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.photos {
-  background-color: #EF6C00;
-}
-
-/* line 28, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.contacts {
-  background-color: #B71C1C;
-}
-
 /* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
-.interests {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-}
-
-/* line 8, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
-.interests img {
-  position: relative;
-  padding: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-/* line 13, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
-.interests img:hover {
-  box-shadow: 0 0 10px white;
-}
-
-/* line 16, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
-.interest-tip {
-  text-align: center;
-  position: relative;
-  margin-bottom: -40px;
-  word-wrap: break-word;
-  vertical-align: middle;
-  display: none;
-}
-
-/* line 24, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
-.interest:hover .interest-tip {
-  display: block;
-  width: 74px;
-  top: -40px;
-  left: 0;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* line 32, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
-.skills-list {
-  display: flex;
-  justify-content: space-around;
-}
-/* line 36, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
-.skills-list img {
-  background-color: white;
-}
-/* line 39, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
-.skills-list figcaption {
-  text-align: center;
-}
-
-/* line 42, /home/andrew/projects/saffa/app/assets/stylesheets/about/about.sass */
 progress {
   display: block;
   width: inherit;
@@ -537,11 +448,125 @@ progress {
   top: 15vh;
 }
 
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/fixed-navigation/fixed-navigation__icon/fixed-navigation__icon.sass */
+.fixed-navigation__icon:hover {
+  filter: drop-shadow(1px 1px 5px white);
+}
+
+/* line 4, /home/andrew/projects/saffa/app/assets/stylesheets/about/fixed-navigation/fixed-navigation__icon/fixed-navigation__icon.sass */
+.fixed-navigation__author-icon:hover {
+  fill: #212121;
+}
+
+/* line 7, /home/andrew/projects/saffa/app/assets/stylesheets/about/fixed-navigation/fixed-navigation__icon/fixed-navigation__icon.sass */
+.fixed-navigation__science-icon:hover {
+  fill: #009688;
+}
+
+/* line 10, /home/andrew/projects/saffa/app/assets/stylesheets/about/fixed-navigation/fixed-navigation__icon/fixed-navigation__icon.sass */
+.fixed-navigation__literature-icon:hover {
+  fill: #1B5E20;
+}
+
+/* line 13, /home/andrew/projects/saffa/app/assets/stylesheets/about/fixed-navigation/fixed-navigation__icon/fixed-navigation__icon.sass */
+.fixed-navigation__skills-icon:hover {
+  fill: #1A237E;
+}
+
+/* line 16, /home/andrew/projects/saffa/app/assets/stylesheets/about/fixed-navigation/fixed-navigation__icon/fixed-navigation__icon.sass */
+.fixed-navigation__projects-icon:hover {
+  fill: #AB47BC;
+}
+
+/* line 19, /home/andrew/projects/saffa/app/assets/stylesheets/about/fixed-navigation/fixed-navigation__icon/fixed-navigation__icon.sass */
+.fixed-navigation__contacts-icon:hover {
+  fill: #B71C1C;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/interest/interest.sass */
+.interest {
+  background-color: #212121;
+  padding: 1vw;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/interest/interest__capture/interest__capture.sass */
+.interest__capture {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/interest/interest__figure/interest__figure.sass */
+.interest__figure {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/interests/interests.sass */
+.interests {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1vw;
+  width: 80vw;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/link/link_white.sass */
+.link_white {
+  color: white;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/skill/skill__image/skill__image.sass */
+.skill__image {
+  background-color: white;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/skills/skills.sass */
+.skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/tab/colors.sass */
+.tab_science-color {
+  background-color: #009688;
+}
+
+/* line 4, /home/andrew/projects/saffa/app/assets/stylesheets/about/tab/colors.sass */
+.tab_literature-color {
+  background-color: #1B5E20;
+}
+
+/* line 7, /home/andrew/projects/saffa/app/assets/stylesheets/about/tab/colors.sass */
+.tab_skills-color {
+  background-color: #1A237E;
+}
+
+/* line 10, /home/andrew/projects/saffa/app/assets/stylesheets/about/tab/colors.sass */
+.tab_about-color {
+  background-color: #212121;
+}
+
+/* line 13, /home/andrew/projects/saffa/app/assets/stylesheets/about/tab/colors.sass */
+.tab_projects-color {
+  background-color: #AB47BC;
+}
+
+/* line 16, /home/andrew/projects/saffa/app/assets/stylesheets/about/tab/colors.sass */
+.tab_contacts-color {
+  background-color: #B71C1C;
+}
+
 /* line 1, /home/andrew/projects/saffa/app/assets/stylesheets/about/tab/tab.sass */
 .tab {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  padding: 10px 20px;
+  margin-bottom: 5vh;
   min-height: 90vh;
   color: white;
 }
@@ -550,39 +575,4 @@ progress {
 .tab__content {
   width: 80vw;
   margin: 0 auto;
-}
-
-/* line 10, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.science {
-  background-color: #009688;
-}
-
-/* line 13, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.literature {
-  background-color: #1B5E20;
-}
-
-/* line 16, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.skills {
-  background-color: #1A237E;
-}
-
-/* line 19, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.about {
-  background-color: #212121;
-}
-
-/* line 22, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.projects {
-  background-color: #AB47BC;
-}
-
-/* line 25, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.photos {
-  background-color: #EF6C00;
-}
-
-/* line 28, /home/andrew/projects/saffa/app/assets/stylesheets/about/variables.sass */
-.contacts {
-  background-color: #B71C1C;
 }
