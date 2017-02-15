@@ -3,14 +3,14 @@ nav
     li
       = link_to inline_svg('author.svg', class: 'fixed-navigation__icon fixed-navigation__author-icon'),'#author'
     li
-      = link_to inline_svg('science.svg', class: 'fixed-navigation__icon fixed-navigation__science-icon'), '#science'
-    li
-      = link_to inline_svg('literature.svg', class: 'fixed-navigation__icon fixed-navigation__literature-icon'), '#literature'
-    li
       = link_to inline_svg('skills.svg', class: 'fixed-navigation__icon fixed-navigation__skills-icon'), '#skills'
     li
-      = link_to inline_svg('projects.svg', class: 'fixed-navigation__icon fixed-navigation__projects-icon'), '#projects'
+      = link_to inline_svg('science.svg', class: 'fixed-navigation__icon fixed-navigation__science-icon'), '#science'
     li
+      = link_to inline_svg('projects.svg', class: 'fixed-navigation__icon fixed-navigation__projects-icon'), '#projects'
+    / li
+      = link_to inline_svg('literature.svg', class: 'fixed-navigation__icon fixed-navigation__literature-icon'), '#literature'
+    / li
       = link_to inline_svg('contacts.svg', class: 'fixed-navigation__icon fixed-navigation__contacts-icon'), '#contacts'
 
 .tab.tab_about-color
@@ -85,43 +85,6 @@ nav
           = image_tag("interests/comics.png", alt: t('.about_content.interests_list.comics'), class: "interests__image")
         figcapture.interest__capture
           = t('.about_content.interests_list.comics')
-
-.tab.tab_science-color
-  .tab__content
-    h2#science
-      = t('.science')
-    p
-      = t('.science_content.intro')
-    p
-      = t('.science_content.theme')
-    p
-      = raw t('.science_content.thesis', link: '<a class="link_white" href="https://github.com/DerrSaff/mythesis" target="_blank">' + 'git-' + t('.science_content.repository') + '</a>')
-    p
-      = t('.science_content.articles')
-      a.link.link_white href="https://github.com/DerrSaff/myarticles" target="_blank" https://github.com/DerrSaff/myarticles
-    p
-      = t('.science_content.achievements_desc')
-      a.link.link_white href="/achievements" target="_blank"
-        = t('.science_content.achievements_title')
-
-.tab.tab_literature-color
-  .tab__content
-    h2#literature
-      = t('.literature')
-    p
-      = t('.literature_content.my_way')
-    ul
-      li
-        a.link.link_white href="http://www.proza.ru/avtor/derrsaff" target="_blank" Проза.ру
-      li
-        a.link.link_white href="https://ficbook.net/authors/1571677" target="_blank" Книга Фанфиков
-    / .collections
-    /   .collection
-    /     h3 = t('.works_content.collections.petals_of_bitterness')
-    /   .collection
-    /     h3 = t('.works_content.collections.coterie_of_drawing')
-    /   .collection
-    /     h3 = t('.works_content.collections.web_of_strings')
 
 .tab.tab_skills-color
   .tab__content
@@ -225,31 +188,68 @@ nav
     /     = t('.projects_content.ar_desc')
   / 
 
-.tab.tab_contacts-color
+.tab.tab_science-color
+  .tab__content
+    h2#science
+      = t('.science')
+    p
+      = t('.science_content.intro')
+    p
+      = t('.science_content.theme')
+    p
+      = raw t('.science_content.thesis', link: '<a class="link_white" href="https://github.com/DerrSaff/mythesis" target="_blank">' + 'git-' + t('.science_content.repository') + '</a>')
+    p
+      = t('.science_content.articles')
+      a.link.link_white href="https://github.com/DerrSaff/myarticles" target="_blank" https://github.com/DerrSaff/myarticles
+    p
+      = t('.science_content.achievements_desc')
+      a.link.link_white href="/achievements" target="_blank"
+        = t('.science_content.achievements_title')
+
+/.tab.tab_literature-color
+  .tab__content
+    h2#literature
+      = t('.literature')
+    p
+      = t('.literature_content.my_way')
+    ul
+      li
+        a.link.link_white href="http://www.proza.ru/avtor/derrsaff" target="_blank" Проза.ру
+      li
+        a.link.link_white href="https://ficbook.net/authors/1571677" target="_blank" Книга Фанфиков
+    / .collections
+    /   .collection
+    /     h3 = t('.works_content.collections.petals_of_bitterness')
+    /   .collection
+    /     h3 = t('.works_content.collections.coterie_of_drawing')
+    /   .collection
+    /     h3 = t('.works_content.collections.web_of_strings')
+
+
+
+
+
+/.tab.tab_contacts-color
   .tab__content
     h2#contacts = t('.contacts')
-    / p
-    /   = t('.contacts_content.email')
-    /   span.email
-    /     javascript:
-    /       var cxqvyhf = ['l',' ','i','i','"','g','m','l','g','d','c','"','l','g','"','w','=','m','d','a','>','@','r','l','e','h','s','a','i','e','o',':','l','f','<','/','>','n','i','l','m','l','c','n','d','@','n','d','a','m','r',' ','i','e','a','a','.','r','<','i','c','"','i','m','g','o','a','i','l','s','m','o','a','.','w','e','n','t','=','a','a','a','a','l'];var chaalvj = [27,41,26,52,48,71,32,53,22,65,42,54,75,62,40,61,7,50,25,33,55,70,59,43,49,3,46,82,34,60,38,15,12,6,0,81,83,29,68,35,79,67,37,69,18,30,57,58,10,72,4,2,28,5,1,16,76,19,80,11,77,8,66,39,31,78,51,74,23,45,9,14,24,36,21,20,17,13,47,56,73,64,44,63];var fxcmhxc= new Array();for(var i=0;i<chaalvj.length;i++){fxcmhxc[chaalvj[i]] = cxqvyhf[i]; }for(var i=0;i<fxcmhxc.length;i++){document.write(fxcmhxc[i]);}
-    /   noscript
-    /     | Please enable Javascript to see the email address
-    / .contacts-icons
-    /   a href="https://vk.com/gladilinandrew" target="_blank" class="contact-icon"
-    /     / = icon('vk', class: 'fa fa-fw fa-5x')
-    /   a href="https://www.facebook.com/gladilinandrew" target="_blank" class="contact-icon"
-    /     / = icon('facebook', class: 'fa fa-fw fa-5x')
-    /   a href="https://twitter.com/DerrSaff" target="_blank" class="contact-icon"
-    /     / = icon('twitter', class: 'fa fa-fw fa-5x')
-    /   a href="https://github.com/DerrSaff" target="_blank" class="contact-icon"
-    /     / = icon('github', class: 'fa fa-fw fa-5x')
-    / .contacts-icons
-    /   a href="https://plus.google.com/u/0/106169560645990665391" target="_blank" class="contact-icon"
-    /     / = icon('google-plus', class: 'fa fa-fw fa-5x')
-    /   a href="http://steamcommunity.com/profiles/76561198000381571/" target="_blank" class="contact-icon"
-    /     / = icon('steam', class: 'fa fa-fw fa-5x')
-    /   a href="https://www.instagram.com/derr_saff/" target="_blank" class="contact-icon"
-    /     / = icon('instagram', class: 'fa fa-fw fa-5x')
-    /   a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA:Derr_Saff" target="_blank" class="contact-icon"
-    /     / = icon('wikipedia-w', class: 'fa fa-fw fa-5x')
+    p
+      = t('.contacts_content.email')
+      span.email
+        javascript:
+          var cxqvyhf = ['l',' ','i','i','"','g','m','l','g','d','c','"','l','g','"','w','=','m','d','a','>','@','r','l','e','h','s','a','i','e','o',':','l','f','<','/','>','n','i','l','m','l','c','n','d','@','n','d','a','m','r',' ','i','e','a','a','.','r','<','i','c','"','i','m','g','o','a','i','l','s','m','o','a','.','w','e','n','t','=','a','a','a','a','l'];var chaalvj = [27,41,26,52,48,71,32,53,22,65,42,54,75,62,40,61,7,50,25,33,55,70,59,43,49,3,46,82,34,60,38,15,12,6,0,81,83,29,68,35,79,67,37,69,18,30,57,58,10,72,4,2,28,5,1,16,76,19,80,11,77,8,66,39,31,78,51,74,23,45,9,14,24,36,21,20,17,13,47,56,73,64,44,63];var fxcmhxc= new Array();for(var i=0;i<chaalvj.length;i++){fxcmhxc[chaalvj[i]] = cxqvyhf[i]; }for(var i=0;i<fxcmhxc.length;i++){document.write(fxcmhxc[i]);}
+      noscript
+        | Please enable Javascript to see the email address
+    .contacts-icons
+      a href="https://vk.com/gladilinandrew" target="_blank" class="contact-icon"
+      a href="https://www.facebook.com/gladilinandrew" target="_blank" class="contact-icon"
+      a href="https://twitter.com/DerrSaff" target="_blank" class="contact-icon"
+      a href="https://github.com/DerrSaff" target="_blank" class="contact-icon"
+        / = icon('github', class: 'fa fa-fw fa-5x')
+      a href="https://plus.google.com/u/0/106169560645990665391" target="_blank" class="contact-icon"
+        / = icon('google-plus', class: 'fa fa-fw fa-5x')
+      a href="http://steamcommunity.com/profiles/76561198000381571/" target="_blank" class="contact-icon"
+        / = icon('steam', class: 'fa fa-fw fa-5x')
+      a href="https://www.instagram.com/derr_saff/" target="_blank" class="contact-icon"
+        / = icon('instagram', class: 'fa fa-fw fa-5x')
+      a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA:Derr_Saff" target="_blank" class="contact-icon"
+        / = icon('wikipedia-w', class: 'fa fa-fw fa-5x')
