@@ -7,7 +7,7 @@
     h2.post__title.post__title_margined
       = @post.header
     .post__subtitle.post__subtitle_fs18
-      | Перевод статьи #{link_to @post.original_header, @post.link} под авторством #{@post.author}
+      | Перевод статьи #{link_to @post.original_header, @post.link, target: '_blank'} под авторством #{@post.author}
     = raw @post.css
     = raw @post.text
     = javascript_tag @post.javascript
