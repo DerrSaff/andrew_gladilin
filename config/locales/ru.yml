@@ -54,3 +54,7 @@ ru:
       contacts: Контакты
       contacts_content:
         email: 'Мой электронный адрес: '
+  posts:
+    index:
+      read_button: Читать
+      comment_link: Комментировать

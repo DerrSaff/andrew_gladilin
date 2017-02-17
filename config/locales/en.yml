@@ -53,3 +53,7 @@ en:
       contacts: Contacts
       contacts_content:
         email: 'My email: '
+  posts:
+    index:
+      read_button: Read
+      comment_link: Comment
