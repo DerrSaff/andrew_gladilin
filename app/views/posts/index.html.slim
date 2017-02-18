@@ -7,8 +7,10 @@
         = link_to inline_svg('edit.svg'), edit_post_path(post), class: 'edit-icon inline-block padded-5px'
         = link_to inline_svg('delete.svg'), post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete-icon inline-block padded-5px'
       .post__tags
-        - post.tags.each do |tag|
-          = tag
+        | #{t('.tags')}: 
+        - post.tags.split(', ').each do |tag|
+          span.post-tag
+            = tag
       .post__summary
         = post.summary
       .post__read-button
