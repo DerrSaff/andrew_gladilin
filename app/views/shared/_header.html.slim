@@ -24,7 +24,7 @@ header.header.header_shadowed
         input.search-form__input type="text" name='search-form__text'
       - if admin?
         = link_to inline_svg('add.svg', class: 'navigation__add-icon'), new_post_path
-        - if params[:action] == "show"
+        - if params[:action] == "show" && controller == 'books'
           = link_to inline_svg('edit_white.svg', class: 'navigation__icon'), edit_post_path(@post)
 
   .header__right-side.header__right-side_uppercase
