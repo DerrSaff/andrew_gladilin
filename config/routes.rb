@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :books
   devise_for :users
   resources :posts
+  resources :comments, only: [:create, :update, :destroy]
   root :to => 'posts#index'
 
   devise_scope :user do
@@ -10,7 +11,7 @@ Rails.application.routes.draw do
     get "/sign_out" => "devise/sessions#destroy", as: :sign_out
     get "/settings" => "devise/registrations#edit", as: :settings
   end
-  
+
   get '/about' => 'application#index', as: :about
   get '/achievements' => 'application#achievements'
 end

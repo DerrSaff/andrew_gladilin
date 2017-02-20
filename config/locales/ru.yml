@@ -58,3 +58,7 @@ ru:
     index:
       read_button: Читать
       comment_link: Комментировать
+    show:
+      send: Отправить
+      write_comment: 'Напишите комментарий...'
+      no_comments: 'Пока нет комментариев.'

@@ -57,3 +57,7 @@ en:
     index:
       read_button: Read
       comment_link: Comment
+    show:
+      send: Send
+      write_comment: 'Write a comment'
+      no_comments: 'No comments yet.'
