@@ -26,8 +26,20 @@ group :development do
   gem 'binding_of_caller', '~> 0.7.2'
 end
 
+group :test do
+  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.1'
+  gem 'selenium-webdriver', '~> 3.1'
+  gem 'capybara', '~> 2.12', '>= 2.12.1'
+  gem 'faker', '~> 1.7', '>= 1.7.3'
+  gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
+  gem 'spring-commands-rspec', '~> 1.0', '>= 1.0.4'
+end
+
 group :development, :test do
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
+  gem 'factory_girl_rails', '~> 4.8'
   gem 'letter_opener', '~> 1.4', '>= 1.4.1'
+  gem 'pry-rails', '~> 0.3.5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
