@@ -69,7 +69,7 @@ nav
         .interest__figure
           = image_tag("interests/ai.png", alt: t('.about_content.interests_list.ai'), class: "interests__image")
         figcapture.interest__capture
-          = t('.about_content.interests_list..ai')
+          = t('.about_content.interests_list.ai')
       figure.interest
         .interest__figure
           = image_tag("interests/music.png", alt: t('.about_content.interests_list.music'), class: "interests__image")
@@ -95,47 +95,47 @@ nav
       .skill
         figure
           = image_tag('skills/frontend.png', size: '96', class: 'skill__image')
-          progress value="60" max="100" 60%
+          progress.skill__progress value="60" max="100" 60%
           figcaption.centered HTML/CSS
       .skill
         figure
           = inline_svg('sass.svg', size: '96', class: 'skill__image')
-          progress value="60" max="100" 60%
+          progress.skill__progress value="60" max="100" 60%
           figcaption.centered Sass
       .skill
         figure
           = image_tag('skills/javascript.png', size: '96', class: 'skill__image')
-          progress value="15" max="100" 15%
+          progress.skill__progress value="15" max="100" 15%
           figcaption.centered JavaScript
       .skill
         figure
           = image_tag('skills/ror.png', size: '96', class: 'skill__image')
-          progress value="25" max="100" 25%
+          progress.skill__progress value="25" max="100" 25%
           figcaption.centered Rails
       .skill
         figure
           = image_tag('skills/git.png', size: '96', class: 'skill__image')
-          progress value="25" max="100" 25%
+          progress.skill__progress value="25" max="100" 25%
           figcaption.centered Git
       .skill
         figure
           = image_tag('skills/java.png', size: '96', class: 'skill__image')
-          progress value="15" max="100" 15%
+          progress.skill__progress value="15" max="100" 15%
           figcaption.centered Java
       .skill
         figure
           = image_tag('skills/postgresql.png', size: '96', class: 'skill__image')
-          progress value="10" max="100" 10%
+          progress.skill__progress value="10" max="100" 10%
           figcaption.centered Postgres
       .skill
         figure
           = image_tag('skills/android.jpg', size: '96', class: 'skill__image')
-          progress value="10" max="100" 10%
+          progress.skill__progress value="10" max="100" 10%
           figcaption.centered Android
       .skill
         figure
           = image_tag('skills/scala.png', size: '96', class: 'skill__image')
-          progress value="5" max="100" 5%
+          progress.skill__progress value="5" max="100" 5%
           figcaption.centered Scala
 
     p
