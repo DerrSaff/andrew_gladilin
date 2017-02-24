@@ -30,5 +30,9 @@
           .post-footer-params__dislikes
             = inline_svg('dislike.svg', class: 'dislikes-icon')
             = post.dislikes.count
+          .w10px
+          .post-footer-params__comments
+            = inline_svg('comment.svg', class: 'comments-icon')
+            = post.comments.count
         .post-footer__comment-button
           = link_to t('.comment_link'), post_path(post, anchor: 'comments')
