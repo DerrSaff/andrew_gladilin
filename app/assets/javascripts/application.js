@@ -9,6 +9,10 @@ $(document).ready(function(){
   $('pre code').each(function(i, block) {
     hljs.highlightBlock(block);
   });
+
+  $('.popup').click( function () {
+    $(this).hide();
+  })
 });
 
 // $(document).on('ready page:load', function() {
