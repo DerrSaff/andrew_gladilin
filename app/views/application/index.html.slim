@@ -91,52 +91,132 @@ nav
     h2#skills = t('.skills')
     p
       = t('.skills_content.level')
+
+    h4 = t('.skills_content.programming_languages')
     .skills
       .skill
         figure
-          = image_tag('skills/frontend.png', size: '96', class: 'skill__image')
-          progress.skill__progress value="60" max="100" 60%
-          figcaption.centered HTML/CSS
+          = image_tag('skills/javascript.png', size: '96', class: 'skill__image')
+          progress.skill__progress value="45" max="100" 45%
+          figcaption.centered JavaScript
+
+      .skill
+        figure
+          = inline_svg('ruby.svg', size: '96', class: 'skill__image')
+          progress.skill__progress value="55" max="100" 55%
+          figcaption.centered Ruby
+
+      .skill
+        figure
+          = image_tag('skills/java.png', size: '96', class: 'skill__image')
+          progress.skill__progress value="20" max="100" 20%
+          figcaption.centered Java
+      
+    h4 = t('.skills_content.backend')
+    .skills
+      .skill
+        figure
+          = image_tag('skills/ror.png', size: '96', class: 'skill__image')
+          progress.skill__progress value="30" max="100" 30%
+          figcaption.centered Rails
+
+    h4 = t('.skills_content.frontend')
+    .skills
+      
+      .skill
+        figure
+          = inline_svg('html.svg', size: '96', class: 'skill__image')
+          progress.skill__progress value="80" max="100" 80%
+          figcaption.centered HTML
+
+      .skill
+        figure
+          = inline_svg('css.svg', size: '96', class: 'skill__image')
+          progress.skill__progress value="70" max="100" 70%
+          figcaption.centered CSS
+
       .skill
         figure
           = inline_svg('sass.svg', size: '96', class: 'skill__image')
           progress.skill__progress value="60" max="100" 60%
           figcaption.centered Sass
+
       .skill
         figure
-          = image_tag('skills/javascript.png', size: '96', class: 'skill__image')
-          progress.skill__progress value="15" max="100" 15%
-          figcaption.centered JavaScript
-      .skill
-        figure
-          = image_tag('skills/ror.png', size: '96', class: 'skill__image')
-          progress.skill__progress value="25" max="100" 25%
-          figcaption.centered Rails
+          = inline_svg('bootstrap.svg', size: '96', class: 'skill__image')
+          progress.skill__progress value="60" max="100" 60%
+          figcaption.centered Bootstrap
+    
+    h4 = t('.skills_content.vcs')
+    .skills
+      
       .skill
         figure
           = image_tag('skills/git.png', size: '96', class: 'skill__image')
           progress.skill__progress value="25" max="100" 25%
           figcaption.centered Git
+
+    h4 = t('.skills_content.databases')
+    .skills
+
       .skill
         figure
-          = image_tag('skills/java.png', size: '96', class: 'skill__image')
-          progress.skill__progress value="15" max="100" 15%
-          figcaption.centered Java
+          a href="http://www.onlinewebfonts.com"
+            = inline_svg('sql.svg', size: '96', class: 'skill__image')
+          progress.skill__progress value="10" max="100" 10%
+          figcaption.centered SQL
+      
       .skill
         figure
           = image_tag('skills/postgresql.png', size: '96', class: 'skill__image')
           progress.skill__progress value="10" max="100" 10%
-          figcaption.centered Postgres
+          figcaption.centered PostgreSQL
+
+    h4 = t('.skills_content.mobile')
+    .skills
+
       .skill
         figure
           = image_tag('skills/android.jpg', size: '96', class: 'skill__image')
           progress.skill__progress value="10" max="100" 10%
           figcaption.centered Android
+
+    h4 = t('.skills_content.plan_to_learn')
+    .skills
       .skill
         figure
-          = image_tag('skills/scala.png', size: '96', class: 'skill__image')
-          progress.skill__progress value="5" max="100" 5%
-          figcaption.centered Scala
+          = inline_svg('typescript.svg', size: '96', class: 'skill__image')
+          figcaption.centered TypeScript
+
+      .skill
+        figure
+          = inline_svg('angular.svg', size: '96', class: 'skill__image')
+          figcaption.centered Angular
+
+      .skill
+        figure
+          = inline_svg('play.svg', size: '96', class: 'skill__image')
+          figcaption.centered Play!
+
+      .skill
+        figure
+          = inline_svg('lift.svg', size: '96', class: 'skill__image')
+          figcaption.centered Lift
+
+      .skill
+        figure
+          = inline_svg('react.svg', size: '96', class: 'skill__image')
+          figcaption.centered React
+
+      .skill
+        figure
+          = inline_svg('python.svg', size: '96', class: 'skill__image')
+          figcaption.centered Python
+
+      .skill
+        figure
+          = inline_svg('r.svg', size: '96', class: 'skill__image')
+          figcaption.centered R
 
     p
       = t('.skills_content.education')

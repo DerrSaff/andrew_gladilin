@@ -24,7 +24,14 @@ en:
       skills_content:
         level: "As a developer, I didn't advanced in any sphere, so I have fragmented knowledge from different areas. I am interested in the full stack of developing, that's why I tend to evolve as a universal specialist."
         interskillar: 'You can see a detailed tree of my skills on my Interskillar project: '
-        education: 'Besides, I periodically go through a variety of interactive courses, solve tasks on programming web-sites, here are links to profiles:'
+        education: 'Besides, I go through a variety of interactive courses periodically, solve tasks on programming web-sites, here are links to profiles:'
+        programming_languages: Programming Languages
+        backend: Backend
+        frontend: Frontend
+        vcs: VCS
+        databases: Databases
+        mobile: Mobile
+        plan_to_learn: Plan to learn
       science: Science
       science_content:
         intro: 'I study in the postgraduate school the second year.'
