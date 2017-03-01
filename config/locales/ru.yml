@@ -69,3 +69,5 @@ ru:
       send: Отправить
       write_comment: 'Напишите комментарий...'
       no_comments: 'Пока нет комментариев.'
+      comment_response: 'Ответ на'
+      comment_response_link: Ответить

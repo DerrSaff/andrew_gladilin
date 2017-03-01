@@ -13,6 +13,13 @@ $(document).ready(function(){
   $('.popup').click( function () {
     $(this).hide();
   })
+
+  $('.comment-info__response-link').click ( function () {
+    $('.comments__form-response-label').show();
+    var responseId = $(this).prev().html();
+    console.log(responseId);
+    $('.comments__form-response-id').html(' #' + responseId).show();
+  });
 });
 
 // $(document).on('ready page:load', function() {

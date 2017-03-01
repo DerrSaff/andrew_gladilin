@@ -68,3 +68,4 @@ en:
       send: Send
       write_comment: 'Write a comment'
       no_comments: 'No comments yet.'
+      comment_response: 'Responce to '
