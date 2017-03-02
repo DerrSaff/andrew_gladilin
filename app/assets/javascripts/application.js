@@ -14,12 +14,36 @@ $(document).ready(function(){
     $(this).hide();
   })
 
+  var responseId = 0;
+
   $('.comment-info__response-link').click ( function () {
+    responseId = $(this).prev().html();
+
     $('.comments__form-response-label').show();
-    var responseId = $(this).prev().html();
-    console.log(responseId);
-    $('.comments__form-response-id').html(' #' + responseId).show();
+    $('.comments__form-response-id')
+      .html('<a href="#comment-' + responseId + '">#' + responseId + '</a>')
+      .show();
+    $('#comment_answer').val(responseId);
   });
+
+  $('.comments__form-response-id').hover( showResponse, hideResponse );
+
+  function showResponse() {
+    var pos = $('.comments__form-response-id').position();
+    $('.comments__form-preview')
+      .html($('#comment-' + responseId).html())
+      .css({
+        top: (pos.top - $('#comment-' + responseId).height()) + "px",
+        left: (pos.left + 30) + "px"})
+      .find('.comment-info__response-link')
+      .remove();
+    $('.comments__form-preview').show();
+  }
+
+  function hideResponse () {
+    $('.comments__form-preview').hide().html('');
+  }
+
 });
 
 // $(document).on('ready page:load', function() {

@@ -14,12 +14,14 @@
 
     h2#comments Комментарии
     - if user_signed_in?
-      
-      span.comments__form-response-label
-        = t('.comment_response')
-      span.comments__form-response-id
 
-      = form_for :comment, url: comments_path, method: :post, html: {class: 'comments-form'} do |f|
+      span.comments__form-response-label
+        => t('.comment_response')
+      span.comments__form-response-id
+      
+      .comments__form-preview
+
+      = form_for :comment, url: comments_path, method: :post, html: {class: 'comments-form'} do |f|        
         = hidden_field_tag 'comment[resource_type]', params['controller']
         = hidden_field_tag 'comment[resource_id]', @post.id
         = hidden_field_tag 'comment[user_id]', current_user.id
@@ -32,7 +34,7 @@
         = t('.no_comments')
       - else
         - @post.comments.each do |comment|
-          .comment
+          .comment id="comment-#{comment.id}"
             .comment-header
               span.comment-header__id
                 => "##{comment.id}"
@@ -44,8 +46,9 @@
             .comment-info
               .comment-info__comment-id
                 = comment.id
-              a.comment-info__response-link href='#comments'
-                = t('.comment_response_link')
+              - if user_signed_in?
+                a.comment-info__response-link href='#comments'
+                  = t('.comment_response_link')
               .comment-info__date
                 = comment.created_at.strftime("%d.%m.%Y %H:%M")
               .comment-info__author
