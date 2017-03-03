@@ -15,25 +15,29 @@ $(document).ready(function(){
   })
 
   var responseId = 0;
+  var previewId = 0;
 
   $('.comment-info__response-link').click ( function () {
     responseId = $(this).prev().html();
 
     $('.comments__form-response-label').show();
     $('.comments__form-response-id')
-      .html('<a href="#comment-' + responseId + '">#' + responseId + '</a>')
+      .html( '#' + responseId)
       .show();
+    $('.comments__form-response-link').attr('href', '#comment-' + responseId)
     $('#comment_answer').val(responseId);
   });
 
-  $('.comments__form-response-id').hover( showResponse, hideResponse );
+  $('.comment__preview-id, .comments__form-response-id').hover( showResponse, hideResponse );
 
   function showResponse() {
-    var pos = $('.comments__form-response-id').position();
+    var pos = $(this).position();
+    previewId = parseInt($(this).html().substr(1));
+    console.log($(this).html());
     $('.comments__form-preview')
-      .html($('#comment-' + responseId).html())
+      .html($('#comment-' + previewId).html())
       .css({
-        top: (pos.top - $('#comment-' + responseId).height()) + "px",
+        top: (pos.top - $('#comment-' + previewId).height()) + "px",
         left: (pos.left + 30) + "px"})
       .find('.comment-info__response-link')
       .remove();

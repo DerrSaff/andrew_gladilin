@@ -17,7 +17,8 @@
 
       span.comments__form-response-label
         => t('.comment_response')
-      span.comments__form-response-id
+      a.comments__form-response-link href=""
+        span.comment__preview-id.comments__form-response-id
       
       .comments__form-preview
 
@@ -38,9 +39,12 @@
             .comment-header
               span.comment-header__id
                 => "##{comment.id}"
-              span.comment-header__response
-                = t('.comment_response')
-              span.comment-header__response-id
+              - if comment.answer != 0
+                span.comment-header__response
+                  => t('.comment_response')
+                a href="#comment-#{comment.answer}"
+                  span.comment__preview-id
+                    = "##{comment.answer}"
             .comment__message
               = comment.message
             .comment-info
