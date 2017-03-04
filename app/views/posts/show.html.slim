@@ -13,6 +13,9 @@
     = javascript_tag @post.javascript
 
     h2#comments Комментарии
+
+    .comments__form-preview
+    
     - if user_signed_in?
 
       span.comments__form-response-label
@@ -20,7 +23,7 @@
       a.comments__form-response-link href=""
         span.comment__preview-id.comments__form-response-id
       
-      .comments__form-preview
+      
 
       = form_for :comment, url: comments_path, method: :post, html: {class: 'comments-form'} do |f|        
         = hidden_field_tag 'comment[resource_type]', params['controller']
