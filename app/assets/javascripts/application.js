@@ -33,7 +33,6 @@ $(document).ready(function(){
   function showResponse() {
     var pos = $(this).position();
     previewId = parseInt($(this).html().substr(1));
-    console.log($(this).html());
     $('.comments__form-preview')
       .html($('#comment-' + previewId).html())
       .css({
@@ -47,6 +46,21 @@ $(document).ready(function(){
   function hideResponse () {
     $('.comments__form-preview').hide().html('');
   }
+
+  // [dis]likes
+  $('.post-footer-params__likes').click ( function () {
+    console.log('ok');
+    $.ajax({
+      url: '/likes',
+      method: 'post',
+      data: {
+        like: {
+          post_id: $(this).closest('.post-footer').find('.post__id').html(),
+          user_id: $('.user-id').html()
+        }
+      }
+    })
+  });
 
 });
 

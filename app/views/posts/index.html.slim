@@ -16,6 +16,8 @@
       .post__read-button
         = link_to (button_tag t('.read_button'), class: 'button button_fs20'), post
       .post-footer
+        .post__id
+          = post.id
         .post-footer__date
           = post.created_at.strftime("%d.%m.%Y %H:%M")
         .post-footer-params

@@ -38,10 +38,6 @@ header.header.header_shadowed
         li.dropdown-menu__item = link_to "Settings", settings_path, class: 'header-link'
         li.dropdown-menu__item = link_to "Sign out", sign_out_path, class: 'header-link'
 
-      / ul.dropdown-menu.dropdown-menu_language
-      /   li.dropdown-menu__item = link_to "Settings", settings_path, class: 'header-link'
-      /   li.dropdown-menu__item = link_to "Sign out", sign_out_path, class: 'header-link'
-
     - else
       = link_to 'Sign up', sign_up_path, class: 'header-link header-link_margined'
       = link_to 'Sign in', sign_in_path, class: 'header-link header-link_margined'
@@ -53,3 +49,6 @@ header.header.header_shadowed
       .dropdown-language__content
         - (Saffa::Application.config.i18n.available_locales).each do |language|
           = link_to inline_svg("#{language}.svg", class: 'language-icon'), url_for( :locale => language.to_s )
+
+    .user-id
+      = current_user.id

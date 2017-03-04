@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :comments, only: [:create, :update, :destroy]
   root :to => 'posts#index'
+  resources :likes, only: [:create, :destroy]
 
   devise_scope :user do
     get "/sign_up" => "devise/registrations#new", as: :sign_up
