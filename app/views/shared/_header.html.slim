@@ -50,5 +50,6 @@ header.header.header_shadowed
         - (Saffa::Application.config.i18n.available_locales).each do |language|
           = link_to inline_svg("#{language}.svg", class: 'language-icon'), url_for( :locale => language.to_s )
 
-    .user-id
-      = current_user.id
+    - if user_signed_in?
+      .user-id
+        = current_user.id
