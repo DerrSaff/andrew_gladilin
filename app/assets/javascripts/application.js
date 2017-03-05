@@ -47,17 +47,27 @@ $(document).ready(function(){
     $('.comments__form-preview').hide().html('');
   }
 
+  var currentIcon;
+
   // [dis]likes
-  $('.post-footer-params__likes').click ( function () {
-    console.log('ok');
+  $('.likes-icon').click ( function () {
+    // console.log('ok');
+    currentIcon = $(this);
     $.ajax({
       url: '/likes',
       method: 'post',
+      dataType: 'text',
       data: {
         like: {
           post_id: $(this).closest('.post-footer').find('.post__id').html(),
           user_id: $('.user-id').html()
         }
+      }
+    }).done( function( data ) {
+      console.log(data);
+      if (data == 'ok') {
+        currentIcon.addClass('likes-icon_liked');
+        currentIcon.next().text( Number($(this).text()) + 1 );
       }
     })
   });

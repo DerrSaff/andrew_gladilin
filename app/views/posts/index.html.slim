@@ -26,8 +26,11 @@
             = post.views
           .w10px
           .post-footer-params__likes
-            = inline_svg('like.svg', class: 'likes-icon')
-            = post.likes.count
+            - if user_signed_in? && Like.where(post_id: post.id, user_id: current_user.id).exists?
+              = inline_svg('like.svg', class: 'likes-icon likes-icon_liked')
+            - else
+              = inline_svg('like.svg', class: 'likes-icon')
+            span.post-footer-params__likes-count = post.likes.count
           .w10px
           .post-footer-params__dislikes
             = inline_svg('dislike.svg', class: 'dislikes-icon')
