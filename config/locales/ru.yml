@@ -1,4 +1,6 @@
 ru:
+  under_construction: 'Сайт в разработке. Что-то может работать неправильно.'
+  report: 'Сообщить о баге'
   application:
     index:
       about: 'Об авторе'
