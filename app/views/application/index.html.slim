@@ -111,7 +111,7 @@ nav
           = image_tag('skills/java.png', size: '96', class: 'skill__image')
           progress.skill__progress value="20" max="100" 20%
           figcaption.centered Java
-      
+
     h4 = t('.skills_content.backend')
     .skills
       .skill
@@ -122,7 +122,7 @@ nav
 
     h4 = t('.skills_content.frontend')
     .skills
-      
+
       .skill
         figure
           = inline_svg('html.svg', size: '96', class: 'skill__image')
@@ -152,10 +152,10 @@ nav
           = inline_svg('jquery.svg', size: '96', class: 'skill__image')
           progress.skill__progress value="15" max="100" 15%
           figcaption.centered jQuery
-    
+
     h4 = t('.skills_content.vcs')
     .skills
-      
+
       .skill
         figure
           = image_tag('skills/git.png', size: '96', class: 'skill__image')
@@ -171,7 +171,7 @@ nav
             = inline_svg('sql.svg', size: '96', class: 'skill__image')
           progress.skill__progress value="10" max="100" 10%
           figcaption.centered SQL
-      
+
       .skill
         figure
           = image_tag('skills/postgresql.png', size: '96', class: 'skill__image')
@@ -255,7 +255,7 @@ nav
       p
         = t('.projects_content.saffa_desc')
         =< link_to "Git", 'https://github.com/DerrSaff/saffa', class: 'link link_white'
-        
+
     / .project
     /   h3 Ord
     /   p
@@ -272,7 +272,7 @@ nav
     /   h3 Achievaroom
     /   p
     /     = t('.projects_content.ar_desc')
-  / 
+  /
 
 .tab.tab_science-color
   .tab__content
@@ -287,10 +287,6 @@ nav
     p
       = t('.science_content.articles')
       a.link.link_white href="https://github.com/DerrSaff/myarticles" target="_blank" https://github.com/DerrSaff/myarticles
-    p
-      = t('.science_content.achievements_desc')
-      a.link.link_white href="/achievements" target="_blank"
-        = t('.science_content.achievements_title')
 
 /.tab.tab_literature-color
   .tab__content

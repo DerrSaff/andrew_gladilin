@@ -41,8 +41,6 @@ en:
         repository: repository
         thesis: "The current state of my thesis can be found in this %{link}."
         articles: 'Also I created a repository for my scientific articles: '
-        achievements_desc: 'During studying at my university I have earned quite a lot of different diplomas and certificates. You can see on this page:'
-        achievements_title: Achievements
       projects: Projects
       projects_content:
         ideas: 'I have a lot of ideas that I would like to implement, but I lack knowledge, skills and time. Projects will appear here, once achieve MVP level.'
