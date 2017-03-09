@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
@@ -9,8 +10,7 @@ class BooksController < ApplicationController
 
   # GET /books/1
   # GET /books/1.json
-  def show
-  end
+  def show; end
 
   # GET /books/new
   def new
@@ -18,8 +18,7 @@ class BooksController < ApplicationController
   end
 
   # GET /books/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /books
   # POST /books.json
@@ -62,13 +61,14 @@ class BooksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_book
-      @book = Book.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def book_params
-      params.require(:book).permit(:name, :author, :publisher, :year, :pages_read, :total_pages, :book_picture, :link, :review, :summary)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_book
+    @book = Book.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def book_params
+    params.require(:book).permit(:name, :author, :publisher, :year, :pages_read, :total_pages, :book_picture, :link, :review, :summary)
+  end
 end

@@ -1,5 +1,5 @@
+# frozen_string_literal: true
 class ReportsController < ApplicationController
-  
   def index
     @reports = Report.all
   end
@@ -17,5 +17,4 @@ class ReportsController < ApplicationController
   def report_params
     params.require(:report).permit(:message, :user_id, :name, :email)
   end
-
 end

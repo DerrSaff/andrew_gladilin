@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
@@ -5,16 +6,16 @@ class ApplicationController < ActionController::Base
 
   private
 
-  def default_url_options(options={})
+  def default_url_options(_options = {})
     { locale: I18n.locale }
   end
 
   def set_locale
-    params[:locale] ||= extract_locale_from_accept_language_header || I18n.default_locale
+    params[:locale] ||= extract_locale || I18n.default_locale
     I18n.locale = params[:locale] || I18n.default_locale
   end
 
-  def extract_locale_from_accept_language_header
-    request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
+  def extract_locale
+    (request.env['HTTP_ACCEPT_LANGUAGE'] || 'ru').scan(/^[a-z]{2}/).first
   end
 end

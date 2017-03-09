@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class AddSummaryToPosts < ActiveRecord::Migration[5.0]
   def change
     add_column :posts, :summary, :text, default: ''

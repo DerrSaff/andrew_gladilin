@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 source 'https://rubygems.org'
 
 gem 'autosize-rails', '~> 1.18', '>= 1.18.17'
@@ -25,7 +26,7 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'overcommit', '~> 0.38.0'
   gem 'rails_best_practices', '~> 1.18'
-  gem 'rubocop', '~> 0.47.1'
+  gem 'rubocop', '~> 0.47.1', require: false
   gem 'rubocop-rspec', '~> 1.13'
   gem 'scss_lint', require: false
   gem 'slim_lint', '~> 0.11.0'

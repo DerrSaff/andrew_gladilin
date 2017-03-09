@@ -1,10 +1,11 @@
+# frozen_string_literal: true
 class LikesController < ApplicationController
   def create
     like = Like.new(like_params)
     respond_to do |format|
       if like.save
         format.text { render plain: 'ok' }
-        format.json { render json: like, status: created}
+        format.json { render json: like, status: created }
       else
         format.text { render plain: 'error' }
         format.json { render json: like.errors, status: :unprocessable_entity }

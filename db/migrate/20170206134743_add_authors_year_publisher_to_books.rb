@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class AddAuthorsYearPublisherToBooks < ActiveRecord::Migration[5.0]
   def change
     add_column :books, :author, :string, default: ''
