@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170220180850) do
+ActiveRecord::Schema.define(version: 20170308215820) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -72,6 +72,15 @@ ActiveRecord::Schema.define(version: 20170220180850) do
     t.text     "javascript",      default: ""
     t.text     "css",             default: ""
     t.string   "tags",            default: ""
+  end
+
+  create_table "reports", force: :cascade do |t|
+    t.text     "message",    default: ""
+    t.integer  "user_id",    default: 0
+    t.string   "email",      default: ""
+    t.string   "name",       default: ""
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "users", force: :cascade do |t|
