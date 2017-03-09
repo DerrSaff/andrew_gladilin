@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'autosize-rails', '~> 1.18', '>= 1.18.17'
 gem 'carrierwave', '~> 1.0'
-gem 'coffee-rails', '~> 4.2'
 gem 'devise', '~> 4.2'
 gem 'inline_svg', '~> 0.11.1'
 gem 'jbuilder', '~> 2.5'
@@ -18,16 +17,22 @@ gem 'underscore-rails', '~> 1.8', '>= 1.8.3'
 group :development do
   gem 'better_errors', '~> 2.1', '>= 2.1.1'
   gem 'binding_of_caller', '~> 0.7.2'
+  gem 'brakeman', '~> 3.5'
   gem 'bullet', '~> 5.5'
+  gem 'fasterer', '~> 0.3.2'
   gem 'guard-rubocop', '~> 1.2'
   gem 'html2slim', '~> 0.2.0'
   gem 'listen', '~> 3.0.5'
   gem 'overcommit', '~> 0.38.0'
+  gem 'rails_best_practices', '~> 1.18'
   gem 'rubocop', '~> 0.47.1'
   gem 'rubocop-rspec', '~> 1.13'
+  gem 'scss_lint', require: false
+  gem 'slim_lint', '~> 0.11.0'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console'
+  gem 'yamllint', '~> 0.0.9'
 end
 
 group :test do
