@@ -1,4 +1,8 @@
 en:
+  settings: Settings
+  sign_up: 'Sign up'
+  sign_in: 'Sign in'
+  sign_out: 'Sign out'
   under_construction: 'The site is still under construction. Some features can malfunction'
   report: 'Report a bug'
   languages: Languages

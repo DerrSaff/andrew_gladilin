@@ -1,4 +1,8 @@
 ru:
+  settings: Настройки
+  sign_up: 'Регистрация'
+  sign_in: 'Вход'
+  sign_out: 'Выйти'
   under_construction: 'Сайт в разработке. Что-то может работать неправильно.'
   report: 'Сообщить о баге'
   languages: Языки

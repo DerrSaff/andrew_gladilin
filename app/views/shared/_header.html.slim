@@ -1,43 +1,48 @@
 header.header.header_shadowed
 
-  .header__left-side.header__left-side_uppercase
-    = link_to inline_svg('logo.svg', class: 'site-logo', size: '48'), root_path
+  nav.header__navigation
+    / logo
+    = link_to inline_svg('logo.svg', class: 'header__icon'), root_path
 
-    .divider.w10px
+    .divider.w2vw
 
-    nav.navigation
+    / link to the About page
+    = link_to inline_svg('author.svg', class: 'header__icon'), about_path
 
-      = link_to inline_svg('author.svg', class: 'navigation__info-icon'), about_path
+    .divider.w2vw
 
-      .divider.w10px
+    / search-form
+    form.search-form action='/search' method='get'
+      / svg icon for search
+      label for='search-form__switch'
+        = inline_svg('search.svg', class: 'header__icon')
+      / hidden checkbox
+      input.search-form__switch.hidden type='checkbox' id='search-form__switch' name='search'
+      / search input
+      input.search-form__input type='text' name='search-form__text'
 
-      // search-form
-      form.search-form action="/search" method="get"
-        label for="search-form__switch"
-          = inline_svg('search.svg', class: 'pointered')
-        input.search-form__switch.hidden type="checkbox" id='search-form__switch' name='search'
-        input.search-form__input type="text" name='search-form__text'
-      - if admin?
-        = link_to inline_svg('add.svg', class: 'navigation__add-icon'), new_post_path
-        - if params[:action] == "show" && controller == 'books'
-          = link_to inline_svg('edit_white.svg', class: 'navigation__icon'), edit_post_path(@post)
+    / link for New Post
+    - if admin?
+      = link_to inline_svg('add.svg', class: 'header__icon'), new_post_path
+      - if params[:action] == 'show' && controller == 'posts'
+        = link_to inline_svg('edit_white.svg', class: 'header__icon'), edit_post_path(@post)
 
-  .header__right-side.header__right-side_uppercase
+  .header__settings.header__settings_uppercase
     - if user_signed_in?
 
-      label for="dropdown-menu__settings"
+      label for='dropdown-menu__settings'
         = inline_svg 'menu.svg', class: 'pointered'
-      input.dropdown-menu__switch.hidden type="checkbox" id='dropdown-menu__settings' name='search'
+      input.dropdown-menu__switch.hidden type='checkbox' id='dropdown-menu__settings' name='search'
 
       ul.dropdown-menu.dropdown-menu_settings
-        li.dropdown-menu__item = link_to "Settings", settings_path, class: 'header-link'
-        li.dropdown-menu__item = link_to "Sign out", sign_out_path, class: 'header-link'
+        li.dropdown-menu__item = link_to t('settings'), settings_path, class: 'header-link'
+        li.dropdown-menu__item = link_to t('sign_out'), sign_out_path, class: 'header-link'
 
     - else
-      = link_to 'Sign up', sign_up_path, class: 'header-link header-link_margined'
-      = link_to 'Sign in', sign_in_path, class: 'header-link header-link_margined'
+      = link_to t('sign_up'), sign_up_path, class: 'header-link header-link_margined'
+      = link_to t('sign_in'), sign_in_path, class: 'header-link header-link_margined'
 
-    .divider.w10px
+    .divider.w2vw
 
     .dropdown-language
       = inline_svg "#{params[:locale]}.svg", class: 'pointered language-icon'
