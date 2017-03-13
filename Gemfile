@@ -2,7 +2,6 @@
 source 'https://rubygems.org'
 
 gem 'autosize-rails', '~> 1.18', '>= 1.18.17'
-gem 'carrierwave', '~> 1.0'
 gem 'devise', '~> 4.2'
 gem 'inline_svg', '~> 0.11.1'
 gem 'jbuilder', '~> 2.5'

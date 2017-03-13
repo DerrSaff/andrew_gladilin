@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
-  resources :books
   devise_for :users
   resources :posts
   resources :comments, only: [:create, :update, :destroy]
@@ -16,5 +15,4 @@ Rails.application.routes.draw do
 
   get '/report' => 'application#report', as: :report
   get '/about' => 'application#index', as: :about
-  get '/achievements' => 'application#achievements'
 end
