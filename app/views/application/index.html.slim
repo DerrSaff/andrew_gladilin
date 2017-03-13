@@ -77,6 +77,29 @@
     p
       = t('.skills_content.level')
 
+    h4 = t('languages')
+    .skills
+      / Russian language
+      .skill
+        figure.skill__figure
+          = inline_svg('ru.svg', width: '96px', height: '96px')
+          = t('language_levels.native')
+          figcaption = t('languages.russian')
+
+      / English language
+      .skill
+        figure.skill__figure
+          = inline_svg('en.svg', width: '96px', height: '96px')
+          = t('language_levels.intermediate')
+          figcaption = t('languages.english')
+
+      / Deutsch language
+      .skill
+        figure.skill__figure
+          = inline_svg('de.svg', width: '96px', height: '96px')
+          = t('language_levels.beginner')
+          figcaption = t('languages.german')
+
     h4 = t('.skills_content.programming_languages')
     .skills
       .skill
@@ -165,7 +188,6 @@
 
     h4 = t('.skills_content.mobile')
     .skills
-
       .skill
         figure
           = image_tag('skills/android.jpg', size: '96', class: 'skill__image')

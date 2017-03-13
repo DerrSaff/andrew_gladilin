@@ -1,6 +1,15 @@
 ru:
   under_construction: 'Сайт в разработке. Что-то может работать неправильно.'
   report: 'Сообщить о баге'
+  languages: Языки
+  language_list:
+    russian: Русский
+    english: Английский
+    german: Немецкий
+  language_levels:
+    native: Родной
+    intermediate: Intermediate
+    beginner: Beginner
   application:
     index:
       about: 'Об авторе'

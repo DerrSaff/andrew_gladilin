@@ -1,6 +1,15 @@
 en:
   under_construction: 'The site is still under construction. Some features can malfunction'
   report: 'Report a bug'
+  languages: Languages
+  language_list:
+    russian: Russian
+    english: English
+    german: German
+  language_levels:
+    native: Native
+    intermediate: Intermediate
+    beginner: Beginner
   application:
     index:
       about: 'About the author'
