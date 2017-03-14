@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 source 'https://rubygems.org'
 
-gem 'autosize-rails', '~> 1.18', '>= 1.18.17'
 gem 'devise', '~> 4.2'
 gem 'inline_svg', '~> 0.11.1'
 gem 'jbuilder', '~> 2.5'
@@ -12,7 +11,6 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'sass-rails', '~> 5.0'
 gem 'slim', '~> 3.0', '>= 3.0.7'
 gem 'uglifier', '>= 1.3.0'
-gem 'underscore-rails', '~> 1.8', '>= 1.8.3'
 
 group :development do
   gem 'better_errors', '~> 2.1', '>= 2.1.1'

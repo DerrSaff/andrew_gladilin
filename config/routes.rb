@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :posts
   resources :comments, only: [:create, :update, :destroy]
-  root to: 'posts#index'
+  root to: 'application#index'
   resources :likes, only: [:create, :destroy]
   resources :reports, only: [:index, :new, :create]
   devise_scope :user do
