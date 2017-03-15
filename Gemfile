@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 source 'https://rubygems.org'
 
-gem 'devise', '~> 4.2'
 gem 'inline_svg', '~> 0.11.1'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
