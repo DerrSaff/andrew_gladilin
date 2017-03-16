@@ -1,13 +1,23 @@
 .language-switcher
   = inline_svg('ru.svg', class: 'language-switcher__icon')
 
-nav
-  ul.nav
-    li About me
-    li Skills
-    li Projects
-    li Links
-    li Contacts
+nav.nav
+  ul.nav-list
+    li.nav-list__item
+      a.nav-list__link href="#"
+        | About me
+    li.nav-list__item
+      a.nav-list__link href="#"
+        | Skills
+    li.nav-list__item
+      a.nav-list__link href="#"
+        | Projects
+    li.nav-list__item
+      a.nav-list__link href="#"
+        | Links
+    li.nav-list__item
+      a.nav-list__link href="#"
+        | Contacts
 
 / .hint
 /   = t('click')
