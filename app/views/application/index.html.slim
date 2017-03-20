@@ -1,5 +1,5 @@
 .language-switcher
-  = inline_svg('ru.svg', class: 'language-switcher__icon')
+  = inline_svg('flags/ru.svg', class: 'language-switcher__icon')
 
 nav.nav
   ul.nav-list
@@ -7,16 +7,16 @@ nav.nav
       a.nav-list__link href="/#about"
         | About me
     li.nav-list__item
-      a.nav-list__link href="#"
+      a.nav-list__link href="/#skills"
         | Skills
     li.nav-list__item
-      a.nav-list__link href="#"
+      a.nav-list__link href="/#projects"
         | Projects
     li.nav-list__item
-      a.nav-list__link href="#"
+      a.nav-list__link href="/#links"
         | Links
     li.nav-list__item
-      a.nav-list__link href="#"
+      a.nav-list__link href="/#contacts"
         | Contacts
 
 section
@@ -26,21 +26,28 @@ section
   h2#about.divider__title About me
 
 section
+  .bg.bg_about
+
+.divider
+  h2#skills.divider__title Skills
+
+section
   .bg.bg_skills
 
-/ .hint
-/   = t('click')
+.divider
+  h2#projects.divider__title Projects
 
-/ = image_tag('iceberg.jpg')
+section
+  .bg.bg_projects
 
-/ .aspects
-    / object type="image/svg+xml" data="aspects/ni.svg"
-    /   | Your browser does not support SVGs
-  /   = inline_svg('aspects/ni.svg', class: 'aspects__icon')
-  /   = inline_svg('aspects/te.svg', class: 'aspects__icon')
-  /   = inline_svg('aspects/fe.svg', class: 'aspects__icon')
-  /   = inline_svg('aspects/se.svg', class: 'aspects__icon')
-  /   = inline_svg('aspects/si.svg', class: 'aspects__icon')
-  /   = inline_svg('aspects/fi.svg', class: 'aspects__icon')
-  /   = inline_svg('aspects/ne.svg', class: 'aspects__icon')
-  /   = inline_svg('aspects/ti.svg', class: 'aspects__icon')
+.divider
+  h2#links.divider__title Links
+
+section
+  .bg.bg_links
+
+.divider
+  h2#contacts.divider__title Contacts
+
+section
+  .bg.bg_contacts
