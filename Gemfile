@@ -14,6 +14,7 @@ gem 'uglifier', '>= 1.3.0'
 
 group :development do
   gem 'better_errors', '~> 2.1', '>= 2.1.1'
+  gem 'binding_of_caller'
   gem 'listen', '~> 3.0.5'
   gem 'overcommit', '~> 0.38.0'
   gem 'rubocop', '~> 0.47.1', require: false
@@ -32,6 +33,7 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.8'
   gem 'letter_opener', '~> 1.4', '>= 1.4.1'
   gem 'pry-rails', '~> 0.3.5'
+  # https://github.com/rspec/rspec-rails
   gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
 end
 

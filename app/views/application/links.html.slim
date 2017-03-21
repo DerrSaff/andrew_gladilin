@@ -1,0 +1,16 @@
+.language-switcher
+  = inline_svg('flags/ru.svg', class: 'language-switcher__icon')
+
+h1 A collection of useful links
+
+- front_links = { 'Caniuse' => 'http://caniuse.com/',
+  'Webref.ru HTML elements' => 'https://webref.ru/html',
+  'HTML Special Characters' => 'http://www.degraeve.com/reference/specialcharacters.php'}
+
+h2 Front-end
+details
+  summary HTML & CSS
+  ul
+    - front_links.each do |key, value|
+      li
+        = link_to key, value
