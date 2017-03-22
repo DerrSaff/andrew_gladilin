@@ -1,7 +1,7 @@
-.language-switcher
-  = inline_svg('flags/ru.svg', class: 'language-switcher__icon')
+= content_for :links
+  = stylesheet_link_tag 'links', media: 'all'
 
-h1 A collection of useful links
+h1 My collection of useful links
 
 - front_links = { 'Caniuse' => 'http://caniuse.com/',
   'Webref.ru HTML elements' => 'https://webref.ru/html',
