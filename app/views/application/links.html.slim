@@ -1,16 +1,57 @@
 = content_for :links
   = stylesheet_link_tag 'links', media: 'all'
 
-h1 My collection of useful links
+- content_for :title, t('links')
 
-- front_links = { 'Caniuse' => 'http://caniuse.com/',
+- html_links = { 'HTML specification' => 'https://www.w3.org/TR/html5/',
   'Webref.ru HTML elements' => 'https://webref.ru/html',
-  'HTML Special Characters' => 'http://www.degraeve.com/reference/specialcharacters.php'}
+  'HTML Special Characters' => 'http://www.degraeve.com/reference/specialcharacters.php',
+  }
 
-h2 Front-end
-details
-  summary HTML & CSS
-  ul
-    - front_links.each do |key, value|
-      li
-        = link_to key, value
+- css_links = { 'CSS specifications' => 'https://www.w3.org/Style/CSS/specs.en.html',
+  'Caniuse' => 'http://caniuse.com/',
+  }
+
+- front_portals_links = { 'CSS-live' => 'http://css-live.ru/'}
+
+- front_tools_links = { 'CSS-live' => 'http://css-live.ru/'}
+
+- db_links = { 'Neo4j Cypher cheat sheet' => 'https://neo4j.com/docs/cypher-refcard/current/'}
+
+.links
+  .links__column.links__column_front
+    h2.links__title Front-end
+    hr
+    details
+      summary HTML
+      ul
+        - html_links.each do |key, value|
+          li
+            = link_to key, value
+
+    details
+      summary CSS
+      ul
+        - css_links.each do |key, value|
+          li
+            = link_to key, value
+
+  .links__column.links__column_back
+    h2.links__title Back-end
+    hr
+    details
+      summary Ruby on Rails
+      ul
+        - css_links.each do |key, value|
+          li
+            = link_to key, value
+
+  .links__column.links__column_db
+    h2.links__title Databases
+    hr
+    details
+      summary SQL
+      ul
+        - css_links.each do |key, value|
+          li
+            = link_to key, value
