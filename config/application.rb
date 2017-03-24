@@ -11,6 +11,6 @@ module Saffa
   class Application < Rails::Application
     config.i18n.enforce_available_locales = false
     config.i18n.available_locales = [:en, :ru]
-    config.i18n.default_locale = :ru
+    config.i18n.default_locale = :en
   end
 end
