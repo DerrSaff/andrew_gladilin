@@ -6,7 +6,6 @@
 - html_links = { 'HTML specification' => 'https://www.w3.org/TR/html5/',
   'Webref.ru HTML elements' => 'https://webref.ru/html',
   'HTML Special Characters' => 'http://www.degraeve.com/reference/specialcharacters.php',
-
   }
 
 - css_links = { 'CSS specifications' => 'https://www.w3.org/Style/CSS/specs.en.html',
@@ -19,13 +18,14 @@
   'Основы отзывчивого веб-дизайна' => 'https://developers.google.com/web/fundamentals/design-and-ui/responsive/?hl=ru',
   'БЭМ' => 'https://ru.bem.info/methodology/quick-start/',
   'Bootstrap 4' => 'https://v4-alpha.getbootstrap.com/getting-started/introduction/',
-
+  'Material Design' => 'https://material.io/'
   }
 
-- css_processors_links = { 'Sass Guidelines' => 'https://sass-guidelin.es/',
+- css_processors_links = { 'Sass Docs' => 'http://sass-lang.com/documentation/file.SASS_REFERENCE.html',
+  'Sass Guidelines' => 'https://sass-guidelin.es/',
+  'My Current CSS and Sass Styleguide' => 'https://www.sitepoint.com/css-sass-styleguide/',
   'PostCSS' => 'https://github.com/postcss/postcss',
   'The HTML5 progress Element' => 'https://css-tricks.com/html5-progress-element/',
-
   }
 
 - javascript_links = { 'Gulp' => 'http://gulpjs.com/',
@@ -35,24 +35,57 @@
   'Современный учебник Javascript' => 'https://learn.javascript.ru/',
   'Angular Docs' => 'https://angular.io/docs/ts/latest/',
   'ECMAScript 6 compatibility table' => 'http://kangax.github.io/compat-table/es6/',
-
+  '27 popular new github repositories for web developers in 2016' => 'https://hackernoon.com/27-popular-new-github-repositories-for-web-developers-in-2016-27cdcbba9779#.fph69h5sb',
+  'Распутываем спагетти-код: как писать поддерживаемый JavaScript' => 'http://prgssr.ru/development/rasputyvaem-spagetti-kod-kak-pisat-podderzhivaemyj-javascript.html',
+  'Node Version Manager' => 'https://github.com/creationix/nvm',
+  'ESLint' => 'http://eslint.org/',
+  'JSconsole' => 'https://jsconsole.com/',
+  '' => '',
+  '' => '',
   }
 
 - front_portals_links = { 'CSS-live' => 'http://css-live.ru/',
   'CSS tricks' => 'https://css-tricks.com/',
-  'w3schools' => 'https://www.w3schools.com/', }
+  'w3schools' => 'https://www.w3schools.com/',
+  'Specky Boy' => 'https://speckyboy.com/',
+  }
 
-- front_tools_links = { 'CSS Gradient Generator' => 'http://www.colorzilla.com/gradient-editor/'}
+- front_tools_links = { 'Chrome DevTools' => 'https://developers.google.com/web/tools/chrome-devtools/',
+  'CSS Gradient Generator' => 'http://www.colorzilla.com/gradient-editor/',
+  'Form builder' => 'http://livetools.uiparade.com/form-builder.html',
+  'Colllor' => 'http://colllor.com/',
+  'Clean CSS' => 'http://www.cleancss.com/',
+  'Dabblet' => 'http://dabblet.com/',
+  'Moqups' => 'https://app.moqups.com',
+  'Screen Queries' => 'http://beta.screenqueri.es/',
+  'Responsivepx' => 'https://responsivepx.com/',
+  'JSFiddle' => 'https://jsfiddle.net/',
+  'JSBin' => 'http://jsbin.com/',
+  'LoremPixel' => 'http://lorempixel.com/',
+  'Turbo.net' => 'https://turbo.net/browsers',
+  'CodePen' => 'http://codepen.io/',
+  'CSS Deck' => 'http://cssdeck.com/',
+  }
+
+- fonts_links = { 'Font Squirrel' => 'https://www.fontsquirrel.com/',
+  }
+
+- images_links = { 'Top 10 mistakes in handling website images and how to solve them' => 'http://cloudinary.com/blog/top_10_mistakes_in_handling_website_images_and_how_to_solve_them',
+  }
 
 - front_snippets_links = { 'CSS Snow Fox' => 'http://codepen.io/davidkpiano/pen/woZNbB',
-  'Pure CSS Sliders' => 'http://codepen.io/melnik909/details/KNLBEX/', }
+  'Pure CSS Sliders' => 'http://codepen.io/melnik909/details/KNLBEX/',
+  'Space Parallax' => 'http://cssdeck.com/labs/space-parallax',
+  }
 
 - other_links = { 'Semver' => 'http://semver.org/lang/ru/'}
 
+- other_tools = { 'Mystic Paste' => 'http://mysticpaste.com/', }
+
 - security_links = { 'Observatory by Mozilla' => 'https://observatory.mozilla.org/'}
 
-- db_links = { 'Neo4j Cypher cheat sheet' => 'https://neo4j.com/docs/cypher-refcard/current/',
-  'ArangoDB Docs' => 'https://docs.arangodb.com/3.1/Manual/index.html'}
+- linux_links = { 'Initial Server Setup with Ubuntu 16.04' => 'https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04',
+  }
 
 .links
   .links__column.links__column_front
@@ -107,15 +140,28 @@
           li
             = link_to key, value
 
+- ror_links = { 'CSS-live' => 'http://css-live.ru/',
+  'CSS tricks' => 'https://css-tricks.com/',
+  'w3schools' => 'https://www.w3schools.com/',
+  'Specky Boy' => 'https://speckyboy.com/',
+  }
+
+
   .links__column.links__column_back
     h2.links__title Back-end
     hr
     details
       summary Ruby on Rails
       ul
-        - css_links.each do |key, value|
+        - ror_links.each do |key, value|
           li
             = link_to key, value
+
+
+- db_links = { 'Neo4j Cypher cheat sheet' => 'https://neo4j.com/docs/cypher-refcard/current/',
+  'ArangoDB Docs' => 'https://docs.arangodb.com/3.1/Manual/index.html',
+  'OrientDB Docs' => 'http://orientdb.com/docs/last/index.html',
+  }
 
   .links__column.links__column_db
     h2.links__title Databases
