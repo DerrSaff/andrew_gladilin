@@ -6,17 +6,53 @@
 - html_links = { 'HTML specification' => 'https://www.w3.org/TR/html5/',
   'Webref.ru HTML elements' => 'https://webref.ru/html',
   'HTML Special Characters' => 'http://www.degraeve.com/reference/specialcharacters.php',
+
   }
 
 - css_links = { 'CSS specifications' => 'https://www.w3.org/Style/CSS/specs.en.html',
+  'Webref.ru CSS elements' => 'https://webref.ru/css',
+  'The HTML5 progress Element' => 'https://css-tricks.com/html5-progress-element/',
   'Caniuse' => 'http://caniuse.com/',
+  'A Complete Guide to Flexbox' => 'https://css-tricks.com/snippets/css/a-guide-to-flexbox/',
+  'The ultimate flexbox cheat sheet' => 'http://www.sketchingwithcss.com/samplechapter/cheatsheet.html',
+  'You Don’t Need JavaScript for That!' => 'https://www.sitepoint.com/you-dont-need-javascript-for-that/',
+  'Основы отзывчивого веб-дизайна' => 'https://developers.google.com/web/fundamentals/design-and-ui/responsive/?hl=ru',
+  'БЭМ' => 'https://ru.bem.info/methodology/quick-start/',
+  'Bootstrap 4' => 'https://v4-alpha.getbootstrap.com/getting-started/introduction/',
+
   }
 
-- front_portals_links = { 'CSS-live' => 'http://css-live.ru/'}
+- css_processors_links = { 'Sass Guidelines' => 'https://sass-guidelin.es/',
+  'PostCSS' => 'https://github.com/postcss/postcss',
+  'The HTML5 progress Element' => 'https://css-tricks.com/html5-progress-element/',
 
-- front_tools_links = { 'CSS-live' => 'http://css-live.ru/'}
+  }
 
-- db_links = { 'Neo4j Cypher cheat sheet' => 'https://neo4j.com/docs/cypher-refcard/current/'}
+- javascript_links = { 'Gulp' => 'http://gulpjs.com/',
+  'Webpack' => 'https://webpack.js.org/',
+  'Grunt' => 'https://gruntjs.com/getting-started',
+  'jQuery' => 'http://api.jquery.com/',
+  'Современный учебник Javascript' => 'https://learn.javascript.ru/',
+  'Angular Docs' => 'https://angular.io/docs/ts/latest/',
+  'ECMAScript 6 compatibility table' => 'http://kangax.github.io/compat-table/es6/',
+
+  }
+
+- front_portals_links = { 'CSS-live' => 'http://css-live.ru/',
+  'CSS tricks' => 'https://css-tricks.com/',
+  'w3schools' => 'https://www.w3schools.com/', }
+
+- front_tools_links = { 'CSS Gradient Generator' => 'http://www.colorzilla.com/gradient-editor/'}
+
+- front_snippets_links = { 'CSS Snow Fox' => 'http://codepen.io/davidkpiano/pen/woZNbB',
+  'Pure CSS Sliders' => 'http://codepen.io/melnik909/details/KNLBEX/', }
+
+- other_links = { 'Semver' => 'http://semver.org/lang/ru/'}
+
+- security_links = { 'Observatory by Mozilla' => 'https://observatory.mozilla.org/'}
+
+- db_links = { 'Neo4j Cypher cheat sheet' => 'https://neo4j.com/docs/cypher-refcard/current/',
+  'ArangoDB Docs' => 'https://docs.arangodb.com/3.1/Manual/index.html'}
 
 .links
   .links__column.links__column_front
@@ -33,6 +69,41 @@
       summary CSS
       ul
         - css_links.each do |key, value|
+          li
+            = link_to key, value
+
+    details
+      summary CSS processors
+      ul
+        - css_processors_links.each do |key, value|
+          li
+            = link_to key, value
+
+    details
+      summary JavaScript
+      ul
+        - javascript_links.each do |key, value|
+          li
+            = link_to key, value
+
+    details
+      summary Portals
+      ul
+        - front_portals_links.each do |key, value|
+          li
+            = link_to key, value
+
+    details
+      summary Tools
+      ul
+        - front_tools_links.each do |key, value|
+          li
+            = link_to key, value
+
+    details
+      summary Snippets
+      ul
+        - front_snippets_links.each do |key, value|
           li
             = link_to key, value
 
