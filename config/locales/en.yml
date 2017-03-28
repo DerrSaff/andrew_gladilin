@@ -1,4 +1,10 @@
 en:
-  hello: 'Hello. My name is Andrew. This is my personal web-page'
+  hello: 'Hi! I\'m Andrew'
+  about_me: 'About me'
+  skills: Skills
+  projects: Projects
+  links: Links
+  contacts: Contacts
   click: 'Click on the figures to learn about me'
   wat: '<a href=""%{}">What are these symbols?</a>'
+  # links: ' - Коллекция полезных ссылок'
