@@ -1,10 +1,10 @@
 ru:
-  hello: 'Привет. Я Андрей'
-  about_me: 'Обо мне'
-  skills: Навыки
-  projects: Проекты
-  links: Links
-  contacts: Contacts
-  click: 'Листайте вниз, чтобы узнать обо мне больше'
-  wat: '<a href=""%{}">Что это за символы?</a>'
-  # links: ' - Коллекция полезных ссылок'
+  application:
+    index:
+      hello: Привет!
+      hello_text: 'Привет! Меня зовут Андрей'
+      about_me: 'Обо мне'
+      skills: Навыки
+      projects: Проекты
+      links: Ссылки
+      contacts: Контакты
