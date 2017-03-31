@@ -1,57 +1,51 @@
 = content_for :main_page
   = stylesheet_link_tag 'application', media: 'all'
 
-.language-switch
-  = inline_svg "flags/#{params[:locale]}.svg", class: 'language-switch__icon'
-  .language-switch__content
-    - (Saffa::Application.config.i18n.available_locales).each do |language|
-      = link_to inline_svg("flags/#{language}.svg", class: 'language-switch__icon'), url_for( :locale => language.to_s )
-
 / hello section
+input#hello_radiobox.radiobox-switch.radiobox-switch_hello type='radio' name='section' checked='checked'
 label.label-switch.nav-link for='hello_radiobox'
   span.label-switch__icon = inline_svg('icons/hello.svg')
-  span.label-switch__text = t('.hello')
-input#hello_radiobox.radiobox-switch.radiobox-switch_hello type='radio' name='section' checked='checked'
 
 section.bg.bg_hello
   h1.hello-heading = t('.hello_text')
 
 / about_me section
+input#about_me_radiobox.radiobox-switch.radiobox-switch_about-me type='radio' name='section'
 label.label-switch.nav-link for='about_me_radiobox'
   span.label-switch__icon = inline_svg('icons/about_me.svg')
-  span.label-switch__text = t('.about_me')
-input#about_me_radiobox.radiobox-switch.radiobox-switch_about-me type='radio' name='section'
 
 .bg.bg_about-me
 
 / skills section
+input#skills_radiobox.radiobox-switch.radiobox-switch_skills type='radio' name='section'
 label.label-switch.nav-link for='skills_radiobox'
   span.label-switch__icon = inline_svg('icons/skills.svg')
-  span.label-switch__text = t('.skills')
-input#skills_radiobox.radiobox-switch.radiobox-switch_skills type='radio' name='section'
 
 .bg.bg_skills
 
 / projects section
+input#projects_radiobox.radiobox-switch.radiobox-switch_projects type='radio' name='section'
 label.label-switch.nav-link for='projects_radiobox'
   span.label-switch__icon = inline_svg('icons/projects.svg')
-  span.label-switch__text = t('.projects')
-input#projects_radiobox.radiobox-switch.radiobox-switch_projects type='radio' name='section'
 
 .bg.bg_projects
 
 / links section
+input#links_radiobox.radiobox-switch.radiobox-switch_links type='radio' name='section'
 label.label-switch.nav-link for='links_radiobox'
   span.label-switch__icon = inline_svg('icons/links.svg')
-  span.label-switch__text = t('.links')
-input#links_radiobox.radiobox-switch.radiobox-switch_links type='radio' name='section'
 
 .bg.bg_links
 
 / contacts
+input#contacts_radiobox.radiobox-switch.radiobox-switch_contacts type='radio' name='section'
 label.label-switch.nav-link for='contacts_radiobox'
   span.label-switch__icon = inline_svg('icons/contacts.svg')
-  span.label-switch__text = t('.contacts')
-input#contacts_radiobox.radiobox-switch.radiobox-switch_contacts type='radio' name='section'
 
 .bg.bg_contacts
+
+.language-switch
+  = inline_svg "flags/#{params[:locale]}.svg", class: 'language-switch__icon'
+  .language-switch__content
+    - (Saffa::Application.config.i18n.available_locales).each do |language|
+      = link_to inline_svg("flags/#{language}.svg", class: 'language-switch__icon'), url_for( :locale => language.to_s )
