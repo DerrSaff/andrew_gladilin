@@ -7,6 +7,13 @@ en:
       full_stack: 'I am a full-stack developer'
       # about me section
       about_me: 'About me'
+      me: 'I am 24 years old. I graduated from Penza State Technological University with "IT in Design" speciality, after that I entered the postgraduate school.'
+      interests: 'My main interests are IT (full-stack) and literature.'
+      experience_ror: 'I worked as a Ruby on Rails back-end developer for a while but eventually decided that it is not for me.'
+      experience_front: 'I do like the front-end development, especially the visual part of the work but I am not yet good enough at realising my ideas.'
+      future: "I am still looking for my place in the world of IT that's why I'd like to try my hand in the mobile dev in the future."
+      for_now: 'At the moment I am working on my thesis and in parallel I am looking for a decent work.'
+      # skill section
       skills: Skills
       projects: Projects
       links: Links

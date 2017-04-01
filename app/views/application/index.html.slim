@@ -18,6 +18,17 @@ label.label-switch.nav-link for='about_me_radiobox'
   span.label-switch__icon = inline_svg('icons/about_me.svg')
 
 .bg.bg_about-me
+  .wrapper.wrapper_about-me
+    = image_tag('me.jpg', class: 'image image_about-me')
+    .divider.divider_about-me
+    .text-block.light-text
+      = image_tag('me.jpg', class: 'image image_about-me-inbox')
+      p = t('.me')
+      p = t('.interests')
+      p = t('.experience_ror')
+      p = t('.experience_front')
+      p = t('.future')
+      p = t('.for_now')
 
 / skills section
 input#skills_radiobox.radiobox-switch.radiobox-switch_skills type='radio' name='section'
