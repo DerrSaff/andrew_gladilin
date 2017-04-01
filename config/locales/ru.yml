@@ -1,8 +1,11 @@
 ru:
   application:
     index:
+      # hello section
       hello: Привет!
-      hello_text: 'Привет! Меня зовут Андрей'
+      name: 'Меня зовут Андрей'
+      full_stack: 'Я full-stack разработчик'
+      # about me page
       about_me: 'Обо мне'
       skills: Навыки
       projects: Проекты

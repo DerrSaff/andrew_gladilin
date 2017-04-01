@@ -7,7 +7,10 @@ label.label-switch.nav-link for='hello_radiobox'
   span.label-switch__icon = inline_svg('icons/hello.svg')
 
 section.bg.bg_hello
-  h1.hello-heading = t('.hello_text')
+  .hello-section
+    h1.light-text.heading.heading_hello = t('.hello')
+    h2.light-text.heading.heading_secondary = t('.name')
+    h2.light-text.heading.heading_secondary = t('.full_stack')
 
 / about_me section
 input#about_me_radiobox.radiobox-switch.radiobox-switch_about-me type='radio' name='section'
