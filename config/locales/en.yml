@@ -1,7 +1,11 @@
 en:
   application:
     index:
+      # hello section
       hello: Hi!
+      name: 'My name is Andrew'
+      full_stack: 'I am a full-stack developer'
+      # about me section
       about_me: 'About me'
       skills: Skills
       projects: Projects
