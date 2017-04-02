@@ -2,7 +2,7 @@
   = stylesheet_link_tag 'application', media: 'all'
 
 / hello section
-input#hello_radiobox.radiobox-switch.radiobox-switch_hello type='radio' name='section' checked='checked'
+input#hello_radiobox.radiobox-switch.radiobox-switch_hello type='radio' name='section'
 label.label-switch.nav-link for='hello_radiobox'
   span.label-switch__icon = inline_svg('icons/hello.svg')
 
@@ -21,7 +21,7 @@ label.label-switch.nav-link for='about_me_radiobox'
   .wrapper.wrapper_about-me
     = image_tag('me.jpg', class: 'image image_about-me')
     .divider.divider_about-me
-    .text-block.light-text
+    .text-block
       = image_tag('me.jpg', class: 'image image_about-me-inbox')
       p = t('.me')
       p = t('.interests')
@@ -31,11 +31,77 @@ label.label-switch.nav-link for='about_me_radiobox'
       p = t('.for_now')
 
 / skills section
-input#skills_radiobox.radiobox-switch.radiobox-switch_skills type='radio' name='section'
+input#skills_radiobox.radiobox-switch.radiobox-switch_skills type='radio' name='section'  checked='checked'
 label.label-switch.nav-link for='skills_radiobox'
   span.label-switch__icon = inline_svg('icons/skills.svg')
 
 .bg.bg_skills
+  .wrapper.wrapper_skills
+    .skills
+      .skill.skill_language
+        = inline_svg('flags/ru.svg', class: 'skill__image')
+        .skill__level = t('levels.native')
+        h3.skill__name = t('languages.russian')
+
+    .skills
+      .skill.skill_language
+        = inline_svg('flags/en.svg', class: 'skill__image')
+        .skill__level = t('levels.intermediate')
+        h3.skill__name = t('languages.english')
+
+    .skills
+      .skill.skill_language
+        = inline_svg('flags/de.svg', class: 'skill__image')
+        .skill__level = t('levels.beginner')
+        h3.skill__name = t('languages.german')
+
+    .skills
+      .skill.skill_git
+        = inline_svg('skills/git.svg', class: 'skill__image')
+        progress.skill__progress value='35' max='100'
+        h3.skill__name Git
+
+    .skills
+      .skill.skill_backend
+        = inline_svg('skills/rails.svg', class: 'skill__image')
+        progress.skill__progress value='35' max='100'
+        h3.skill__name Ruby on Rails
+
+    .skills
+      .skill.skill_frontend
+        = inline_svg('skills/html.svg', class: 'skill__image')
+        progress.skill__progress value='35' max='100'
+        h3.skill__name HTML
+
+    .skills
+      .skill.skill_frontend
+        = inline_svg('skills/css.svg', class: 'skill__image')
+        progress.skill__progress value='35' max='100'
+        h3.skill__name CSS
+
+    .skills
+      .skill.skill_frontend
+        = inline_svg('skills/sass.svg', class: 'skill__image')
+        progress.skill__progress value='35' max='100'
+        h3.skill__name Sass
+
+    .skills
+      .skill.skill_frontend
+        = inline_svg('skills/bootstrap.svg', class: 'skill__image')
+        progress.skill__progress value='35' max='100'
+        h3.skill__name Bootstrap
+
+    .skills
+      .skill.skill_frontend
+        = inline_svg('skills/javascript.svg', class: 'skill__image')
+        progress.skill__progress value='35' max='100'
+        h3.skill__name JavaScript
+
+    .skills
+      .skill.skill_frontend
+        = inline_svg('skills/jquery.svg', class: 'skill__image')
+        progress.skill__progress value='35' max='100'
+        h3.skill__name jQuery
 
 / projects section
 input#projects_radiobox.radiobox-switch.radiobox-switch_projects type='radio' name='section'

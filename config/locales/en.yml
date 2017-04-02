@@ -1,4 +1,12 @@
 en:
+  languages:
+    english: English
+    russian: Russian
+    german: German
+  levels:
+    beginner: Beginner
+    intermediate: Intermediate
+    native: Native
   application:
     index:
       # hello section

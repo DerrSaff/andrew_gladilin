@@ -1,4 +1,12 @@
 ru:
+  languages:
+    english: Английский
+    russian: Русский
+    german: Немецкий
+  levels:
+    beginner: Beginner
+    intermediate: Intermediate
+    native: Родной
   application:
     index:
       # hello section
