@@ -4,7 +4,7 @@
 / hello section
 input#hello_radiobox.radiobox-switch.radiobox-switch_hello type='radio' name='section'
 label.label-switch.nav-link for='hello_radiobox'
-  span.label-switch__icon = inline_svg('icons/hello.svg')
+  span = inline_svg('icons/hello.svg', class: 'label-switch__icon')
 
 section.bg.bg_hello
   .hello-section
@@ -15,7 +15,7 @@ section.bg.bg_hello
 / about_me section
 input#about_me_radiobox.radiobox-switch.radiobox-switch_about-me type='radio' name='section'
 label.label-switch.nav-link for='about_me_radiobox'
-  span.label-switch__icon = inline_svg('icons/about_me.svg')
+  span = inline_svg('icons/about_me.svg', class: 'label-switch__icon')
 
 .bg.bg_about-me
   .wrapper.wrapper_about-me
@@ -31,9 +31,9 @@ label.label-switch.nav-link for='about_me_radiobox'
       p = t('.for_now')
 
 / skills section
-input#skills_radiobox.radiobox-switch.radiobox-switch_skills type='radio' name='section'  checked='checked'
+input#skills_radiobox.radiobox-switch.radiobox-switch_skills type='radio' name='section'
 label.label-switch.nav-link for='skills_radiobox'
-  span.label-switch__icon = inline_svg('icons/skills.svg')
+  span = inline_svg('icons/skills.svg', class: 'label-switch__icon')
 
 .bg.bg_skills
   .wrapper.wrapper_skills
@@ -79,23 +79,39 @@ label.label-switch.nav-link for='skills_radiobox'
         = inline_svg('skills/jquery.svg', class: 'skill__image')
 
 / projects section
-input#projects_radiobox.radiobox-switch.radiobox-switch_projects type='radio' name='section'
+input#projects_radiobox.radiobox-switch.radiobox-switch_projects type='radio' name='section' checked='checked'
 label.label-switch.nav-link for='projects_radiobox'
-  span.label-switch__icon = inline_svg('icons/projects.svg')
+  span = inline_svg('icons/projects.svg', class: 'label-switch__icon')
 
 .bg.bg_projects
+  .wrapper.wrapper_projects
+    h1.light-text.heading_projects = t('.projects')
+    .projects
+      .project
+        h3.project__title Ȿaff'a
+        = inline_svg('projects/saffa.svg', class: 'project__image')
+        .project__icons
+          button.project__button.project__button_link
+            a href='http://www.derrsaff.com' target='_blank'
+              = inline_svg('icons/links.svg', class: 'project__icon')
+          button.project__button.project__button_git
+            a href='https://github.com/DerrSaff/saffa' target='_blank'
+              = inline_svg('icons/github.svg', class: 'project__icon')
+      .project
+        h3.project__title Ord
+        h4 = t('.in_progress')
 
 / links section
 input#links_radiobox.radiobox-switch.radiobox-switch_links type='radio' name='section'
 label.label-switch.nav-link for='links_radiobox'
-  span.label-switch__icon = inline_svg('icons/links.svg')
+  span = inline_svg('icons/links.svg', class: 'label-switch__icon')
 
 .bg.bg_links
 
 / contacts
 input#contacts_radiobox.radiobox-switch.radiobox-switch_contacts type='radio' name='section'
 label.label-switch.nav-link for='contacts_radiobox'
-  span.label-switch__icon = inline_svg('icons/contacts.svg')
+  span = inline_svg('icons/contacts.svg', class: 'label-switch__icon')
 
 .bg.bg_contacts
 

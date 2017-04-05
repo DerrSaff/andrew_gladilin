@@ -23,6 +23,8 @@ en:
       for_now: 'At the moment I am working on my thesis and in parallel I am looking for a decent work.'
       # skill section
       skills: Skills
+      # projects section
       projects: Projects
+      in_progress: 'Work in progress'
       links: Links
       contacts: Contacts

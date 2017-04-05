@@ -23,6 +23,8 @@ ru:
       for_now: 'На данный момент я работаю над диссертацией и параллельно ищу достойно оплачиваемую работу.'
       # skill section
       skills: Навыки
+      # projects section
       projects: Проекты
+      in_progress: 'В разработке'
       links: Ссылки
       contacts: Контакты
