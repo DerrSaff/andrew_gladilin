@@ -26,5 +26,15 @@ ru:
       # projects section
       projects: Проекты
       in_progress: 'В разработке'
+      # links section
       links: Ссылки
+      specials: Особенное
+      specials_description: 'Несколько страниц, посвящённых определённым темам.'
+      bookmarks: Закладки
+      databases: 'Базы данных'
+      languages: Языки
+      books: Книги
+      profiles: Профили
+      profiles_description: 'Вы можете добавить меня в друзья на следующих сайтах:'
+      # contacts section
       contacts: Контакты

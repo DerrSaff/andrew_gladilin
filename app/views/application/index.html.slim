@@ -79,7 +79,7 @@ label.label-switch.nav-link for='skills_radiobox'
         = inline_svg('skills/jquery.svg', class: 'skill__image')
 
 / projects section
-input#projects_radiobox.radiobox-switch.radiobox-switch_projects type='radio' name='section' checked='checked'
+input#projects_radiobox.radiobox-switch.radiobox-switch_projects type='radio' name='section'
 label.label-switch.nav-link for='projects_radiobox'
   span = inline_svg('icons/projects.svg', class: 'label-switch__icon')
 
@@ -102,11 +102,44 @@ label.label-switch.nav-link for='projects_radiobox'
         h4 = t('.in_progress')
 
 / links section
-input#links_radiobox.radiobox-switch.radiobox-switch_links type='radio' name='section'
+input#links_radiobox.radiobox-switch.radiobox-switch_links type='radio' name='section' checked='checked'
 label.label-switch.nav-link for='links_radiobox'
   span = inline_svg('icons/links.svg', class: 'label-switch__icon')
 
 .bg.bg_links
+  .wrapper.wrapper_links
+    .specials.dark-text
+      h2.heading.heading_links = t('.specials')
+      p = t('.specials_description')
+      a href=bookmarks_path
+        figure.specials-item
+          = inline_svg('icons/bookmarks.svg', class: 'specials-item__icon')
+          figcaption.specials-item__title = t('.bookmarks')
+      a href=databases_path
+        figure.specials-item
+          = inline_svg('icons/databases.svg', class: 'specials-item__icon')
+          figcaption.specials-item__title = t('.databases')
+      a href=languages_path
+        figure.specials-item
+          = inline_svg('icons/languages.svg', class: 'specials-item__icon')
+          figcaption.specials-item__title = t('.languages')
+      a href=books_path
+        figure.specials-item
+          = inline_svg('icons/books.svg', class: 'specials-item__icon')
+          figcaption.specials-item__title = t('.books')
+    .divider.divider_links
+    .profiles.light-text
+      h2.heading.heading_links = t('.profiles')
+      p = t('.profiles_description')
+      .profiles-icons
+        a href='https://github.com/DerrSaff' target='_blank'
+          = inline_svg('icons/github.svg', class: 'profiles__icon')
+        a href='https://codefights.com/profile/andrewgladilin' target='_blank'
+          = inline_svg('icons/codefights.svg', class: 'profiles__icon')
+        a href='https://www.codecademy.com/AndrewGladilin' target='_blank'
+          = inline_svg('icons/codecademy.svg', class: 'profiles__icon')
+        a href='https://www.codewars.com/users/Andrew%20Gladilin' target='_blank'
+          = image_tag('icons/codewars.png', class: 'profiles__icon')
 
 / contacts
 input#contacts_radiobox.radiobox-switch.radiobox-switch_contacts type='radio' name='section'

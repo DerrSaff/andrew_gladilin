@@ -26,5 +26,15 @@ en:
       # projects section
       projects: Projects
       in_progress: 'Work in progress'
+      # links section
       links: Links
+      specials: Specials
+      specials_description: 'A few pages dedicated to definite themes.'
+      bookmarks: Bookmarks
+      databases: Databases
+      languages: Languages
+      books: Books
+      profiles: Profiles
+      profiles_description: 'You can me add to friends on these sites:'
+      # contacts section
       contacts: Contacts
