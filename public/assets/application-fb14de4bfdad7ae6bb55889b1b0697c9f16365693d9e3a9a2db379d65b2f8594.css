@@ -1,0 +1,810 @@
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/bg/bg.sass */
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/body/body.sass */
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: #012536;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/contacts/contacts.sass */
+.contacts {
+  width: 320px;
+  height: 50vh;
+  background-color: rgba(166, 183, 255, 0.8);
+  padding: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/contacts/contacts__email/contacts__email.sass */
+.contacts__email {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/contacts/contacts__icon/contacts__icon.sass */
+.contacts__icon {
+  width: 70px;
+  height: 70px;
+  margin-left: 1;
+  margin-right: 1vw;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.6));
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/dark-text/dark-text.sass */
+.dark-text {
+  color: #000c3b;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/divider/divider_about-me.sass */
+.divider_about-me {
+  width: 5vw;
+}
+
+@media (max-width: 700px) {
+  /* line 5, /home/saff/projects/saffa/app/assets/stylesheets/application/divider/divider_about-me.sass */
+  .divider_about-me {
+    width: 100vw;
+    height: 5vh;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/divider/divider_links.sass */
+.divider_links {
+  width: 1px;
+  background-color: white;
+  height: 50vh;
+  margin: 0 2vw;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/email/email.sass */
+.email {
+  color: white;
+}
+/* line 4, /home/saff/projects/saffa/app/assets/stylesheets/application/email/email.sass */
+.email:active, .email:visited {
+  color: white;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading.sass */
+.heading {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 330px) {
+  /* line 2, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_hello.sass */
+  .heading_hello {
+    font-size: 2rem;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_links.sass */
+.heading_links {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_projects.sass */
+.heading_projects {
+  margin: 0;
+}
+
+@media (max-width: 2565px) {
+  /* line 5, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_projects.sass */
+  .heading_projects {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 1445px) {
+  /* line 9, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_projects.sass */
+  .heading_projects {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1025px) {
+  /* line 13, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_projects.sass */
+  .heading_projects {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 770px) {
+  /* line 17, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_projects.sass */
+  .heading_projects {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 430px) {
+  /* line 21, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_projects.sass */
+  .heading_projects {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 380px) {
+  /* line 25, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_projects.sass */
+  .heading_projects {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 330px) {
+  /* line 29, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_projects.sass */
+  .heading_projects {
+    font-size: 2rem;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_secondary.sass */
+.heading_secondary {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 330px) {
+  /* line 5, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_secondary.sass */
+  .heading_secondary {
+    font-size: 1.2rem;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_skills.sass */
+.heading_skills {
+  margin: 0;
+}
+
+@media (max-width: 2565px) {
+  /* line 5, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_skills.sass */
+  .heading_skills {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 1445px) {
+  /* line 9, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_skills.sass */
+  .heading_skills {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 1025px) {
+  /* line 13, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_skills.sass */
+  .heading_skills {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 770px) {
+  /* line 17, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_skills.sass */
+  .heading_skills {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 430px) {
+  /* line 21, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_skills.sass */
+  .heading_skills {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 380px) {
+  /* line 25, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_skills.sass */
+  .heading_skills {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 330px) {
+  /* line 29, /home/saff/projects/saffa/app/assets/stylesheets/application/heading/heading_skills.sass */
+  .heading_skills {
+    font-size: 2rem;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/hello-section/hello-section.sass */
+.hello-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/icon/icon_facebook.sass */
+.icon_facebook {
+  fill: #3B5998;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/icon/icon_goodreads.sass */
+.icon_goodreads {
+  fill: #663300;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/icon/icon_instagram.sass */
+.icon_instagram {
+  fill: #E4405F;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/icon/icon_steam.sass */
+.icon_steam {
+  fill: #000000;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/icon/icon_twitter.sass */
+.icon_twitter {
+  fill: #1DA1F2;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/icon/icon_vk.sass */
+.icon_vk {
+  fill: #6383A8;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/icon/icon_wikipedia.sass */
+.icon_wikipedia {
+  fill: #000000;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/image/image.sass */
+.image {
+  border: 1px solid black;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/image/image_about-me-inbox.sass */
+.image_about-me-inbox {
+  display: none;
+  width: 20vw;
+  height: auto;
+}
+
+@media (max-width: 766px) {
+  /* line 7, /home/saff/projects/saffa/app/assets/stylesheets/application/image/image_about-me-inbox.sass */
+  .image_about-me-inbox {
+    display: inline;
+    width: 20vw;
+    float: left;
+    margin: 3px;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/image/image_about-me.sass */
+.image_about-me {
+  width: 20vw;
+  margin-left: 5vw;
+  height: auto;
+}
+
+@media (max-width: 766px) {
+  /* line 7, /home/saff/projects/saffa/app/assets/stylesheets/application/image/image_about-me.sass */
+  .image_about-me {
+    display: none;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/label-switch/label-switch.sass */
+.label-switch {
+  z-index: 1;
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #004960;
+  text-align: center;
+}
+/* line 9, /home/saff/projects/saffa/app/assets/stylesheets/application/label-switch/label-switch.sass */
+.label-switch:hover {
+  background-color: #2dcdff;
+}
+/* line 12, /home/saff/projects/saffa/app/assets/stylesheets/application/label-switch/label-switch.sass */
+.label-switch:hover .label-switch__icon {
+  fill: #00132e;
+}
+
+@media (max-width: 360px) {
+  /* line 16, /home/saff/projects/saffa/app/assets/stylesheets/application/label-switch/label-switch.sass */
+  .label-switch {
+    width: 14.2857vw;
+    padding: 0;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/language-switch/language-switch.sass */
+.language-switch {
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* line 9, /home/saff/projects/saffa/app/assets/stylesheets/application/language-switch/language-switch.sass */
+.language-switch:hover .language-switch__content {
+  display: block;
+}
+
+@media (max-width: 450px) {
+  /* line 13, /home/saff/projects/saffa/app/assets/stylesheets/application/language-switch/language-switch.sass */
+  .language-switch {
+    top: 2px;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/language-switch/language-switch__content/language-switch__content.sass */
+.language-switch__content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* line 8, /home/saff/projects/saffa/app/assets/stylesheets/application/language-switch/language-switch__content/language-switch__content.sass */
+.language-switch__content a {
+  text-decoration: none;
+  padding: 2px 5px;
+  display: block;
+}
+/* line 13, /home/saff/projects/saffa/app/assets/stylesheets/application/language-switch/language-switch__content/language-switch__content.sass */
+.language-switch__content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/light-text/light-text.sass */
+.light-text {
+  color: #edfcff;
+  text-shadow: 3px 1px 2px black;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/nav-link/nav-link.sass */
+.nav-link {
+  text-decoration: none;
+  color: #edfcff;
+  text-shadow: 3px 1px 2px black;
+}
+/* line 5, /home/saff/projects/saffa/app/assets/stylesheets/application/nav-link/nav-link.sass */
+.nav-link:hover {
+  color: #034670;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/profiles-icons/profiles-icons.sass */
+.profiles-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/profiles/profiles.sass */
+.profiles {
+  width: 40vw;
+  height: inherit;
+  background-color: #0a023c;
+  padding: 1vw;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/profiles/profiles__icon/profiles__icon.sass */
+.profiles__icon {
+  width: 70px;
+  height: 70px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  background-color: white;
+  padding: 1vw;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project.sass */
+.project {
+  width: 15vw;
+  height: 40vh;
+  background-color: #0076b0;
+  border-radius: 10px 0 10px 0;
+  padding: 1vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 770px) {
+  /* line 15, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project.sass */
+  .project {
+    width: 25vw;
+  }
+}
+@media (max-width: 430px) {
+  /* line 19, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project.sass */
+  .project {
+    width: 90vw;
+    height: 30vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project__button/project__button.sass */
+.project__button {
+  width: 40%;
+  cursor: pointer;
+  border: none;
+  padding: 2px;
+  height: 35px;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project__button/project__button_git.sass */
+.project__button_git {
+  background-color: white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+/* line 6, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project__button/project__button_git.sass */
+.project__button_git:hover {
+  background-color: black;
+}
+/* line 8, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project__button/project__button_git.sass */
+.project__button_git:hover .project__icon {
+  fill: white;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project__button/project__button_link.sass */
+.project__button_link {
+  background-color: #3191df;
+}
+/* line 4, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project__button/project__button_link.sass */
+.project__button_link:hover {
+  filter: invert(100%);
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project__icon/project__icon.sass */
+.project__icon {
+  height: 24px;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project__icons/project__icons.sass */
+.project__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 10vh;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project__image/project__image.sass */
+.project__image {
+  width: inherit;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/project/project__title/project__title.sass */
+.project__title {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/projects/projects.sass */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1vw;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+}
+
+@media (max-width: 430px) {
+  /* line 10, /home/saff/projects/saffa/app/assets/stylesheets/application/projects/projects.sass */
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/radiobox-switch/radiobox-switch.sass */
+.radiobox-switch {
+  display: none;
+}
+
+/* line 4, /home/saff/projects/saffa/app/assets/stylesheets/application/radiobox-switch/radiobox-switch.sass */
+.radiobox-switch:checked + label {
+  background-color: #05a4d6;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/radiobox-switch/radiobox-switch_about-me.sass */
+.radiobox-switch_about-me:checked ~ .bg_about-me {
+  display: block;
+  background-image: url(/assets/bgs/about-a054b9af805a399ed632793ef8232776970eba06b39db2ea25eea5c785c38b80.jpg);
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/radiobox-switch/radiobox-switch_contacts.sass */
+.radiobox-switch_contacts:checked ~ .bg_contacts {
+  display: block;
+  background-image: url(/assets/bgs/contacts-2f07c4ce71cfc7cede1fc834ee46c14964089aeb9ea2d09c314462faaa0a9b26.jpg);
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/radiobox-switch/radiobox-switch_hello.sass */
+.radiobox-switch_hello:checked ~ .bg_hello {
+  display: block;
+  background-image: url(/assets/bgs/iceberg-d1400196f6877a0549a460d4e6bc7caad81d5d5f6294949c4afebaaf3ba94f88.jpg);
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/radiobox-switch/radiobox-switch_links.sass */
+.radiobox-switch_links:checked ~ .bg_links {
+  display: block;
+  background-image: url(/assets/bgs/links-3a048a371bad7c0366221b91a86aade72aa96a360619102a8c4cf9a229c71cee.jpg);
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/radiobox-switch/radiobox-switch_projects.sass */
+.radiobox-switch_projects:checked ~ .bg_projects {
+  display: block;
+  background-image: url(/assets/bgs/projects-f57922f7d62cbece7e2113bb3b644269275c458df9b018c092f51b4f8200b81a.jpg);
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/radiobox-switch/radiobox-switch_skills.sass */
+.radiobox-switch_skills:checked ~ .bg_skills {
+  display: block;
+  background-image: url(/assets/bgs/skills-d8aced8a885f6ae015f12dd1828543ffc509c0e735861ee79a55ec0eb4e18ac5.jpg);
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill.sass */
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 2vw;
+  margin: 3vh 2vw;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+/* line 12, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill.sass */
+.skill:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 2565px) {
+  /* line 16, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill.sass */
+  .skill {
+    margin: 2vh 1vw;
+    width: 6vw;
+    height: 6vw;
+  }
+}
+@media (max-width: 1445px) {
+  /* line 22, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill.sass */
+  .skill {
+    margin: 2vh 1vw;
+    width: 6vw;
+    height: 6vw;
+  }
+}
+@media (max-width: 1025px) {
+  /* line 28, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill.sass */
+  .skill {
+    margin: 2vh 2vw;
+    width: 9vw;
+    height: 9vw;
+  }
+}
+@media (max-width: 770px) {
+  /* line 34, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill.sass */
+  .skill {
+    width: 9vw;
+    height: 9vw;
+  }
+}
+@media (max-width: 430px) {
+  /* line 39, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill.sass */
+  .skill {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+@media (max-width: 380px) {
+  /* line 44, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill.sass */
+  .skill {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+@media (max-width: 325px) {
+  /* line 49, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill.sass */
+  .skill {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill__image/skill__image.sass */
+.skill__image {
+  width: auto;
+  height: inherit;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill__level/skill__level.sass */
+.skill__level {
+  text-align: center;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill__name/skill__name.sass */
+.skill__name {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill__progress/skill__progress.sass */
+.skill__progress {
+  width: 10vw;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill_backend.sass */
+.skill_backend {
+  background-color: #bbff9a;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill_frontend.sass */
+.skill_frontend {
+  background-color: #fff298;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill_git.sass */
+.skill_git {
+  background-color: #ffcbcb;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/skill/skill_language.sass */
+.skill_language {
+  background-color: #a49fff;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/skills/skills.sass */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(217, 217, 217, 0.4);
+  padding: 1vw;
+  justify-content: center;
+  align-content: center;
+  width: 80vw;
+  height: 80vw;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/specials-item/specials-item.sass */
+.specials-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd34f;
+  padding: 1vw;
+  height: 10vw;
+  width: 10vw;
+  margin: 1vh 1vw;
+  border-radius: 50%;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/specials-item/specials-item__icon/specials-item__icon.sass */
+.specials-item__icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/specials/specials.sass */
+.specials {
+  width: 40vw;
+  min-width: 300px;
+  background-color: #c3ceff;
+  height: inherit;
+  padding: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/text-block/text-block.sass */
+.text-block {
+  background-color: rgba(13, 21, 61, 0.5);
+  color: #edfcff;
+  text-shadow: 3px 1px 2px black;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/text-block/text-block_about-me.sass */
+.text-block {
+  width: 50vw;
+  padding: 2vh 5vw;
+  margin-right: 5vw;
+}
+
+@media (max-width: 900px) {
+  /* line 7, /home/saff/projects/saffa/app/assets/stylesheets/application/text-block/text-block_about-me.sass */
+  .text-block {
+    width: 90vw;
+    padding: 3px;
+    font-size: 14px;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/tip-text/tip-text.sass */
+.tip-text {
+  color: #edfcff;
+  text-shadow: 3px 1px 2px black;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/wrapper/wrapper_about-me.sass */
+.wrapper_about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding-bottom: 10vh;
+}
+
+@media (max-width: 700px) {
+  /* line 10, /home/saff/projects/saffa/app/assets/stylesheets/application/wrapper/wrapper_about-me.sass */
+  .wrapper_about-me {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/wrapper/wrapper_contacts.sass */
+.wrapper_contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding-bottom: 10vh;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/wrapper/wrapper_links.sass */
+.wrapper_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  margin-top: 10vh;
+  padding-bottom: 10vh;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/wrapper/wrapper_projects.sass */
+.wrapper_projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 100vw;
+  margin-top: 5vh;
+  padding-bottom: 10vh;
+}
+
+@media (max-width: 700px) {
+  /* line 12, /home/saff/projects/saffa/app/assets/stylesheets/application/wrapper/wrapper_projects.sass */
+  .wrapper_projects {
+    margin-top: 2vh;
+    padding-bottom: 0;
+  }
+}
+/* line 1, /home/saff/projects/saffa/app/assets/stylesheets/application/wrapper/wrapper_skills.sass */
+.wrapper_skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  flex-direction: column;
+}
+
+@media (max-width: 700px) {
+  /* line 12, /home/saff/projects/saffa/app/assets/stylesheets/application/wrapper/wrapper_skills.sass */
+  .wrapper_skills {
+    padding-bottom: 0;
+  }
+}
+/* line 5, /home/saff/projects/saffa/app/assets/stylesheets/application.sass */
+html {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
