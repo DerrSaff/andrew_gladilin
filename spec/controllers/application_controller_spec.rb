@@ -9,10 +9,10 @@ RSpec.describe ApplicationController, type: :controller do
     end
   end
 
-  describe 'GET #links' do
+  describe 'GET #bookmarks' do
     it 'renders :index template' do
-      get :links
-      expect(response).to render_template(:links)
+      get :bookmarks
+      expect(response).to render_template(:bookmarks)
     end
   end
 end
