@@ -2,7 +2,7 @@
   = stylesheet_link_tag 'application', media: 'all'
 
 / hello section
-input#hello_radiobox.radiobox-switch.radiobox-switch_hello type='radio' name='section'
+input#hello_radiobox.radiobox-switch.radiobox-switch_hello type='radio' name='section' checked='checked'
 label.label-switch.nav-link for='hello_radiobox'
   span = inline_svg('icons/hello.svg', class: 'label-switch__icon')
 
@@ -111,22 +111,22 @@ label.label-switch.nav-link for='links_radiobox'
     .specials.dark-text
       h2.heading.heading_links = t('.specials')
       p = t('.specials_description')
-      a href=bookmarks_path
+      a.specials-item__title href=bookmarks_path target='_blank'
         figure.specials-item
           = inline_svg('icons/bookmarks.svg', class: 'specials-item__icon')
-          figcaption.specials-item__title = t('.bookmarks')
-      a href=databases_path
+          figcaption = t('.bookmarks')
+      a.specials-item__title href=databases_path target='_blank'
         figure.specials-item
           = inline_svg('icons/databases.svg', class: 'specials-item__icon')
-          figcaption.specials-item__title = t('.databases')
-      a href=languages_path
+          figcaption = t('.databases')
+      a.specials-item__title href=languages_path target='_blank'
         figure.specials-item
           = inline_svg('icons/languages.svg', class: 'specials-item__icon')
-          figcaption.specials-item__title = t('.languages')
-      a href=books_path
+          figcaption = t('.languages')
+      a.specials-item__title href=books_path target='_blank'
         figure.specials-item
           = inline_svg('icons/books.svg', class: 'specials-item__icon')
-          figcaption.specials-item__title = t('.books')
+          figcaption = t('.books')
     .divider.divider_links
     .profiles.light-text
       h2.heading.heading_links = t('.profiles')
@@ -146,7 +146,7 @@ label.label-switch.nav-link for='links_radiobox'
           = inline_svg('icons/linkedin.svg', class: 'profiles__icon')
 
 / contacts
-input#contacts_radiobox.radiobox-switch.radiobox-switch_contacts type='radio' name='section' checked='checked'
+input#contacts_radiobox.radiobox-switch.radiobox-switch_contacts type='radio' name='section'
 label.label-switch.nav-link for='contacts_radiobox'
   span = inline_svg('icons/contacts.svg', class: 'label-switch__icon')
 
