@@ -1,0 +1,17 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $page-background-color;
+  color: #555;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
