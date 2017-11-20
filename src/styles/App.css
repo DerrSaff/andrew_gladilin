@@ -1,5 +1,6 @@
 html {
-  font-size: 0.625rem;
+  font-size: 62.5%;
+  font-family: sans-serif;
 }
 
 body {
@@ -50,7 +51,7 @@ ul {
   padding-left: 2rem;
 }
 
-.personal-data {
+.hor_row {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -60,4 +61,32 @@ ul {
 .socials {
   display: flex;
   flex-direction: column;
+}
+
+.project_image {
+  height: 128px;
+  width: 128px;
+}
+
+.project_name {
+  font-size: 1.6rem;
+  max-width: 128px;
+  text-align: center;
+}
+
+a {
+  color: rgb(14, 0, 48);
+}
+  
+a:link, a:visited, a:focus, a:active {
+  text-decoration: none;
+}
+  
+a:hover {
+  color: rgb(0, 0, 238);
+  text-decoration: underline;
+}
+
+.projects_title {
+  text-align: center;
 }
