@@ -8,7 +8,7 @@ import facebook from './svgs/facebook.svg';
 export class PersonalData extends Component {
   render() {
     return (
-      <div className="box personal-data">
+      <div className="box hor_row">
         <div className="socials">
           <a href="https://vk.com/gladilinandrew" target="_blank" rel="noopener noreferrer">
             <img className="icon vk" src={vk} alt="Vk link" />
