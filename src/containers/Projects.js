@@ -6,11 +6,11 @@ import LanguagesComparison from './../components/projects/spreadsheet-cell-row.s
 export class Projects extends Component {
   render() {
     return (
-      <div className="box">
-        <h2 className="projects_title">Projects</h2>
-        <div className="hor_row">
-          <Project name="English With Games" file={EnglishWithGames} link="https://vk.com/engvg" />
-          <Project name="Languages Comparison (In development)" file={LanguagesComparison} link="https://languages-comparison.herokuapp.com/" />
+      <div className="projects">
+        <h2 className="projects__title">Projects and Activities</h2>
+        <div className="projects__list">
+          <Project file={EnglishWithGames} link="https://vk.com/engvg" />
+          <Project file={LanguagesComparison} link="https://languages-comparison.herokuapp.com/" />
         </div>
       </div>
     );
