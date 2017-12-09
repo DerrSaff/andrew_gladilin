@@ -1,6 +1,8 @@
 html {
   font-size: 62.5%;
   font-family: sans-serif;
+  background: url('../components/svgs/pattern.svg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 body {
@@ -10,83 +12,91 @@ body {
 
 .App {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
 }
 
-.box {
-  border: 1px grey solid;
-  border-radius: 1%;
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-  padding: 1rem;
+.personal_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.photo {
+  width: 25.6rem;
+  height: 25.6rem;
+  border: 0.1rem grey solid;
+  border-radius: 50%;
   margin: 1rem;
 }
 
-.table {
-  border-collapse: collapse;
-  border: 1px solid #dbdbdb;
-  font-size: 1.5rem;
-}
-.table td {
-  padding: 0.5rem;
-}
-
-.image {
-  width: 128px;
-  height: 128px;
-  border: 1px grey solid;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .icon {
-  height: 3rem;
-  width: 3rem;
+  height: 6.4rem;
+  width: 6.4rem;
   margin: 0.5rem;
 }
 
-ul {
-  margin: 0;
-  padding-left: 2rem;
-}
-
-.hor_row {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
+.icon:hover {
+  filter: brightness(150%);
 }
 
 .socials {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 32rem;
+}
+
+.projects {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  flex-grow: 3;
 }
 
-.project_image {
-  height: 128px;
-  width: 128px;
+.projects__list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.project_name {
-  font-size: 1.6rem;
-  max-width: 128px;
-  text-align: center;
+.projects__title {
+  font-size: 2.5rem;
+  color: rgb(48, 0, 94);
 }
 
-a {
-  color: rgb(14, 0, 48);
-}
-  
-a:link, a:visited, a:focus, a:active {
-  text-decoration: none;
-}
-  
-a:hover {
-  color: rgb(0, 0, 238);
-  text-decoration: underline;
+.project__image {
+  height: 12.8rem;
+  width: 12.8rem;
 }
 
-.projects_title {
-  text-align: center;
+.project__image:hover {
+  filter: brightness(120%);
+}
+
+@media (max-width: 768px) {
+  .App {
+    flex-wrap: wrap;
+  }
+}
+
+.icon:hover, .project__image:hover {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: pulse;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
 }
