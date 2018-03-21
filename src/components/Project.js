@@ -6,7 +6,7 @@ export class Project extends Component {
       <div>
         <a href={this.props.link} target="_blank" rel="noopener noreferrer">
           <figure>
-            <p><img className="project__image" src={this.props.file} alt="English with Games"/></p>
+            <p><img className="project__image" src={this.props.file} alt={this.props.alt}/></p>
           </figure>
         </a>
       </div>
