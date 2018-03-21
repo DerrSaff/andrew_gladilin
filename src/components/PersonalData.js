@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import photo from './photos/me.jpg';
+import photo from './images/me.jpg';
 import vk from './svgs/vk.svg';
 import github from './svgs/github.svg';
 import instagram from './svgs/instagram.svg';
@@ -25,8 +25,6 @@ export class PersonalData extends Component {
             <img className="icon instagram" src={instagram} alt="Instagram link" />
           </a>
         </div>
-
-        
       </div>
     );
   }
